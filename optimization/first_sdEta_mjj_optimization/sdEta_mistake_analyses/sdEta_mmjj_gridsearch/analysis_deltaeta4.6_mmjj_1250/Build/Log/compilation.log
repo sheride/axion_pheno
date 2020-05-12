@@ -1,0 +1,81 @@
+clang++ -Wall -O3 -fPIC -I/Users/elijahsheridan/MG5_aMC_v2_6_5/HEPTools/madanalysis5/madanalysis5/tools/ -I./ -pthread -stdlib=libc++ -std=c++11 -m64 -I/usr/local/Cellar/root/6.16.00/include/root -o Main/main.o -c Main/main.cpp
+In file included from Main/main.cpp:11:
+In file included from /Users/elijahsheridan/MG5_aMC_v2_6_5/HEPTools/madanalysis5/madanalysis5/tools/SampleAnalyzer/Process/Core/SampleAnalyzer.h:40:
+In file included from /Users/elijahsheridan/MG5_aMC_v2_6_5/HEPTools/madanalysis5/madanalysis5/tools/SampleAnalyzer/Process/Reader/ReaderManager.h:31:
+/Users/elijahsheridan/MG5_aMC_v2_6_5/HEPTools/madanalysis5/madanalysis5/tools/SampleAnalyzer/Process/Core/ManagerBase.h:108:37: warning: 'ptr_fun<int, int>' is deprecated [-Wdeprecated-declarations]
+                 name.begin(), std::ptr_fun<int, int>(std::tolower));
+                                    ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/functional:1097:1: note: 'ptr_fun<int, int>' has been explicitly marked deprecated here
+_LIBCPP_DEPRECATED_IN_CXX11 inline _LIBCPP_INLINE_VISIBILITY
+^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/__config:1101:39: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX11'
+#  define _LIBCPP_DEPRECATED_IN_CXX11 _LIBCPP_DEPRECATED
+                                      ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/__config:1090:48: note: expanded from macro '_LIBCPP_DEPRECATED'
+#    define _LIBCPP_DEPRECATED __attribute__ ((deprecated))
+                                               ^
+In file included from Main/main.cpp:11:
+In file included from /Users/elijahsheridan/MG5_aMC_v2_6_5/HEPTools/madanalysis5/madanalysis5/tools/SampleAnalyzer/Process/Core/SampleAnalyzer.h:40:
+In file included from /Users/elijahsheridan/MG5_aMC_v2_6_5/HEPTools/madanalysis5/madanalysis5/tools/SampleAnalyzer/Process/Reader/ReaderManager.h:31:
+/Users/elijahsheridan/MG5_aMC_v2_6_5/HEPTools/madanalysis5/madanalysis5/tools/SampleAnalyzer/Process/Core/ManagerBase.h:132:37: warning: 'ptr_fun<int, int>' is deprecated [-Wdeprecated-declarations]
+                 name.begin(), std::ptr_fun<int, int>(std::tolower));
+                                    ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/functional:1097:1: note: 'ptr_fun<int, int>' has been explicitly marked deprecated here
+_LIBCPP_DEPRECATED_IN_CXX11 inline _LIBCPP_INLINE_VISIBILITY
+^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/__config:1101:39: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX11'
+#  define _LIBCPP_DEPRECATED_IN_CXX11 _LIBCPP_DEPRECATED
+                                      ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/__config:1090:48: note: expanded from macro '_LIBCPP_DEPRECATED'
+#    define _LIBCPP_DEPRECATED __attribute__ ((deprecated))
+                                               ^
+In file included from Main/main.cpp:11:
+In file included from /Users/elijahsheridan/MG5_aMC_v2_6_5/HEPTools/madanalysis5/madanalysis5/tools/SampleAnalyzer/Process/Core/SampleAnalyzer.h:40:
+In file included from /Users/elijahsheridan/MG5_aMC_v2_6_5/HEPTools/madanalysis5/madanalysis5/tools/SampleAnalyzer/Process/Reader/ReaderManager.h:31:
+/Users/elijahsheridan/MG5_aMC_v2_6_5/HEPTools/madanalysis5/madanalysis5/tools/SampleAnalyzer/Process/Core/ManagerBase.h:161:37: warning: 'ptr_fun<int, int>' is deprecated [-Wdeprecated-declarations]
+                 name.begin(), std::ptr_fun<int, int>(std::tolower));
+                                    ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/functional:1097:1: note: 'ptr_fun<int, int>' has been explicitly marked deprecated here
+_LIBCPP_DEPRECATED_IN_CXX11 inline _LIBCPP_INLINE_VISIBILITY
+^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/__config:1101:39: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX11'
+#  define _LIBCPP_DEPRECATED_IN_CXX11 _LIBCPP_DEPRECATED
+                                      ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/__config:1090:48: note: expanded from macro '_LIBCPP_DEPRECATED'
+#    define _LIBCPP_DEPRECATED __attribute__ ((deprecated))
+                                               ^
+In file included from Main/main.cpp:11:
+In file included from /Users/elijahsheridan/MG5_aMC_v2_6_5/HEPTools/madanalysis5/madanalysis5/tools/SampleAnalyzer/Process/Core/SampleAnalyzer.h:40:
+In file included from /Users/elijahsheridan/MG5_aMC_v2_6_5/HEPTools/madanalysis5/madanalysis5/tools/SampleAnalyzer/Process/Reader/ReaderManager.h:31:
+/Users/elijahsheridan/MG5_aMC_v2_6_5/HEPTools/madanalysis5/madanalysis5/tools/SampleAnalyzer/Process/Core/ManagerBase.h:195:37: warning: 'ptr_fun<int, int>' is deprecated [-Wdeprecated-declarations]
+                 name.begin(), std::ptr_fun<int, int>(std::tolower));
+                                    ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/functional:1097:1: note: 'ptr_fun<int, int>' has been explicitly marked deprecated here
+_LIBCPP_DEPRECATED_IN_CXX11 inline _LIBCPP_INLINE_VISIBILITY
+^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/__config:1101:39: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX11'
+#  define _LIBCPP_DEPRECATED_IN_CXX11 _LIBCPP_DEPRECATED
+                                      ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/__config:1090:48: note: expanded from macro '_LIBCPP_DEPRECATED'
+#    define _LIBCPP_DEPRECATED __attribute__ ((deprecated))
+                                               ^
+In file included from Main/main.cpp:11:
+In file included from /Users/elijahsheridan/MG5_aMC_v2_6_5/HEPTools/madanalysis5/madanalysis5/tools/SampleAnalyzer/Process/Core/SampleAnalyzer.h:40:
+In file included from /Users/elijahsheridan/MG5_aMC_v2_6_5/HEPTools/madanalysis5/madanalysis5/tools/SampleAnalyzer/Process/Reader/ReaderManager.h:31:
+/Users/elijahsheridan/MG5_aMC_v2_6_5/HEPTools/madanalysis5/madanalysis5/tools/SampleAnalyzer/Process/Core/ManagerBase.h:161:37: warning: 'ptr_fun<int, int>' is deprecated [-Wdeprecated-declarations]
+                 name.begin(), std::ptr_fun<int, int>(std::tolower));
+                                    ^
+./SampleAnalyzer/User/Analyzer/analysisList.h:11:11: note: in instantiation of member function 'MA5::ManagerBase<MA5::AnalyzerBase>::Add' requested here
+  manager.Add("MadAnalysis5job", new user);
+          ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/functional:1097:1: note: 'ptr_fun<int, int>' has been explicitly marked deprecated here
+_LIBCPP_DEPRECATED_IN_CXX11 inline _LIBCPP_INLINE_VISIBILITY
+^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/__config:1101:39: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX11'
+#  define _LIBCPP_DEPRECATED_IN_CXX11 _LIBCPP_DEPRECATED
+                                      ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/__config:1090:48: note: expanded from macro '_LIBCPP_DEPRECATED'
+#    define _LIBCPP_DEPRECATED __attribute__ ((deprecated))
+                                               ^
+5 warnings generated.
+clang++ -Wall -O3 -fPIC -I/Users/elijahsheridan/MG5_aMC_v2_6_5/HEPTools/madanalysis5/madanalysis5/tools/ -I./ -pthread -stdlib=libc++ -std=c++11 -m64 -I/usr/local/Cellar/root/6.16.00/include/root -o SampleAnalyzer/User/Analyzer/user.o -c SampleAnalyzer/User/Analyzer/user.cpp

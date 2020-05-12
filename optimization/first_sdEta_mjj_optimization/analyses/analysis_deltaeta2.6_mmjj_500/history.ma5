@@ -1,0 +1,249 @@
+set main.currentdir = /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/optimization
+# set directory where running "./bin/ma5"
+ set lumi
+ define the signal significance
+set main.currentdir = /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno # need to change this directory path --> exit and type "pwd" to get the path
+set main.lumi = 40.0
+set main.SBratio = 'S/sqrt(S+B)'
+# import samples --> change the path to the LHE file
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/axion_signal/axion_signal_gurrola_cuts_1MeV.lhe.gz as signal
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/vbf_diphoton_background_data/merged_lhe/vbf_diphoton_background_ht_0_100_merged.lhe.gz as bg_vbf_0_100
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/vbf_diphoton_background_data/merged_lhe/vbf_diphoton_background_ht_100_200_merged.lhe.gz as bg_vbf_100_200
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/vbf_diphoton_background_data/merged_lhe/vbf_diphoton_background_ht_200_400_merged.lhe.gz as bg_vbf_200_400
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/vbf_diphoton_background_data/merged_lhe/vbf_diphoton_background_ht_400_600_merged.lhe.gz as bg_vbf_400_600
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/vbf_diphoton_background_data/merged_lhe/vbf_diphoton_background_ht_600_800_merged.lhe.gz as bg_vbf_600_800
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/vbf_diphoton_background_data/merged_lhe/vbf_diphoton_background_ht_800_1200_merged.lhe.gz as bg_vbf_800_1200
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/vbf_diphoton_background_data/merged_lhe/vbf_diphoton_background_ht_1200_1600_merged.lhe.gz as bg_vbf_1200_1600
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/vbf_diphoton_background_data/merged_lhe/vbf_diphoton_background_ht_1600_inf_merged.lhe.gz as bg_vbf_1600_inf
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/diphoton_double_isr_background_data/merged_lhe/diphoton_double_isr_background_ht_0_100_merged.lhe.gz as bg_dip_0_100
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/diphoton_double_isr_background_data/merged_lhe/diphoton_double_isr_background_ht_100_200_merged.lhe.gz as bg_dip_100_200
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/diphoton_double_isr_background_data/merged_lhe/diphoton_double_isr_background_ht_200_400_merged.lhe.gz as bg_dip_200_400
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/diphoton_double_isr_background_data/merged_lhe/diphoton_double_isr_background_ht_400_600_merged.lhe.gz as bg_dip_400_600
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/diphoton_double_isr_background_data/merged_lhe/diphoton_double_isr_background_ht_600_800_merged.lhe.gz as bg_dip_600_800
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/diphoton_double_isr_background_data/merged_lhe/diphoton_double_isr_background_ht_800_1200_merged.lhe.gz as bg_dip_800_1200
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/diphoton_double_isr_background_data/merged_lhe/diphoton_double_isr_background_ht_1200_1600_merged.lhe.gz as bg_dip_1200_1600
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/diphoton_double_isr_background_data/merged_lhe/diphoton_double_isr_background_ht_1600_inf_merged.lhe.gz as bg_dip_1600_inf
+# define bg and signal samples
+set signal.type = signal
+set bg_vbf_0_100.type = background
+set bg_vbf_100_200.type = background
+set bg_vbf_200_400.type  = background
+set bg_vbf_400_600.type  = background
+set bg_vbf_600_800.type  = background
+set bg_vbf_800_1200.type  = background
+set bg_vbf_1200_1600.type  = background
+set bg_vbf_1600_inf.type = background
+set bg_dip_0_100.type = background
+set bg_dip_100_200.type = background
+set bg_dip_200_400.type = background
+set bg_dip_400_600.type = background
+set bg_dip_600_800.type = background
+set bg_dip_800_1200.type = background
+set bg_dip_1200_1600.type = background
+set bg_dip_1600_inf.type = background
+# define weights for the samples
+#set sample_1.weight = 1
+#set sample_2.weight = 1
+# line styles and colors
+set signal.linecolor = red
+set signal.linestyle = dashed
+set signal.linewidth = 3
+set bg_vbf_0_100.linecolor = blue-4
+set bg_vbf_0_100.linestyle = dash-dotted
+set bg_vbf_0_100.linewidth = 4
+set bg_vbf_100_200.linecolor = blue-3
+set bg_vbf_100_200.linestyle = dash-dotted
+set bg_vbf_100_200.linewidth = 4
+set bg_vbf_200_400.linecolor = blue-2
+set bg_vbf_200_400.linestyle = dash-dotted
+set bg_vbf_200_400.linewidth = 4
+set bg_vbf_400_600.linecolor = blue-1
+set bg_vbf_400_600.linestyle = dash-dotted
+set bg_vbf_400_600.linewidth = 4
+set bg_vbf_600_800.linecolor = blue
+set bg_vbf_600_800.linestyle = dash-dotted
+set bg_vbf_600_800.linewidth = 4
+set bg_vbf_800_1200.linecolor = blue+1
+set bg_vbf_800_1200.linestyle = dash-dotted
+set bg_vbf_800_1200.linewidth = 4
+set bg_vbf_1200_1600.linecolor = blue+2
+set bg_vbf_1200_1600.linestyle = dash-dotted
+set bg_vbf_1200_1600.linewidth = 4
+set bg_vbf_1600_inf.linecolor = blue+3
+set bg_vbf_1600_inf.linestyle = dash-dotted
+set bg_vbf_1600_inf.linewidth = 4
+set bg_dip_0_100.linecolor = green-4
+set bg_dip_0_100.linestyle = dash-dotted
+set bg_dip_0_100.linewidth = 4
+set bg_dip_100_200.linecolor = green-3
+set bg_dip_100_200.linestyle = dash-dotted
+set bg_dip_100_200.linewidth = 4
+set bg_dip_200_400.linecolor = green-2
+set bg_dip_200_400.linestyle = dash-dotted
+set bg_dip_200_400.linewidth = 4
+set bg_dip_400_600.linecolor = green-1
+set bg_dip_400_600.linestyle = dash-dotted
+set bg_dip_400_600.linewidth = 4
+set bg_dip_600_800.linecolor = green
+set bg_dip_600_800.linestyle = dash-dotted
+set bg_dip_600_800.linewidth = 4
+set bg_dip_800_1200.linecolor = green+1
+set bg_dip_800_1200.linestyle = dash-dotted
+set bg_dip_800_1200.linewidth = 4
+set bg_dip_1200_1600.linecolor = green+2
+set bg_dip_1200_1600.linestyle = dash-dotted
+set bg_dip_1200_1600.linewidth = 4
+set bg_dip_1600_inf.linecolor = green+3
+set bg_dip_1600_inf.linestyle = dash-dotted
+set bg_dip_1600_inf.linewidth = 4
+# a jet can be from a light quark or b quark
+define jets = j
+define e = e+ e-
+define mu = mu+ mu-
+define ta = ta+ ta-
+define lept = e mu ta
+define Zprime = 32 -32
+# reduce contribution from V+Zp ==> jj+Zpz
+select M(jets[1] jets[2]) > 120
+# define which plots to make
+plot PT(jets[1])
+plot ETA(jets[1])
+plot PHI(jets[1])
+plot PT(jets[2])
+plot ETA(jets[2])
+plot PHI(jets[2])
+plot DELTAR(jets[1], jets[2])
+plot M(jets[1] jets[2])
+plot MET
+plot sdETA(jets[1] jets[2])
+plot M(a[1] a[2])
+plot PT(a[1])
+plot PT(a[2])
+plot THT
+plot MET
+plot TET
+#set the plot/graph parameters
+set selection[2].xmax = 1000
+set selection[2].xmin = 0
+set selection[2].nbins = 200
+set selection[2].logY = true
+set selection[2].logX = false
+set selection[2].rank = PTordering
+#set selection[2].stacking_method = normalize2one
+set selection[2].titleX = "p_{T}[j_{1}] (GeV)"
+set selection[3].xmax = 8
+set selection[3].xmin = -8
+set selection[3].nbins = 160
+set selection[3].logY = false
+set selection[3].logX = false
+set selection[3].rank = PTordering
+#set selection[3].stacking_method = normalize2one
+set selection[3].titleX = "#eta[j_{1}]"
+set selection[4].xmax = 3.2
+set selection[4].xmin = -3.2
+set selection[4].nbins = 64
+set selection[4].logY = false
+set selection[4].logX = false
+set selection[4].rank = PTordering
+#set selection[4].stacking_method = normalize2one
+set selection[4].titleX = "#phi[j_{1}]"
+set selection[5].xmax = 500
+set selection[5].xmin = 0
+set selection[5].nbins = 100
+set selection[5].logY = true
+set selection[5].logX = false
+set selection[5].rank = PTordering
+#set selection[5].stacking_method = normalize2one
+set selection[5].titleX = "p_{T}[j_{2}] (GeV)"
+set selection[6].xmax = 8
+set selection[6].xmin = -8
+set selection[6].nbins = 160
+set selection[6].logY = false
+set selection[6].logX = false
+set selection[6].rank = PTordering
+#set selection[6].stacking_method = normalize2one
+set selection[6].titleX = "#eta[j_{2}]"
+set selection[7].xmax = 3.2
+set selection[7].xmin = -3.2
+set selection[7].nbins = 64
+set selection[7].logY = false
+set selection[7].logX = false
+set selection[7].rank = PTordering
+#set selection[7].stacking_method = normalize2one
+set selection[7].titleX = "#phi[j_{2}]"
+set selection[8].xmax = 15
+set selection[8].xmin = 0
+set selection[8].nbins = 75
+set selection[8].logY = false
+set selection[8].logX = false
+set selection[8].rank = PTordering
+#set selection[8].stacking_method = normalize2one
+set selection[8].titleX = "#DeltaR[j_{1},j_{2}]"
+set selection[9].xmax = 8000
+set selection[9].xmin = 0
+set selection[9].nbins = 160
+set selection[9].logY = false
+set selection[9].logX = false
+set selection[9].rank = PTordering
+#set selection[9].stacking_method = normalize2one
+set selection[9].titleX = "M[j_{1},j_{2}] (GeV)"
+set selection[10].xmax = 1000
+set selection[10].xmin = 0
+set selection[10].nbins = 100
+set selection[10].logY = true
+set selection[10].logX = false
+set selection[10].rank = PTordering
+#set selection[10].stacking_method = normalize2one
+set selection[10].titleX = "#slash{E}_{T} (GeV)"
+#set selection[11].stacking_method = normalize2one
+set selection[11].titleX = "#Delta#eta(j_{1},j_{2})"
+#set selection[12].xmax = 2000
+#set selection[12].xmin = 0
+set selection[12].nbins = 400
+set selection[12].logY = true
+set selection[12].logX = false
+set selection[12].rank = PTordering
+#set selection[12].stacking_method = normalize2one
+set selection[12].titleX = "M[a_{1},a_{2}] (GeV)"
+#set selection[13].xmax = 4
+#set selection[13].xmin = -4
+set selection[13].nbins = 80
+set selection[13].logY = false
+set selection[13].logX = false
+set selection[13].rank = PTordering
+#set selection[13].stacking_method = normalize2one
+set selection[13].titleX = "p_{T}[a_{1}]"
+#set selection[14].xmax = 2000
+#set selection[14].xmin = 0
+set selection[14].nbins = 400
+set selection[14].logY = true
+set selection[14].logX = false
+set selection[14].rank = PTordering
+#set selection[14].stacking_method = normalize2one
+set selection[14].titleX = "p_{T}[a_{2}] (GeV)"
+#set selection[15].xmax = 4
+#set selection[15].xmin = -4
+set selection[15].nbins = 80
+set selection[15].logY = false
+set selection[15].logX = false
+set selection[15].rank = PTordering
+#set selection[15].stacking_method = normalize2one
+set selection[15].titleX = "THT"
+#set selection[16].xmax = 1000
+#set selection[16].xmin = 0
+set selection[16].nbins = 200
+set selection[16].logY = true
+set selection[16].logX = false
+set selection[16].rank = PTordering
+#set selection[16].stacking_method = normalize2one
+set selection[16].titleX = "MET"
+#set selection[17].xmax = 4
+#set selection[17].xmin = -4
+set selection[17].nbins = 80
+set selection[17].logY = false
+set selection[17].logX = false
+set selection[17].rank = PTordering
+#set selection[17].stacking_method = normalize2one
+set selection[17].titleX = "TET"
+# apply selections
+select (sdETA(jets[1] jets[2]) > 2.6 or sdETA(jets[1] jets[2]) < -2.6) and M(jets[1] jets[2]) > 500

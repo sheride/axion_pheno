@@ -1,0 +1,19 @@
+<SAFheader>
+</SAFheader>
+
+<InitialCounter>
+"Initial number of events"      #
+337115          0               # nentries
+4.346681e+03    0.000000e+00    # sum of weights
+5.702109e+01    0.000000e+00    # sum of weights^2
+</InitialCounter>
+
+<Counter>
+"1_sdETA ( jets[1] jets[2] ) > 2.6 and M ( jets[1] jets[2] ) > 1250.0"# 1st cut
+7085            0               # nentries
+9.133892e+01    0.000000e+00    # sum of weights
+1.177564e+00    0.000000e+00    # sum of weights^2
+</Counter>
+
+<SAFfooter>
+</SAFfooter>

@@ -1,0 +1,340 @@
+################################################################################
+#                  MADANALYSIS5 CONFIGURATION FILE FOR PLOTS                   #
+#                      produced by MadAnalysis5 version                        #
+#                                                                              #
+################################################################################
+
+################################################################################
+#                               Files and Paths                                #
+################################################################################
+<Files>
+  jodir = /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/optimization/analysis_tight_pta500_maa600
+  html = 1
+  latex = 1
+  pdflatex = 1
+</Files>
+
+################################################################################
+#                   Global information related to the layout                   #
+################################################################################
+<Main>
+  lumi = 40.0 # fb^{-1}
+  stack = 1
+</Main>
+
+################################################################################
+#                            Definition of datasets                            #
+################################################################################
+<Dataset name="signal">
+  <Physics>
+    background = False
+    weight = 1.0
+    xsection = 0.0
+  </Physics>
+  <Layout>
+    title = signal
+    linecolor = 0
+    linestyle = 0
+    lineshade = 0
+    linewidth = 1
+    backcolor = 0
+    backstyle = 1
+    backshade = 0
+  </Layout>
+</Dataset>
+
+<Dataset name="bg_vbf_0_100">
+  <Physics>
+    background = True
+    weight = 1.0
+    xsection = 0.0
+  </Physics>
+  <Layout>
+    title = bg_vbf_0_100
+    linecolor = 0
+    linestyle = 0
+    lineshade = 0
+    linewidth = 1
+    backcolor = 0
+    backstyle = 1
+    backshade = 0
+  </Layout>
+</Dataset>
+
+<Dataset name="bg_vbf_100_200">
+  <Physics>
+    background = True
+    weight = 1.0
+    xsection = 0.0
+  </Physics>
+  <Layout>
+    title = bg_vbf_100_200
+    linecolor = 0
+    linestyle = 0
+    lineshade = 0
+    linewidth = 1
+    backcolor = 0
+    backstyle = 1
+    backshade = 0
+  </Layout>
+</Dataset>
+
+<Dataset name="bg_vbf_200_400">
+  <Physics>
+    background = True
+    weight = 1.0
+    xsection = 0.0
+  </Physics>
+  <Layout>
+    title = bg_vbf_200_400
+    linecolor = 0
+    linestyle = 0
+    lineshade = 0
+    linewidth = 1
+    backcolor = 0
+    backstyle = 1
+    backshade = 0
+  </Layout>
+</Dataset>
+
+<Dataset name="bg_vbf_400_600">
+  <Physics>
+    background = True
+    weight = 1.0
+    xsection = 0.0
+  </Physics>
+  <Layout>
+    title = bg_vbf_400_600
+    linecolor = 0
+    linestyle = 0
+    lineshade = 0
+    linewidth = 1
+    backcolor = 0
+    backstyle = 1
+    backshade = 0
+  </Layout>
+</Dataset>
+
+<Dataset name="bg_vbf_600_800">
+  <Physics>
+    background = True
+    weight = 1.0
+    xsection = 0.0
+  </Physics>
+  <Layout>
+    title = bg_vbf_600_800
+    linecolor = 0
+    linestyle = 0
+    lineshade = 0
+    linewidth = 1
+    backcolor = 0
+    backstyle = 1
+    backshade = 0
+  </Layout>
+</Dataset>
+
+<Dataset name="bg_vbf_800_1200">
+  <Physics>
+    background = True
+    weight = 1.0
+    xsection = 0.0
+  </Physics>
+  <Layout>
+    title = bg_vbf_800_1200
+    linecolor = 0
+    linestyle = 0
+    lineshade = 0
+    linewidth = 1
+    backcolor = 0
+    backstyle = 1
+    backshade = 0
+  </Layout>
+</Dataset>
+
+<Dataset name="bg_vbf_1200_1600">
+  <Physics>
+    background = True
+    weight = 1.0
+    xsection = 0.0
+  </Physics>
+  <Layout>
+    title = bg_vbf_1200_1600
+    linecolor = 0
+    linestyle = 0
+    lineshade = 0
+    linewidth = 1
+    backcolor = 0
+    backstyle = 1
+    backshade = 0
+  </Layout>
+</Dataset>
+
+<Dataset name="bg_vbf_1600_inf">
+  <Physics>
+    background = True
+    weight = 1.0
+    xsection = 0.0
+  </Physics>
+  <Layout>
+    title = bg_vbf_1600_inf
+    linecolor = 0
+    linestyle = 0
+    lineshade = 0
+    linewidth = 1
+    backcolor = 0
+    backstyle = 1
+    backshade = 0
+  </Layout>
+</Dataset>
+
+<Dataset name="bg_dip_0_100">
+  <Physics>
+    background = True
+    weight = 1.0
+    xsection = 0.0
+  </Physics>
+  <Layout>
+    title = bg_dip_0_100
+    linecolor = 0
+    linestyle = 0
+    lineshade = 0
+    linewidth = 1
+    backcolor = 0
+    backstyle = 1
+    backshade = 0
+  </Layout>
+</Dataset>
+
+<Dataset name="bg_dip_100_200">
+  <Physics>
+    background = True
+    weight = 1.0
+    xsection = 0.0
+  </Physics>
+  <Layout>
+    title = bg_dip_100_200
+    linecolor = 0
+    linestyle = 0
+    lineshade = 0
+    linewidth = 1
+    backcolor = 0
+    backstyle = 1
+    backshade = 0
+  </Layout>
+</Dataset>
+
+<Dataset name="bg_dip_200_400">
+  <Physics>
+    background = True
+    weight = 1.0
+    xsection = 0.0
+  </Physics>
+  <Layout>
+    title = bg_dip_200_400
+    linecolor = 0
+    linestyle = 0
+    lineshade = 0
+    linewidth = 1
+    backcolor = 0
+    backstyle = 1
+    backshade = 0
+  </Layout>
+</Dataset>
+
+<Dataset name="bg_dip_400_600">
+  <Physics>
+    background = True
+    weight = 1.0
+    xsection = 0.0
+  </Physics>
+  <Layout>
+    title = bg_dip_400_600
+    linecolor = 0
+    linestyle = 0
+    lineshade = 0
+    linewidth = 1
+    backcolor = 0
+    backstyle = 1
+    backshade = 0
+  </Layout>
+</Dataset>
+
+<Dataset name="bg_dip_600_800">
+  <Physics>
+    background = True
+    weight = 1.0
+    xsection = 0.0
+  </Physics>
+  <Layout>
+    title = bg_dip_600_800
+    linecolor = 0
+    linestyle = 0
+    lineshade = 0
+    linewidth = 1
+    backcolor = 0
+    backstyle = 1
+    backshade = 0
+  </Layout>
+</Dataset>
+
+<Dataset name="bg_dip_800_1200">
+  <Physics>
+    background = True
+    weight = 1.0
+    xsection = 0.0
+  </Physics>
+  <Layout>
+    title = bg_dip_800_1200
+    linecolor = 0
+    linestyle = 0
+    lineshade = 0
+    linewidth = 1
+    backcolor = 0
+    backstyle = 1
+    backshade = 0
+  </Layout>
+</Dataset>
+
+<Dataset name="bg_dip_1200_1600">
+  <Physics>
+    background = True
+    weight = 1.0
+    xsection = 0.0
+  </Physics>
+  <Layout>
+    title = bg_dip_1200_1600
+    linecolor = 0
+    linestyle = 0
+    lineshade = 0
+    linewidth = 1
+    backcolor = 0
+    backstyle = 1
+    backshade = 0
+  </Layout>
+</Dataset>
+
+<Dataset name="bg_dip_1600_inf">
+  <Physics>
+    background = True
+    weight = 1.0
+    xsection = 0.0
+  </Physics>
+  <Layout>
+    title = bg_dip_1600_inf
+    linecolor = 0
+    linestyle = 0
+    lineshade = 0
+    linewidth = 1
+    backcolor = 0
+    backstyle = 1
+    backshade = 0
+  </Layout>
+</Dataset>
+
+################################################################################
+#              Definition of the selection : histograms and cuts               #
+################################################################################
+<Cut name="selection0"/>
+
+<Cut name="selection1"/>
+

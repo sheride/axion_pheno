@@ -1,0 +1,1715 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'>
+
+<head>
+  <title>MadAnalysis 5 HTML report</title>
+  <link rel='stylesheet' media='screen' type='text/css' title='style' href='style.css' />
+<meta http-equiv='Content-Type' content='text/html;charset=utf-8'/>
+</head>
+
+<body>
+<div id='top' class='top'>
+  <table>
+    <tr>
+      <td width='35%'>
+        <img style='width: 182px; height: 53px;' alt='ma5-logo' src='logo.png' /><br />
+        <a href='http://madanalysis.irmp.ucl.ac.be'>Please visit us.</a>
+      </td>
+      <td width='65%'>
+        <h1>MadAnalysis 5 report</h1><br />
+        <i>Created by <font color='#0000CC'>elijahsheridan</font> on  <font color='#0000CC'>01 April 2020, 14:23:11</font></i>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div id='menu' class= 'menu'>
+  <br />
+  <h3>PDF version of this report</h3>
+  <ul><li><a href='../../PDF/MadAnalysis5job_0/main.pdf'>Download here</a></li></ul>
+  <h3>Setup</h3>
+  <ul>
+    <li><a href='#Commandhistory'>Command history</a></li>
+    <li><a href='#Configuration'>Configuration</a></li>
+  </ul>
+  <h3>Datasets</h3>
+  <ul>
+    <li><a href='#signal'>signal</a></li>
+    <li><a href='#bg_vbf_0_100'>bg_vbf_0_100</a></li>
+    <li><a href='#bg_vbf_100_200'>bg_vbf_100_200</a></li>
+    <li><a href='#bg_vbf_200_400'>bg_vbf_200_400</a></li>
+    <li><a href='#bg_vbf_400_600'>bg_vbf_400_600</a></li>
+    <li><a href='#bg_vbf_600_800'>bg_vbf_600_800</a></li>
+    <li><a href='#bg_vbf_800_1200'>bg_vbf_800_1200</a></li>
+    <li><a href='#bg_vbf_1200_1600'>bg_vbf_1200_1600</a></li>
+    <li><a href='#bg_vbf_1600_inf'>bg_vbf_1600_inf</a></li>
+    <li><a href='#bg_dip_0_100'>bg_dip_0_100</a></li>
+    <li><a href='#bg_dip_100_200'>bg_dip_100_200</a></li>
+    <li><a href='#bg_dip_200_400'>bg_dip_200_400</a></li>
+    <li><a href='#bg_dip_400_600'>bg_dip_400_600</a></li>
+    <li><a href='#bg_dip_600_800'>bg_dip_600_800</a></li>
+    <li><a href='#bg_dip_800_1200'>bg_dip_800_1200</a></li>
+    <li><a href='#bg_dip_1200_1600'>bg_dip_1200_1600</a></li>
+    <li><a href='#bg_dip_1600_inf'>bg_dip_1600_inf</a></li>
+  </ul>
+  <h3>Histos and cuts</h3>
+  <ul>
+    <li><a href='#Cut1'>Cut 1</a></li>
+    <li><a href='#Cut2'>Cut 2</a></li>
+  </ul>
+  <h3>Summary</h3>
+  <ul>
+    <li><a href='#Cut-flowcharts'>Cut-flow charts</a></li>
+  </ul>
+</div>
+
+<div id='main' class='main'>
+  <br /><br />
+
+  <h2>Setup</h2><br />
+  <h3><a name='Commandhistory'>Command history</a></h3><br />
+  <tt>ma5># set directory where running "./bin/ma5"; set lumi; define the signal significance</tt><br />
+  <tt>ma5>set main.currentdir = /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno # need to change this directory path --> exit and type "pwd" to get the path</tt><br />
+  <tt>ma5>set main.lumi = 40.0</tt><br />
+  <tt>ma5>set main.SBratio = 'S/sqrt(S+B)'</tt><br />
+  <tt>ma5># import samples --> change the path to the LHE file</tt><br />
+  <tt>ma5>import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/axion_signal/axion_signal_gurrola_cuts_1MeV.lhe.gz as signal</tt><br />
+  <tt>ma5>import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/vbf_diphoton_background_data/merged_lhe/vbf_diphoton_background_ht_0_100_merged.lhe.gz as bg_vbf_0_100</tt><br />
+  <tt>ma5>import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/vbf_diphoton_background_data/merged_lhe/vbf_diphoton_background_ht_100_200_merged.lhe.gz as bg_vbf_100_200</tt><br />
+  <tt>ma5>import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/vbf_diphoton_background_data/merged_lhe/vbf_diphoton_background_ht_200_400_merged.lhe.gz as bg_vbf_200_400</tt><br />
+  <tt>ma5>import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/vbf_diphoton_background_data/merged_lhe/vbf_diphoton_background_ht_400_600_merged.lhe.gz as bg_vbf_400_600</tt><br />
+  <tt>ma5>import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/vbf_diphoton_background_data/merged_lhe/vbf_diphoton_background_ht_600_800_merged.lhe.gz as bg_vbf_600_800</tt><br />
+  <tt>ma5>import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/vbf_diphoton_background_data/merged_lhe/vbf_diphoton_background_ht_800_1200_merged.lhe.gz as bg_vbf_800_1200</tt><br />
+  <tt>ma5>import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/vbf_diphoton_background_data/merged_lhe/vbf_diphoton_background_ht_1200_1600_merged.lhe.gz as bg_vbf_1200_1600</tt><br />
+  <tt>ma5>import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/vbf_diphoton_background_data/merged_lhe/vbf_diphoton_background_ht_1600_inf_merged.lhe.gz as bg_vbf_1600_inf</tt><br />
+  <tt>ma5>import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/diphoton_double_isr_background_data/merged_lhe/diphoton_double_isr_background_ht_0_100_merged.lhe.gz as bg_dip_0_100</tt><br />
+  <tt>ma5>import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/diphoton_double_isr_background_data/merged_lhe/diphoton_double_isr_background_ht_100_200_merged.lhe.gz as bg_dip_100_200</tt><br />
+  <tt>ma5>import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/diphoton_double_isr_background_data/merged_lhe/diphoton_double_isr_background_ht_200_400_merged.lhe.gz as bg_dip_200_400</tt><br />
+  <tt>ma5>import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/diphoton_double_isr_background_data/merged_lhe/diphoton_double_isr_background_ht_400_600_merged.lhe.gz as bg_dip_400_600</tt><br />
+  <tt>ma5>import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/diphoton_double_isr_background_data/merged_lhe/diphoton_double_isr_background_ht_600_800_merged.lhe.gz as bg_dip_600_800</tt><br />
+  <tt>ma5>import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/diphoton_double_isr_background_data/merged_lhe/diphoton_double_isr_background_ht_800_1200_merged.lhe.gz as bg_dip_800_1200</tt><br />
+  <tt>ma5>import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/diphoton_double_isr_background_data/merged_lhe/diphoton_double_isr_background_ht_1200_1600_merged.lhe.gz as bg_dip_1200_1600</tt><br />
+  <tt>ma5>import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/diphoton_double_isr_background_data/merged_lhe/diphoton_double_isr_background_ht_1600_inf_merged.lhe.gz as bg_dip_1600_inf</tt><br />
+  <tt>ma5># define bg and signal samples</tt><br />
+  <tt>ma5>set signal.type = signal</tt><br />
+  <tt>ma5>set bg_vbf_0_100.type = background</tt><br />
+  <tt>ma5>set bg_vbf_100_200.type = background</tt><br />
+  <tt>ma5>set bg_vbf_200_400.type  = background</tt><br />
+  <tt>ma5>set bg_vbf_400_600.type  = background</tt><br />
+  <tt>ma5>set bg_vbf_600_800.type  = background</tt><br />
+  <tt>ma5>set bg_vbf_800_1200.type  = background</tt><br />
+  <tt>ma5>set bg_vbf_1200_1600.type  = background</tt><br />
+  <tt>ma5>set bg_vbf_1600_inf.type = background</tt><br />
+  <tt>ma5>set bg_dip_0_100.type = background</tt><br />
+  <tt>ma5>set bg_dip_100_200.type = background</tt><br />
+  <tt>ma5>set bg_dip_200_400.type = background</tt><br />
+  <tt>ma5>set bg_dip_400_600.type = background</tt><br />
+  <tt>ma5>set bg_dip_600_800.type = background</tt><br />
+  <tt>ma5>set bg_dip_800_1200.type = background</tt><br />
+  <tt>ma5>set bg_dip_1200_1600.type = background</tt><br />
+  <tt>ma5>set bg_dip_1600_inf.type = background</tt><br />
+  <tt>ma5># define weights for the samples</tt><br />
+  <tt>ma5>#set sample_1.weight = 1</tt><br />
+  <tt>ma5>#set sample_2.weight = 1</tt><br />
+  <tt>ma5># line styles and colors</tt><br />
+  <tt>ma5>set signal.linecolor = red</tt><br />
+  <tt>ma5>set signal.linestyle = dashed</tt><br />
+  <tt>ma5>set signal.linewidth = 3</tt><br />
+  <tt>ma5>set bg_vbf_0_100.linecolor = blue-4</tt><br />
+  <tt>ma5>set bg_vbf_0_100.linestyle = dash-dotted</tt><br />
+  <tt>ma5>set bg_vbf_0_100.linewidth = 4</tt><br />
+  <tt>ma5>set bg_vbf_100_200.linecolor = blue-3</tt><br />
+  <tt>ma5>set bg_vbf_100_200.linestyle = dash-dotted</tt><br />
+  <tt>ma5>set bg_vbf_100_200.linewidth = 4</tt><br />
+  <tt>ma5>set bg_vbf_200_400.linecolor = blue-2</tt><br />
+  <tt>ma5>set bg_vbf_200_400.linestyle = dash-dotted</tt><br />
+  <tt>ma5>set bg_vbf_200_400.linewidth = 4</tt><br />
+  <tt>ma5>set bg_vbf_400_600.linecolor = blue-1</tt><br />
+  <tt>ma5>set bg_vbf_400_600.linestyle = dash-dotted</tt><br />
+  <tt>ma5>set bg_vbf_400_600.linewidth = 4</tt><br />
+  <tt>ma5>set bg_vbf_600_800.linecolor = blue</tt><br />
+  <tt>ma5>set bg_vbf_600_800.linestyle = dash-dotted</tt><br />
+  <tt>ma5>set bg_vbf_600_800.linewidth = 4</tt><br />
+  <tt>ma5>set bg_vbf_800_1200.linecolor = blue+1</tt><br />
+  <tt>ma5>set bg_vbf_800_1200.linestyle = dash-dotted</tt><br />
+  <tt>ma5>set bg_vbf_800_1200.linewidth = 4</tt><br />
+  <tt>ma5>set bg_vbf_1200_1600.linecolor = blue+2</tt><br />
+  <tt>ma5>set bg_vbf_1200_1600.linestyle = dash-dotted</tt><br />
+  <tt>ma5>set bg_vbf_1200_1600.linewidth = 4</tt><br />
+  <tt>ma5>set bg_vbf_1600_inf.linecolor = blue+3</tt><br />
+  <tt>ma5>set bg_vbf_1600_inf.linestyle = dash-dotted</tt><br />
+  <tt>ma5>set bg_vbf_1600_inf.linewidth = 4</tt><br />
+  <tt>ma5>set bg_dip_0_100.linecolor = green-4</tt><br />
+  <tt>ma5>set bg_dip_0_100.linestyle = dash-dotted</tt><br />
+  <tt>ma5>set bg_dip_0_100.linewidth = 4</tt><br />
+  <tt>ma5>set bg_dip_100_200.linecolor = green-3</tt><br />
+  <tt>ma5>set bg_dip_100_200.linestyle = dash-dotted</tt><br />
+  <tt>ma5>set bg_dip_100_200.linewidth = 4</tt><br />
+  <tt>ma5>set bg_dip_200_400.linecolor = green-2</tt><br />
+  <tt>ma5>set bg_dip_200_400.linestyle = dash-dotted</tt><br />
+  <tt>ma5>set bg_dip_200_400.linewidth = 4</tt><br />
+  <tt>ma5>set bg_dip_400_600.linecolor = green-1</tt><br />
+  <tt>ma5>set bg_dip_400_600.linestyle = dash-dotted</tt><br />
+  <tt>ma5>set bg_dip_400_600.linewidth = 4</tt><br />
+  <tt>ma5>set bg_dip_600_800.linecolor = green</tt><br />
+  <tt>ma5>set bg_dip_600_800.linestyle = dash-dotted</tt><br />
+  <tt>ma5>set bg_dip_600_800.linewidth = 4</tt><br />
+  <tt>ma5>set bg_dip_800_1200.linecolor = green+1</tt><br />
+  <tt>ma5>set bg_dip_800_1200.linestyle = dash-dotted</tt><br />
+  <tt>ma5>set bg_dip_800_1200.linewidth = 4</tt><br />
+  <tt>ma5>set bg_dip_1200_1600.linecolor = green+2</tt><br />
+  <tt>ma5>set bg_dip_1200_1600.linestyle = dash-dotted</tt><br />
+  <tt>ma5>set bg_dip_1200_1600.linewidth = 4</tt><br />
+  <tt>ma5>set bg_dip_1600_inf.linecolor = green+3</tt><br />
+  <tt>ma5>set bg_dip_1600_inf.linestyle = dash-dotted</tt><br />
+  <tt>ma5>set bg_dip_1600_inf.linewidth = 4</tt><br />
+  <tt>ma5># a jet can be from a light quark or b quark</tt><br />
+  <tt>ma5>define jets = j</tt><br />
+  <tt>ma5>define e = e+ e-</tt><br />
+  <tt>ma5>define mu = mu+ mu-</tt><br />
+  <tt>ma5>define ta = ta+ ta-</tt><br />
+  <tt>ma5>define lept = e mu ta</tt><br />
+  <tt>ma5>define ax = 9000005</tt><br />
+  <tt>ma5># apply selections</tt><br />
+  <tt>ma5>select PT(a[1]) > 250 and M(a[1] a[2]) > 400</tt><br />
+  <tt>ma5>select (sdETA(jets[1] jets[2]) > 3.1 or sdETA(jets[1] jets[2]) < -3.1) and M(jets[1] jets[2]) > 1000</tt><br />
+  <tt>ma5>submit second_analysis_sdEta3.1_mjj1000</tt><br />
+  <br />
+  <h3><a name='Configuration'>Configuration</a></h3>
+  <ul>
+    <li>
+      MadAnalysis version 1.6.33 (2017/11/20).<br />
+    </li>
+    <li>
+      Histograms given for an integrated luminosity of <font color='#0000CC'>40.0</font><font color='#0000CC'> fb</font><sup><font color='#0000CC'>-1</font></sup><font color='#0000CC'>.</font><br />
+    </li>
+  </ul>
+  <br /><br />
+
+  <h2>Datasets</h2><br />
+  <h3><a name='signal'>signal</a></h3>
+  <ul>
+    <li>
+      Samples stored in the directory: <font color='#0000CC'>/Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/optimization</font>.<br />
+    </li>
+    <li>
+      Sample consisting of: <font color='#0000CC'>signal</font> events.<br />
+    </li>
+    <li>
+      Generated events: <font color='#0000CC'>1000000 </font> events.<br />
+    </li>
+    <li>
+      Normalization to the luminosity: <font color='#0000CC'>4094</font><font color='#0000CC'> +/- </font><font color='#0000CC'>2 </font> events.<br />
+    </li>
+    <li>
+      Ratio (event weight): <font color='#0000CC'>0.0041 </font>. <br />
+    </li>
+  </ul>
+  <table>
+    <tr>
+      <td width='39.0%' bgcolor='#FFFF00'>
+        Path to the event file  <br />
+      </td> 
+      <td width='18.0%' bgcolor='#FFFF00'>
+        Nr. of events  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFF00'>
+        Cross section (pb)  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFF00'>
+        Negative wgts (%)  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='39.0%' bgcolor='#FFFFFF'>
+        /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/axion_signal/axion_signal_gurrola_cuts_1MeV.lhe.gz  <br />
+      </td> 
+      <td width='18.0%' bgcolor='#FFFFFF'>
+        1000000  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFFFF'>
+        0.102 @ 0.028%  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFFFF'>
+        0.0  <br />
+      </td>
+    </tr>
+  </table><br /> <br />
+  <h3><a name='bg_vbf_0_100'>bg_vbf_0_100</a></h3>
+  <ul>
+    <li>
+      Samples stored in the directory: <font color='#0000CC'>/Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/optimization</font>.<br />
+    </li>
+    <li>
+      Sample consisting of: <font color='#0000CC'>background</font> events.<br />
+    </li>
+    <li>
+      Generated events: <font color='#0000CC'>1000000 </font> events.<br />
+    </li>
+    <li>
+      Normalization to the luminosity: <font color='#0000CC'>12150</font><font color='#0000CC'> +/- </font><font color='#0000CC'>24 </font> events.<br />
+    </li>
+    <li>
+      Ratio (event weight): <font color='#0000CC'>0.012 </font>. <br />
+    </li>
+  </ul>
+  <table>
+    <tr>
+      <td width='39.0%' bgcolor='#FFFF00'>
+        Path to the event file  <br />
+      </td> 
+      <td width='18.0%' bgcolor='#FFFF00'>
+        Nr. of events  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFF00'>
+        Cross section (pb)  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFF00'>
+        Negative wgts (%)  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='39.0%' bgcolor='#FFFFFF'>
+        /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/vbf_diphoton_background_data/merged_lhe/vbf_diphoton_background_ht_0_100_merged.lhe.gz  <br />
+      </td> 
+      <td width='18.0%' bgcolor='#FFFFFF'>
+        1000000  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFFFF'>
+        0.304 @ 0.19%  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFFFF'>
+        0.0  <br />
+      </td>
+    </tr>
+  </table><br /> <br />
+  <h3><a name='bg_vbf_100_200'>bg_vbf_100_200</a></h3>
+  <ul>
+    <li>
+      Samples stored in the directory: <font color='#0000CC'>/Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/optimization</font>.<br />
+    </li>
+    <li>
+      Sample consisting of: <font color='#0000CC'>background</font> events.<br />
+    </li>
+    <li>
+      Generated events: <font color='#0000CC'>965662 </font> events.<br />
+    </li>
+    <li>
+      Normalization to the luminosity: <font color='#0000CC'>9695</font><font color='#0000CC'> +/- </font><font color='#0000CC'>17 </font> events.<br />
+    </li>
+    <li>
+      Ratio (event weight): <font color='#0000CC'>0.01 </font>. <br />
+    </li>
+  </ul>
+  <table>
+    <tr>
+      <td width='39.0%' bgcolor='#FFFF00'>
+        Path to the event file  <br />
+      </td> 
+      <td width='18.0%' bgcolor='#FFFF00'>
+        Nr. of events  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFF00'>
+        Cross section (pb)  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFF00'>
+        Negative wgts (%)  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='39.0%' bgcolor='#FFFFFF'>
+        /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/vbf_diphoton_background_data/merged_lhe/vbf_diphoton_background_ht_100_200_merged.lhe.gz  <br />
+      </td> 
+      <td width='18.0%' bgcolor='#FFFFFF'>
+        965662  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFFFF'>
+        0.242 @ 0.17%  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFFFF'>
+        0.0  <br />
+      </td>
+    </tr>
+  </table><br /> <br />
+  <h3><a name='bg_vbf_200_400'>bg_vbf_200_400</a></h3>
+  <ul>
+    <li>
+      Samples stored in the directory: <font color='#0000CC'>/Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/optimization</font>.<br />
+    </li>
+    <li>
+      Sample consisting of: <font color='#0000CC'>background</font> events.<br />
+    </li>
+    <li>
+      Generated events: <font color='#0000CC'>984165 </font> events.<br />
+    </li>
+    <li>
+      Normalization to the luminosity: <font color='#0000CC'>5413</font><font color='#0000CC'> +/- </font><font color='#0000CC'>11 </font> events.<br />
+    </li>
+    <li>
+      Ratio (event weight): <font color='#0000CC'>0.0055 </font>. <br />
+    </li>
+  </ul>
+  <table>
+    <tr>
+      <td width='39.0%' bgcolor='#FFFF00'>
+        Path to the event file  <br />
+      </td> 
+      <td width='18.0%' bgcolor='#FFFF00'>
+        Nr. of events  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFF00'>
+        Cross section (pb)  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFF00'>
+        Negative wgts (%)  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='39.0%' bgcolor='#FFFFFF'>
+        /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/vbf_diphoton_background_data/merged_lhe/vbf_diphoton_background_ht_200_400_merged.lhe.gz  <br />
+      </td> 
+      <td width='18.0%' bgcolor='#FFFFFF'>
+        984165  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFFFF'>
+        0.135 @ 0.2%  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFFFF'>
+        0.0  <br />
+      </td>
+    </tr>
+  </table><br /> <br />
+  <h3><a name='bg_vbf_400_600'>bg_vbf_400_600</a></h3>
+  <ul>
+    <li>
+      Samples stored in the directory: <font color='#0000CC'>/Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/optimization</font>.<br />
+    </li>
+    <li>
+      Sample consisting of: <font color='#0000CC'>background</font> events.<br />
+    </li>
+    <li>
+      Generated events: <font color='#0000CC'>1000000 </font> events.<br />
+    </li>
+    <li>
+      Normalization to the luminosity: <font color='#0000CC'>986</font><font color='#0000CC'> +/- </font><font color='#0000CC'>2 </font> events.<br />
+    </li>
+    <li>
+      Ratio (event weight): <font color='#0000CC'>0.00099 </font>. <br />
+    </li>
+  </ul>
+  <table>
+    <tr>
+      <td width='39.0%' bgcolor='#FFFF00'>
+        Path to the event file  <br />
+      </td> 
+      <td width='18.0%' bgcolor='#FFFF00'>
+        Nr. of events  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFF00'>
+        Cross section (pb)  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFF00'>
+        Negative wgts (%)  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='39.0%' bgcolor='#FFFFFF'>
+        /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/vbf_diphoton_background_data/merged_lhe/vbf_diphoton_background_ht_400_600_merged.lhe.gz  <br />
+      </td> 
+      <td width='18.0%' bgcolor='#FFFFFF'>
+        1000000  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFFFF'>
+        0.0247 @ 0.14%  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFFFF'>
+        0.0  <br />
+      </td>
+    </tr>
+  </table><br /> <br />
+  <h3><a name='bg_vbf_600_800'>bg_vbf_600_800</a></h3>
+  <ul>
+    <li>
+      Samples stored in the directory: <font color='#0000CC'>/Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/optimization</font>.<br />
+    </li>
+    <li>
+      Sample consisting of: <font color='#0000CC'>background</font> events.<br />
+    </li>
+    <li>
+      Generated events: <font color='#0000CC'>1000000 </font> events.<br />
+    </li>
+    <li>
+      Normalization to the luminosity: <font color='#0000CC'>252</font><font color='#0000CC'> +/- </font><font color='#0000CC'>1 </font> events.<br />
+    </li>
+    <li>
+      Ratio (event weight): <font color='#0000CC'>0.00025 </font>. <br />
+    </li>
+  </ul>
+  <table>
+    <tr>
+      <td width='39.0%' bgcolor='#FFFF00'>
+        Path to the event file  <br />
+      </td> 
+      <td width='18.0%' bgcolor='#FFFF00'>
+        Nr. of events  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFF00'>
+        Cross section (pb)  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFF00'>
+        Negative wgts (%)  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='39.0%' bgcolor='#FFFFFF'>
+        /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/vbf_diphoton_background_data/merged_lhe/vbf_diphoton_background_ht_600_800_merged.lhe.gz  <br />
+      </td> 
+      <td width='18.0%' bgcolor='#FFFFFF'>
+        1000000  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFFFF'>
+        0.0063 @ 0.13%  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFFFF'>
+        0.0  <br />
+      </td>
+    </tr>
+  </table><br /> <br />
+  <h3><a name='bg_vbf_800_1200'>bg_vbf_800_1200</a></h3>
+  <ul>
+    <li>
+      Samples stored in the directory: <font color='#0000CC'>/Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/optimization</font>.<br />
+    </li>
+    <li>
+      Sample consisting of: <font color='#0000CC'>background</font> events.<br />
+    </li>
+    <li>
+      Generated events: <font color='#0000CC'>400839 </font> events.<br />
+    </li>
+    <li>
+      Normalization to the luminosity: <font color='#0000CC'>114</font><font color='#0000CC'> +/- </font><font color='#0000CC'>1 </font> events.<br />
+    </li>
+    <li>
+      Ratio (event weight): <font color='#0000CC'>0.00028 </font>. <br />
+    </li>
+  </ul>
+  <table>
+    <tr>
+      <td width='39.0%' bgcolor='#FFFF00'>
+        Path to the event file  <br />
+      </td> 
+      <td width='18.0%' bgcolor='#FFFF00'>
+        Nr. of events  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFF00'>
+        Cross section (pb)  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFF00'>
+        Negative wgts (%)  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='39.0%' bgcolor='#FFFFFF'>
+        /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/vbf_diphoton_background_data/merged_lhe/vbf_diphoton_background_ht_800_1200_merged.lhe.gz  <br />
+      </td> 
+      <td width='18.0%' bgcolor='#FFFFFF'>
+        400839  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFFFF'>
+        0.00287 @ 0.16%  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFFFF'>
+        0.0  <br />
+      </td>
+    </tr>
+  </table><br /> <br />
+  <h3><a name='bg_vbf_1200_1600'>bg_vbf_1200_1600</a></h3>
+  <ul>
+    <li>
+      Samples stored in the directory: <font color='#0000CC'>/Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/optimization</font>.<br />
+    </li>
+    <li>
+      Sample consisting of: <font color='#0000CC'>background</font> events.<br />
+    </li>
+    <li>
+      Generated events: <font color='#0000CC'>953803 </font> events.<br />
+    </li>
+    <li>
+      Normalization to the luminosity: <font color='#0000CC'>20</font><font color='#0000CC'> +/- </font><font color='#0000CC'>1 </font> events.<br />
+    </li>
+    <li>
+      Ratio (event weight): <font color='#0000CC'>2.1e-05 </font>. <br />
+    </li>
+  </ul>
+  <table>
+    <tr>
+      <td width='39.0%' bgcolor='#FFFF00'>
+        Path to the event file  <br />
+      </td> 
+      <td width='18.0%' bgcolor='#FFFF00'>
+        Nr. of events  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFF00'>
+        Cross section (pb)  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFF00'>
+        Negative wgts (%)  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='39.0%' bgcolor='#FFFFFF'>
+        /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/vbf_diphoton_background_data/merged_lhe/vbf_diphoton_background_ht_1200_1600_merged.lhe.gz  <br />
+      </td> 
+      <td width='18.0%' bgcolor='#FFFFFF'>
+        953803  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFFFF'>
+        0.000515 @ 0.16%  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFFFF'>
+        0.0  <br />
+      </td>
+    </tr>
+  </table><br /> <br />
+  <h3><a name='bg_vbf_1600_inf'>bg_vbf_1600_inf</a></h3>
+  <ul>
+    <li>
+      Samples stored in the directory: <font color='#0000CC'>/Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/optimization</font>.<br />
+    </li>
+    <li>
+      Sample consisting of: <font color='#0000CC'>background</font> events.<br />
+    </li>
+    <li>
+      Generated events: <font color='#0000CC'>270148 </font> events.<br />
+    </li>
+    <li>
+      Normalization to the luminosity: <font color='#0000CC'>7</font><font color='#0000CC'> +/- </font><font color='#0000CC'>1 </font> events.<br />
+    </li>
+    <li>
+      Ratio (event weight): <font color='#0000CC'>2.6e-05 </font>. <br />
+    </li>
+  </ul>
+  <table>
+    <tr>
+      <td width='39.0%' bgcolor='#FFFF00'>
+        Path to the event file  <br />
+      </td> 
+      <td width='18.0%' bgcolor='#FFFF00'>
+        Nr. of events  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFF00'>
+        Cross section (pb)  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFF00'>
+        Negative wgts (%)  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='39.0%' bgcolor='#FFFFFF'>
+        /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/vbf_diphoton_background_data/merged_lhe/vbf_diphoton_background_ht_1600_inf_merged.lhe.gz  <br />
+      </td> 
+      <td width='18.0%' bgcolor='#FFFFFF'>
+        270148  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFFFF'>
+        0.000191 @ 0.11%  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFFFF'>
+        0.0  <br />
+      </td>
+    </tr>
+  </table><br /> <br />
+  <h3><a name='bg_dip_0_100'>bg_dip_0_100</a></h3>
+  <ul>
+    <li>
+      Samples stored in the directory: <font color='#0000CC'>/Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/optimization</font>.<br />
+    </li>
+    <li>
+      Sample consisting of: <font color='#0000CC'>background</font> events.<br />
+    </li>
+    <li>
+      Generated events: <font color='#0000CC'>1040000 </font> events.<br />
+    </li>
+    <li>
+      Normalization to the luminosity: <font color='#0000CC'>2710847</font><font color='#0000CC'> +/- </font><font color='#0000CC'>4614 </font> events.<br />
+    </li>
+    <li>
+      <font color='#FF0000'>Ratio (event weight): </font><font color='#FF0000'>2.6 </font><font color='#FF0000'> - warning: please generate more events (weight larger than 1)!</font><br />
+    </li>
+  </ul>
+  <table>
+    <tr>
+      <td width='39.0%' bgcolor='#FFFF00'>
+        Path to the event file  <br />
+      </td> 
+      <td width='18.0%' bgcolor='#FFFF00'>
+        Nr. of events  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFF00'>
+        Cross section (pb)  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFF00'>
+        Negative wgts (%)  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='39.0%' bgcolor='#FFFFFF'>
+        /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/diphoton_double_isr_background_data/merged_lhe/diphoton_double_isr_background_ht_0_100_merged.lhe.gz  <br />
+      </td> 
+      <td width='18.0%' bgcolor='#FFFFFF'>
+        1040000  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFFFF'>
+        67.8 @ 0.17%  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFFFF'>
+        0.0  <br />
+      </td>
+    </tr>
+  </table><br /> <br />
+  <h3><a name='bg_dip_100_200'>bg_dip_100_200</a></h3>
+  <ul>
+    <li>
+      Samples stored in the directory: <font color='#0000CC'>/Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/optimization</font>.<br />
+    </li>
+    <li>
+      Sample consisting of: <font color='#0000CC'>background</font> events.<br />
+    </li>
+    <li>
+      Generated events: <font color='#0000CC'>1040000 </font> events.<br />
+    </li>
+    <li>
+      Normalization to the luminosity: <font color='#0000CC'>1095362</font><font color='#0000CC'> +/- </font><font color='#0000CC'>1528 </font> events.<br />
+    </li>
+    <li>
+      <font color='#FF0000'>Ratio (event weight): </font><font color='#FF0000'>1.1 </font><font color='#FF0000'> - warning: please generate more events (weight larger than 1)!</font><br />
+    </li>
+  </ul>
+  <table>
+    <tr>
+      <td width='39.0%' bgcolor='#FFFF00'>
+        Path to the event file  <br />
+      </td> 
+      <td width='18.0%' bgcolor='#FFFF00'>
+        Nr. of events  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFF00'>
+        Cross section (pb)  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFF00'>
+        Negative wgts (%)  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='39.0%' bgcolor='#FFFFFF'>
+        /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/diphoton_double_isr_background_data/merged_lhe/diphoton_double_isr_background_ht_100_200_merged.lhe.gz  <br />
+      </td> 
+      <td width='18.0%' bgcolor='#FFFFFF'>
+        1040000  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFFFF'>
+        27.4 @ 0.14%  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFFFF'>
+        0.0  <br />
+      </td>
+    </tr>
+  </table><br /> <br />
+  <h3><a name='bg_dip_200_400'>bg_dip_200_400</a></h3>
+  <ul>
+    <li>
+      Samples stored in the directory: <font color='#0000CC'>/Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/optimization</font>.<br />
+    </li>
+    <li>
+      Sample consisting of: <font color='#0000CC'>background</font> events.<br />
+    </li>
+    <li>
+      Generated events: <font color='#0000CC'>1040000 </font> events.<br />
+    </li>
+    <li>
+      Normalization to the luminosity: <font color='#0000CC'>239548</font><font color='#0000CC'> +/- </font><font color='#0000CC'>414 </font> events.<br />
+    </li>
+    <li>
+      Ratio (event weight): <font color='#0000CC'>0.23 </font>. <br />
+    </li>
+  </ul>
+  <table>
+    <tr>
+      <td width='39.0%' bgcolor='#FFFF00'>
+        Path to the event file  <br />
+      </td> 
+      <td width='18.0%' bgcolor='#FFFF00'>
+        Nr. of events  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFF00'>
+        Cross section (pb)  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFF00'>
+        Negative wgts (%)  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='39.0%' bgcolor='#FFFFFF'>
+        /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/diphoton_double_isr_background_data/merged_lhe/diphoton_double_isr_background_ht_200_400_merged.lhe.gz  <br />
+      </td> 
+      <td width='18.0%' bgcolor='#FFFFFF'>
+        1040000  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFFFF'>
+        5.99 @ 0.17%  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFFFF'>
+        0.0  <br />
+      </td>
+    </tr>
+  </table><br /> <br />
+  <h3><a name='bg_dip_400_600'>bg_dip_400_600</a></h3>
+  <ul>
+    <li>
+      Samples stored in the directory: <font color='#0000CC'>/Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/optimization</font>.<br />
+    </li>
+    <li>
+      Sample consisting of: <font color='#0000CC'>background</font> events.<br />
+    </li>
+    <li>
+      Generated events: <font color='#0000CC'>1040000 </font> events.<br />
+    </li>
+    <li>
+      Normalization to the luminosity: <font color='#0000CC'>28798</font><font color='#0000CC'> +/- </font><font color='#0000CC'>53 </font> events.<br />
+    </li>
+    <li>
+      Ratio (event weight): <font color='#0000CC'>0.028 </font>. <br />
+    </li>
+  </ul>
+  <table>
+    <tr>
+      <td width='39.0%' bgcolor='#FFFF00'>
+        Path to the event file  <br />
+      </td> 
+      <td width='18.0%' bgcolor='#FFFF00'>
+        Nr. of events  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFF00'>
+        Cross section (pb)  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFF00'>
+        Negative wgts (%)  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='39.0%' bgcolor='#FFFFFF'>
+        /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/diphoton_double_isr_background_data/merged_lhe/diphoton_double_isr_background_ht_400_600_merged.lhe.gz  <br />
+      </td> 
+      <td width='18.0%' bgcolor='#FFFFFF'>
+        1040000  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFFFF'>
+        0.72 @ 0.18%  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFFFF'>
+        0.0  <br />
+      </td>
+    </tr>
+  </table><br /> <br />
+  <h3><a name='bg_dip_600_800'>bg_dip_600_800</a></h3>
+  <ul>
+    <li>
+      Samples stored in the directory: <font color='#0000CC'>/Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/optimization</font>.<br />
+    </li>
+    <li>
+      Sample consisting of: <font color='#0000CC'>background</font> events.<br />
+    </li>
+    <li>
+      Generated events: <font color='#0000CC'>662009 </font> events.<br />
+    </li>
+    <li>
+      Normalization to the luminosity: <font color='#0000CC'>6674</font><font color='#0000CC'> +/- </font><font color='#0000CC'>28 </font> events.<br />
+    </li>
+    <li>
+      Ratio (event weight): <font color='#0000CC'>0.01 </font>. <br />
+    </li>
+  </ul>
+  <table>
+    <tr>
+      <td width='39.0%' bgcolor='#FFFF00'>
+        Path to the event file  <br />
+      </td> 
+      <td width='18.0%' bgcolor='#FFFF00'>
+        Nr. of events  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFF00'>
+        Cross section (pb)  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFF00'>
+        Negative wgts (%)  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='39.0%' bgcolor='#FFFFFF'>
+        /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/diphoton_double_isr_background_data/merged_lhe/diphoton_double_isr_background_ht_600_800_merged.lhe.gz  <br />
+      </td> 
+      <td width='18.0%' bgcolor='#FFFFFF'>
+        662009  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFFFF'>
+        0.167 @ 0.41%  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFFFF'>
+        0.0  <br />
+      </td>
+    </tr>
+  </table><br /> <br />
+  <h3><a name='bg_dip_800_1200'>bg_dip_800_1200</a></h3>
+  <ul>
+    <li>
+      Samples stored in the directory: <font color='#0000CC'>/Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/optimization</font>.<br />
+    </li>
+    <li>
+      Sample consisting of: <font color='#0000CC'>background</font> events.<br />
+    </li>
+    <li>
+      Generated events: <font color='#0000CC'>1040000 </font> events.<br />
+    </li>
+    <li>
+      Normalization to the luminosity: <font color='#0000CC'>2942</font><font color='#0000CC'> +/- </font><font color='#0000CC'>6 </font> events.<br />
+    </li>
+    <li>
+      Ratio (event weight): <font color='#0000CC'>0.0028 </font>. <br />
+    </li>
+  </ul>
+  <table>
+    <tr>
+      <td width='39.0%' bgcolor='#FFFF00'>
+        Path to the event file  <br />
+      </td> 
+      <td width='18.0%' bgcolor='#FFFF00'>
+        Nr. of events  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFF00'>
+        Cross section (pb)  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFF00'>
+        Negative wgts (%)  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='39.0%' bgcolor='#FFFFFF'>
+        /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/diphoton_double_isr_background_data/merged_lhe/diphoton_double_isr_background_ht_800_1200_merged.lhe.gz  <br />
+      </td> 
+      <td width='18.0%' bgcolor='#FFFFFF'>
+        1040000  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFFFF'>
+        0.0736 @ 0.17%  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFFFF'>
+        0.0  <br />
+      </td>
+    </tr>
+  </table><br /> <br />
+  <h3><a name='bg_dip_1200_1600'>bg_dip_1200_1600</a></h3>
+  <ul>
+    <li>
+      Samples stored in the directory: <font color='#0000CC'>/Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/optimization</font>.<br />
+    </li>
+    <li>
+      Sample consisting of: <font color='#0000CC'>background</font> events.<br />
+    </li>
+    <li>
+      Generated events: <font color='#0000CC'>337115 </font> events.<br />
+    </li>
+    <li>
+      Normalization to the luminosity: <font color='#0000CC'>513</font><font color='#0000CC'> +/- </font><font color='#0000CC'>3 </font> events.<br />
+    </li>
+    <li>
+      Ratio (event weight): <font color='#0000CC'>0.0015 </font>. <br />
+    </li>
+  </ul>
+  <table>
+    <tr>
+      <td width='39.0%' bgcolor='#FFFF00'>
+        Path to the event file  <br />
+      </td> 
+      <td width='18.0%' bgcolor='#FFFF00'>
+        Nr. of events  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFF00'>
+        Cross section (pb)  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFF00'>
+        Negative wgts (%)  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='39.0%' bgcolor='#FFFFFF'>
+        /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/diphoton_double_isr_background_data/merged_lhe/diphoton_double_isr_background_ht_1200_1600_merged.lhe.gz  <br />
+      </td> 
+      <td width='18.0%' bgcolor='#FFFFFF'>
+        337115  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFFFF'>
+        0.0128 @ 0.51%  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFFFF'>
+        0.0  <br />
+      </td>
+    </tr>
+  </table><br /> <br />
+  <h3><a name='bg_dip_1600_inf'>bg_dip_1600_inf</a></h3>
+  <ul>
+    <li>
+      Samples stored in the directory: <font color='#0000CC'>/Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/optimization</font>.<br />
+    </li>
+    <li>
+      Sample consisting of: <font color='#0000CC'>background</font> events.<br />
+    </li>
+    <li>
+      Generated events: <font color='#0000CC'>1040000 </font> events.<br />
+    </li>
+    <li>
+      Normalization to the luminosity: <font color='#0000CC'>187</font><font color='#0000CC'> +/- </font><font color='#0000CC'>1 </font> events.<br />
+    </li>
+    <li>
+      Ratio (event weight): <font color='#0000CC'>0.00018 </font>. <br />
+    </li>
+  </ul>
+  <table>
+    <tr>
+      <td width='39.0%' bgcolor='#FFFF00'>
+        Path to the event file  <br />
+      </td> 
+      <td width='18.0%' bgcolor='#FFFF00'>
+        Nr. of events  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFF00'>
+        Cross section (pb)  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFF00'>
+        Negative wgts (%)  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='39.0%' bgcolor='#FFFFFF'>
+        /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/diphoton_double_isr_background_data/merged_lhe/diphoton_double_isr_background_ht_1600_inf_merged.lhe.gz  <br />
+      </td> 
+      <td width='18.0%' bgcolor='#FFFFFF'>
+        1040000  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFFFF'>
+        0.00469 @ 0.15%  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFFFF'>
+        0.0  <br />
+      </td>
+    </tr>
+  </table><br /> <br />
+  <br /><br />
+
+  <h2>Histos and cuts</h2><br />
+  <h3><a name='Cut1'>Cut 1</a></h3><br />
+<b>* Cut: select PT ( a[1] ) > 250.0 and M ( a[1] a[2] ) > 400.0</b>  <br />
+<BR>  <br />
+  <table>
+    <tr>
+      <td width='15.0%' bgcolor='#FFFF00'>
+        Dataset  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFF00'>
+        Events kept:<br />
+        K  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFF00'>
+        Rejected events:<br />
+        R  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFF00'>
+        Efficiency:<br />
+        K / (K + R)  <br />
+      </td> 
+      <td width='23.0%' bgcolor='#FFFF00'>
+        Cumul. efficiency:<br />
+        K / Initial  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='15.0%' bgcolor='#FFFFFF'>
+        signal  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        2954.1 +/- 28.7  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        1140.0 +/- 28.7  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFFFF'>
+        0.72154 +/- 0.00701  <br />
+      </td> 
+      <td width='23.0%' bgcolor='#FFFFFF'>
+        0.72154 +/- 0.00701  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='15.0%' bgcolor='#FFFFFF'>
+        bg_vbf_0_100  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        1.62 +/- 1.27  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        12148.7 +/- 23.1  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFFFF'>
+        0.000133 +/- 0.000105  <br />
+      </td> 
+      <td width='23.0%' bgcolor='#FFFFFF'>
+        0.000133 +/- 0.000105  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='15.0%' bgcolor='#FFFFFF'>
+        bg_vbf_100_200  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        9.26 +/- 3.04  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        9686.1 +/- 16.9  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFFFF'>
+        0.000955 +/- 0.000314  <br />
+      </td> 
+      <td width='23.0%' bgcolor='#FFFFFF'>
+        0.000955 +/- 0.000314  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='15.0%' bgcolor='#FFFFFF'>
+        bg_vbf_200_400  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        31.85 +/- 5.63  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        5381.4 +/- 12.2  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFFFF'>
+        0.00588 +/- 0.00104  <br />
+      </td> 
+      <td width='23.0%' bgcolor='#FFFFFF'>
+        0.00588 +/- 0.00104  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='15.0%' bgcolor='#FFFFFF'>
+        bg_vbf_400_600  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        20.7 +/- 4.5  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        966.19 +/- 4.69  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFFFF'>
+        0.02094 +/- 0.00456  <br />
+      </td> 
+      <td width='23.0%' bgcolor='#FFFFFF'>
+        0.02094 +/- 0.00456  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='15.0%' bgcolor='#FFFFFF'>
+        bg_vbf_600_800  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        8.98 +/- 2.94  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        243.10 +/- 2.96  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFFFF'>
+        0.0356 +/- 0.0117  <br />
+      </td> 
+      <td width='23.0%' bgcolor='#FFFFFF'>
+        0.0356 +/- 0.0117  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='15.0%' bgcolor='#FFFFFF'>
+        bg_vbf_800_1200  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        5.42 +/- 2.27  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        109.34 +/- 2.28  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFFFF'>
+        0.0472 +/- 0.0198  <br />
+      </td> 
+      <td width='23.0%' bgcolor='#FFFFFF'>
+        0.0472 +/- 0.0198  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='15.0%' bgcolor='#FFFFFF'>
+        bg_vbf_1200_1600  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        1.15 +/- 1.04  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        19.44 +/- 1.04  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFFFF'>
+        0.0560 +/- 0.0507  <br />
+      </td> 
+      <td width='23.0%' bgcolor='#FFFFFF'>
+        0.0560 +/- 0.0507  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='15.0%' bgcolor='#FFFFFF'>
+        bg_vbf_1600_inf  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        0.446 +/- 0.648  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        7.212 +/- 0.648  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFFFF'>
+        0.0583 +/- 0.0846  <br />
+      </td> 
+      <td width='23.0%' bgcolor='#FFFFFF'>
+        0.0583 +/- 0.0846  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='15.0%' bgcolor='#FFFFFF'>
+        bg_dip_0_100  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        143.4 +/- 12.0  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        2710703 +/- 4613  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFFFF'>
+        5.29e-05 +/- 4.42e-06  <br />
+      </td> 
+      <td width='23.0%' bgcolor='#FFFFFF'>
+        5.29e-05 +/- 4.42e-06  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='15.0%' bgcolor='#FFFFFF'>
+        bg_dip_100_200  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        621.5 +/- 24.9  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        1094741 +/- 1526  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFFFF'>
+        5.67e-04 +/- 2.28e-05  <br />
+      </td> 
+      <td width='23.0%' bgcolor='#FFFFFF'>
+        5.67e-04 +/- 2.28e-05  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='15.0%' bgcolor='#FFFFFF'>
+        bg_dip_200_400  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        1110.1 +/- 33.3  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        238438 +/- 413  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFFFF'>
+        0.004634 +/- 0.000139  <br />
+      </td> 
+      <td width='23.0%' bgcolor='#FFFFFF'>
+        0.004634 +/- 0.000139  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='15.0%' bgcolor='#FFFFFF'>
+        bg_dip_400_600  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        465.3 +/- 21.4  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        28333.4 +/- 55.6  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFFFF'>
+        0.016158 +/- 0.000743  <br />
+      </td> 
+      <td width='23.0%' bgcolor='#FFFFFF'>
+        0.016158 +/- 0.000743  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='15.0%' bgcolor='#FFFFFF'>
+        bg_dip_600_800  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        162.7 +/- 12.6  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        6511.7 +/- 29.7  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFFFF'>
+        0.02437 +/- 0.00189  <br />
+      </td> 
+      <td width='23.0%' bgcolor='#FFFFFF'>
+        0.02437 +/- 0.00189  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='15.0%' bgcolor='#FFFFFF'>
+        bg_dip_800_1200  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        90.22 +/- 9.35  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        2852.1 +/- 10.6  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFFFF'>
+        0.03066 +/- 0.00318  <br />
+      </td> 
+      <td width='23.0%' bgcolor='#FFFFFF'>
+        0.03066 +/- 0.00318  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='15.0%' bgcolor='#FFFFFF'>
+        bg_dip_1200_1600  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        18.47 +/- 4.22  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        495.04 +/- 4.92  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFFFF'>
+        0.03596 +/- 0.00822  <br />
+      </td> 
+      <td width='23.0%' bgcolor='#FFFFFF'>
+        0.03596 +/- 0.00822  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='15.0%' bgcolor='#FFFFFF'>
+        bg_dip_1600_inf  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        7.70 +/- 2.72  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        180.09 +/- 2.73  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFFFF'>
+        0.0410 +/- 0.0145  <br />
+      </td> 
+      <td width='23.0%' bgcolor='#FFFFFF'>
+        0.0410 +/- 0.0145  <br />
+      </td>
+    </tr>
+  </table><br /> <br />
+  <br />
+  <h3><a name='Cut2'>Cut 2</a></h3><br />
+<b>* Cut: select ( sdETA ( jets[1] jets[2] ) > 3.1 or sdETA ( jets[1] jets[2] ) < -3.1 ) and M ( jets[1] jets[2] ) > 1000.0</b>  <br />
+<BR>  <br />
+  <table>
+    <tr>
+      <td width='15.0%' bgcolor='#FFFF00'>
+        Dataset  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFF00'>
+        Events kept:<br />
+        K  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFF00'>
+        Rejected events:<br />
+        R  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFF00'>
+        Efficiency:<br />
+        K / (K + R)  <br />
+      </td> 
+      <td width='23.0%' bgcolor='#FFFF00'>
+        Cumul. efficiency:<br />
+        K / Initial  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='15.0%' bgcolor='#FFFFFF'>
+        signal  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        1110.3 +/- 28.4  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        1843.8 +/- 31.8  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFFFF'>
+        0.37584 +/- 0.00891  <br />
+      </td> 
+      <td width='23.0%' bgcolor='#FFFFFF'>
+        0.27119 +/- 0.00695  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='15.0%' bgcolor='#FFFFFF'>
+        bg_vbf_0_100  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        0.0243 +/- 0.1559  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        1.59 +/- 1.26  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFFFF'>
+        0.015 +/- 0.096  <br />
+      </td> 
+      <td width='23.0%' bgcolor='#FFFFFF'>
+        2.00e-06 +/- 1.28e-05  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='15.0%' bgcolor='#FFFFFF'>
+        bg_vbf_100_200  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        1.62 +/- 1.27  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        7.64 +/- 2.76  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFFFF'>
+        0.175 +/- 0.125  <br />
+      </td> 
+      <td width='23.0%' bgcolor='#FFFFFF'>
+        0.000167 +/- 0.000131  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='15.0%' bgcolor='#FFFFFF'>
+        bg_vbf_200_400  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        11.89 +/- 3.44  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        19.96 +/- 4.46  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFFFF'>
+        0.3732 +/- 0.0857  <br />
+      </td> 
+      <td width='23.0%' bgcolor='#FFFFFF'>
+        0.002196 +/- 0.000636  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='15.0%' bgcolor='#FFFFFF'>
+        bg_vbf_400_600  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        10.64 +/- 3.24  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        10.02 +/- 3.15  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFFFF'>
+        0.52 +/- 0.11  <br />
+      </td> 
+      <td width='23.0%' bgcolor='#FFFFFF'>
+        0.01079 +/- 0.00329  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='15.0%' bgcolor='#FFFFFF'>
+        bg_vbf_600_800  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        4.09 +/- 2.01  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        4.89 +/- 2.19  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFFFF'>
+        0.456 +/- 0.166  <br />
+      </td> 
+      <td width='23.0%' bgcolor='#FFFFFF'>
+        0.01623 +/- 0.00796  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='15.0%' bgcolor='#FFFFFF'>
+        bg_vbf_800_1200  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        1.79 +/- 1.33  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        3.63 +/- 1.88  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFFFF'>
+        0.330 +/- 0.202  <br />
+      </td> 
+      <td width='23.0%' bgcolor='#FFFFFF'>
+        0.0156 +/- 0.0116  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='15.0%' bgcolor='#FFFFFF'>
+        bg_vbf_1200_1600  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        0.194 +/- 0.438  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        0.960 +/- 0.957  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFFFF'>
+        0.168 +/- 0.348  <br />
+      </td> 
+      <td width='23.0%' bgcolor='#FFFFFF'>
+        0.00941 +/- 0.02127  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='15.0%' bgcolor='#FFFFFF'>
+        bg_vbf_1600_inf  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        0.0255 +/- 0.1595  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        0.421 +/- 0.631  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFFFF'>
+        0.0572 +/- 0.3477  <br />
+      </td> 
+      <td width='23.0%' bgcolor='#FFFFFF'>
+        0.00333 +/- 0.02083  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='15.0%' bgcolor='#FFFFFF'>
+        bg_dip_0_100  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        0.0 +/- 0.0  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        143.4 +/- 12.0  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFFFF'>
+        0.0 +/- 0.0  <br />
+      </td> 
+      <td width='23.0%' bgcolor='#FFFFFF'>
+        0.0 +/- 0.0  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='15.0%' bgcolor='#FFFFFF'>
+        bg_dip_100_200  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        6.32 +/- 2.51  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        615.1 +/- 24.8  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFFFF'>
+        0.01017 +/- 0.00403  <br />
+      </td> 
+      <td width='23.0%' bgcolor='#FFFFFF'>
+        5.77e-06 +/- 2.30e-06  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='15.0%' bgcolor='#FFFFFF'>
+        bg_dip_200_400  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        27.86 +/- 5.28  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        1082.2 +/- 32.9  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFFFF'>
+        0.0251 +/- 0.0047  <br />
+      </td> 
+      <td width='23.0%' bgcolor='#FFFFFF'>
+        1.16e-04 +/- 2.20e-05  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='15.0%' bgcolor='#FFFFFF'>
+        bg_dip_400_600  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        27.91 +/- 5.28  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        437.4 +/- 20.8  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFFFF'>
+        0.060 +/- 0.011  <br />
+      </td> 
+      <td width='23.0%' bgcolor='#FFFFFF'>
+        0.000969 +/- 0.000183  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='15.0%' bgcolor='#FFFFFF'>
+        bg_dip_600_800  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        10.05 +/- 3.17  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        152.6 +/- 12.2  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFFFF'>
+        0.0618 +/- 0.0189  <br />
+      </td> 
+      <td width='23.0%' bgcolor='#FFFFFF'>
+        0.001506 +/- 0.000475  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='15.0%' bgcolor='#FFFFFF'>
+        bg_dip_800_1200  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        4.4 +/- 2.1  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        85.80 +/- 9.13  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFFFF'>
+        0.0490 +/- 0.0227  <br />
+      </td> 
+      <td width='23.0%' bgcolor='#FFFFFF'>
+        0.001503 +/- 0.000714  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='15.0%' bgcolor='#FFFFFF'>
+        bg_dip_1200_1600  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        0.46 +/- 0.68  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        18.01 +/- 4.17  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFFFF'>
+        0.0249 +/- 0.0363  <br />
+      </td> 
+      <td width='23.0%' bgcolor='#FFFFFF'>
+        0.000896 +/- 0.001320  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='15.0%' bgcolor='#FFFFFF'>
+        bg_dip_1600_inf  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        0.0543 +/- 0.2331  <br />
+      </td> 
+      <td width='19.0%' bgcolor='#FFFFFF'>
+        7.64 +/- 2.71  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFFFF'>
+        0.00706 +/- 0.03017  <br />
+      </td> 
+      <td width='23.0%' bgcolor='#FFFFFF'>
+        0.000289 +/- 0.001241  <br />
+      </td>
+    </tr>
+  </table><br /> <br />
+  <br />
+  <br /><br />
+
+  <h2>Summary</h2><br />
+  <h3><a name='Cut-flowcharts'>Cut-flow charts</a></h3>
+  <ul>
+    <li>
+      How to compare signal (S) and background (B): <font color='#0000CC'>S/sqrt(S+B)</font>.<br />
+    </li>
+    <li>
+      Object definition selections are indicated in cyan.    </li>
+    <li>
+      Reject and select are indicated by 'REJ' and 'SEL' respectively    </li>
+  </ul>
+  <table>
+    <tr>
+      <td width='25.0%' bgcolor='#FFFF00'>
+        Cuts  <br />
+      </td> 
+      <td width='25.0%' bgcolor='#FFFF00'>
+        Signal (S)  <br />
+      </td> 
+      <td width='25.0%' bgcolor='#FFFF00'>
+        Background (B)  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFF00'>
+        S vs B  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='25.0%' bgcolor='#FFFFFF'>
+        Initial (no cut)  <br />
+      </td> 
+      <td width='25.0%' bgcolor='#FFFFFF'>
+        4094.08 +/- 1.13  <br />
+      </td> 
+      <td width='25.0%' bgcolor='#FFFFFF'>
+        4113516 +/- 4877  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFFFF'>
+        2.01760 +/- 0.00132  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='25.0%' bgcolor='#FFFFFF'>
+SEL: PT ( a[1] ) > 250.0 and M ( a[1] a[2] ) > 400  <br />
+      </td> 
+      <td width='25.0%' bgcolor='#FFFFFF'>
+        2954.1 +/- 28.7  <br />
+      </td> 
+      <td width='25.0%' bgcolor='#FFFFFF'>
+        2698.7 +/- 51.8  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFFFF'>
+        39.291 +/- 0.334  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='25.0%' bgcolor='#FFFFFF'>
+SEL: ( sdETA ( jets[1] jets[2] ) > 3.1 or sdETA (   <br />
+      </td> 
+      <td width='25.0%' bgcolor='#FFFFFF'>
+        1110.3 +/- 28.4  <br />
+      </td> 
+      <td width='25.0%' bgcolor='#FFFFFF'>
+        107.4 +/- 10.3  <br />
+      </td> 
+      <td width='24.0%' bgcolor='#FFFFFF'>
+        31.818 +/- 0.464  <br />
+      </td>
+    </tr>
+  </table><br /> <br />
+  <br /><hr size='4' width='350' />
+</div>
+</body>
+</html>

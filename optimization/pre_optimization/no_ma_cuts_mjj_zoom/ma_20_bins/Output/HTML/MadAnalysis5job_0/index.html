@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'>
+
+<head>
+  <title>MadAnalysis 5 HTML report</title>
+  <link rel='stylesheet' media='screen' type='text/css' title='style' href='style.css' />
+<meta http-equiv='Content-Type' content='text/html;charset=utf-8'/>
+</head>
+
+<body>
+<div id='top' class='top'>
+  <table>
+    <tr>
+      <td width='35%'>
+        <img style='width: 182px; height: 53px;' alt='ma5-logo' src='logo.png' /><br />
+        <a href='http://madanalysis.irmp.ucl.ac.be'>Please visit us.</a>
+      </td>
+      <td width='65%'>
+        <h1>MadAnalysis 5 report</h1><br />
+        <i>Created by <font color='#0000CC'>elijahsheridan</font> on  <font color='#0000CC'>12 May 2020, 00:41:26</font></i>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div id='menu' class= 'menu'>
+  <br />
+  <h3>PDF version of this report</h3>
+  <ul><li><a href='../../PDF/MadAnalysis5job_0/main.pdf'>Download here</a></li></ul>
+  <h3>Setup</h3>
+  <ul>
+    <li><a href='#Commandhistory'>Command history</a></li>
+    <li><a href='#Configuration'>Configuration</a></li>
+  </ul>
+  <h3>Datasets</h3>
+  <ul>
+    <li><a href='#signal'>signal</a></li>
+  </ul>
+  <h3>Histos and cuts</h3>
+  <ul>
+    <li><a href='#Histogram1'>Histogram 1</a></li>
+  </ul>
+</div>
+
+<div id='main' class='main'>
+  <br /><br />
+
+  <h2>Setup</h2><br />
+  <h3><a name='Commandhistory'>Command history</a></h3><br />
+  <tt>ma5># set directory where running "./bin/ma5"; set lumi; define the signal significance</tt><br />
+  <tt>ma5>set main.currentdir = /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data # need to change this directory path --> exit and type "pwd" to get the path</tt><br />
+  <tt>ma5>set main.lumi = 40</tt><br />
+  <tt>ma5>set main.fom.formula = 5</tt><br />
+  <tt>ma5>set main.fom.x = 0.0</tt><br />
+  <tt>ma5># import samples --> change the path to the LHE file</tt><br />
+  <tt>ma5>import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/axion_signal/axion_signal_no_cuts_1MeV.lhe.gz as signal</tt><br />
+  <tt>ma5># define bg and signal samples</tt><br />
+  <tt>ma5>set signal.type = signal</tt><br />
+  <tt>ma5># a jet can be from a light quark or b quark</tt><br />
+  <tt>ma5>define jets = j</tt><br />
+  <tt>ma5>define e = e+ e-</tt><br />
+  <tt>ma5>define mu = mu+ mu-</tt><br />
+  <tt>ma5>define ta = ta+ ta-</tt><br />
+  <tt>ma5>define lept = e mu ta</tt><br />
+  <tt>ma5>define ax = 9000005</tt><br />
+  <tt>ma5># define which plots to make</tt><br />
+  <tt>ma5>plot M(jets[1] jets[2])</tt><br />
+  <tt>ma5>#set the plot/graph parameters</tt><br />
+  <tt>ma5>set selection[1].xmin = 0</tt><br />
+  <tt>ma5>set selection[1].xmax = 400</tt><br />
+  <tt>ma5>set selection[1].nbins = 20</tt><br />
+  <tt>ma5>set selection[1].rank = PTordering</tt><br />
+  <tt>ma5>set selection[1].titleX = "M[j_{1},j_{2}] (GeV)"</tt><br />
+  <tt>ma5>submit no_mg_cuts_mjj_zoom</tt><br />
+  <br />
+  <h3><a name='Configuration'>Configuration</a></h3>
+  <ul>
+    <li>
+      MadAnalysis version 1.6.33 (2017/11/20).<br />
+    </li>
+    <li>
+      Histograms given for an integrated luminosity of <font color='#0000CC'>40.0</font><font color='#0000CC'> fb</font><sup><font color='#0000CC'>-1</font></sup><font color='#0000CC'>.</font><br />
+    </li>
+  </ul>
+  <br /><br />
+
+  <h2>Datasets</h2><br />
+  <h3><a name='signal'>signal</a></h3>
+  <ul>
+    <li>
+      Sample consisting of: <font color='#0000CC'>signal</font> events.<br />
+    </li>
+    <li>
+      Generated events: <font color='#0000CC'>10000 </font> events.<br />
+    </li>
+    <li>
+      Normalization to the luminosity: <font color='#0000CC'>31440</font><font color='#0000CC'> +/- </font><font color='#0000CC'>48 </font> events.<br />
+    </li>
+    <li>
+      <font color='#FF0000'>Ratio (event weight): </font><font color='#FF0000'>3.1 </font><font color='#FF0000'> - warning: please generate more events (weight larger than 1)!</font><br />
+    </li>
+  </ul>
+  <table>
+    <tr>
+      <td width='39.0%' bgcolor='#FFFF00'>
+        Path to the event file  <br />
+      </td> 
+      <td width='18.0%' bgcolor='#FFFF00'>
+        Nr. of events  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFF00'>
+        Cross section (pb)  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFF00'>
+        Negative wgts (%)  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='39.0%' bgcolor='#FFFFFF'>
+        axion_pheno/madgraph_data/axion_signal/axion_signal_no_cuts_1MeV.lhe.gz  <br />
+      </td> 
+      <td width='18.0%' bgcolor='#FFFFFF'>
+        10000  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFFFF'>
+        0.786 @ 0.15%  <br />
+      </td> 
+      <td width='21.0%' bgcolor='#FFFFFF'>
+        0.0  <br />
+      </td>
+    </tr>
+  </table><br /> <br />
+  <br /><br />
+
+  <h2>Histos and cuts</h2><br />
+  <h3><a name='Histogram1'>Histogram 1</a></h3><br />
+<b>* Plot: M ( jets[1] jets[2] ) </b>  <br />
+<BR>  <br />
+  <table>
+    <tr>
+      <td width='17.0%' bgcolor='#FFFF00'>
+        Dataset  <br />
+      </td> 
+      <td width='16.0%' bgcolor='#FFFF00'>
+        Integral  <br />
+      </td> 
+      <td width='13.0%' bgcolor='#FFFF00'>
+        Entries per event  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        Mean  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        RMS  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        % underflow  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFF00'>
+        % overflow  <br />
+      </td>
+    </tr>
+    <tr>
+      <td width='17.0%' bgcolor='#FFFFFF'>
+        signal  <br />
+      </td> 
+      <td width='16.0%' bgcolor='#FFFFFF'>
+        31437  <br />
+      </td> 
+      <td width='13.0%' bgcolor='#FFFFFF'>
+        1.0  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFFFF'>
+        997.007  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FFFFFF'>
+        691.5  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FF0000'>
+        0.0  <br />
+      </td> 
+      <td width='14.0%' bgcolor='#FF0000'>
+        81.19  <br />
+      </td>
+    </tr>
+  </table><br /> <br />
+  <center>
+    <img src='selection_0.png' height='420.459770115' alt ='' />
+  </center><br /> <br />
+  <br />
+  <br /><hr size='4' width='350' />
+</div>
+</body>
+</html>

@@ -1,0 +1,3272 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  24 MAR 2020 18:14
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2018-12-01>
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (./jheppub.sty
+Package: jheppub 2012/06/08 r448
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2018/12/01 v2.17b AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks14
+\ex@=\dimen103
+))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen104
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 223.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 385.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 482.
+LaTeX Info: Redefining \dots on input line 485.
+LaTeX Info: Redefining \cdots on input line 606.
+\Mathstrutbox@=\box27
+\strutbox@=\box28
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
+\dotsspace@=\muskip10
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
+\tag@help=\toks15
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
+\andhelp@=\toks16
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks17
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2844.
+LaTeX Info: Redefining \] on input line 2845.
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/epsfig.sty
+Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks19
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen112
+\Gin@req@width=\dimen113
+)
+\epsfxsize=\dimen114
+\epsfysize=\dimen115
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip46
+\bibsep=\skip47
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count100
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2018/11/30 v6.88e Hypertext links for LaTeX
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen116
+\Hy@linkcounter=\count101
+\Hy@pagecounter=\count102
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2018/11/30 v6.88e Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+\Hy@SavedSpaceFactor=\count103
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 4393.
+
+
+Package hyperref Warning: Option `pagecolor' is not available anymore.
+
+Package hyperref Info: Option `linktocpage' set `true' on input line 4393.
+Package hyperref Info: Hyper figures OFF on input line 4519.
+Package hyperref Info: Link nesting OFF on input line 4524.
+Package hyperref Info: Hyper index ON on input line 4527.
+Package hyperref Info: Plain pages OFF on input line 4534.
+Package hyperref Info: Backreferencing OFF on input line 4539.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4772.
+\c@Hy@tempcnt=\count104
+(/usr/local/texlive/2019/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5125.
+\XeTeXLinkMargin=\dimen117
+\Fld@menulength=\count105
+\Field@Width=\dimen118
+\Fld@charsize=\dimen119
+Package hyperref Info: Hyper figures OFF on input line 6380.
+Package hyperref Info: Link nesting OFF on input line 6385.
+Package hyperref Info: Hyper index ON on input line 6388.
+Package hyperref Info: backreferencing OFF on input line 6395.
+Package hyperref Info: Link coloring ON on input line 6398.
+Package hyperref Info: Link coloring with OCG OFF on input line 6405.
+Package hyperref Info: PDF/A mode OFF on input line 6410.
+LaTeX Info: Redefining \ref on input line 6450.
+LaTeX Info: Redefining \pageref on input line 6454.
+\Hy@abspage=\count106
+\c@Item=\count107
+\c@Hfootnote=\count108
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2018/11/30 v6.88e Hyperref driver for pdfTeX
+\Fld@listcount=\count109
+\c@bookmark@seq@number=\count110
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip48
+)
+\auth@toks=\toks20
+\affil@toks=\toks21
+\email@toks=\toks22
+\c@email@counter=\count111
+\affiliationsSep=\skip49
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 140.
+
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ot1phv.fd
+File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
+))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2018/12/12 v1.0d Color table columns (DPC)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/tools/array.sty
+Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
+\col@sep=\dimen120
+\ar@mcellbox=\box29
+\extrarowheight=\dimen121
+\NC@list=\toks23
+\extratabsurround=\skip50
+\backup@length=\skip51
+\ar@cellbox=\box30
+)
+\everycr=\toks24
+\minrowclearance=\skip52
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 709.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count112
+\float@exts=\toks25
+\float@box=\box31
+\@float@everytoks=\toks26
+\@floatcapt=\box32
+) (./main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+
+(/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count113
+\scratchdimen=\dimen122
+\scratchbox=\box33
+\nofMPsegments=\count114
+\nofMParguments=\count115
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count116
+\MPscratchDim=\dimen123
+\MPnumerator=\count117
+\makeMPintoPDFobject=\count118
+\everyMPtoPDFconversion=\toks28
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\AtBeginShipoutBox=\box34
+Package hyperref Info: Link coloring ON on input line 37.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count119
+)
+LaTeX Info: Redefining \ref on input line 37.
+LaTeX Info: Redefining \pageref on input line 37.
+LaTeX Info: Redefining \nameref on input line 37.
+
+(./main.out) (./main.out)
+\@outlinefile=\write3
+\openout3 = `main.out'.
+
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 38.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/t1cmss.fd
+File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+<logo.png, id=172, 325.215pt x 92.59593pt>
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 38.
+(pdftex.def)             Requested size: 130.0837pt x 37.0377pt.
+
+
+Package JHEP Warning: E-mails are missing.
+(JHEP)                Plese use \emailAdd macro to provide e-mails..
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 38.
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 38.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+
+ []
+
+[0
+
+{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./logo.
+png>] (./main.toc)
+\tf@toc=\write4
+\openout4 = `main.toc'.
+
+ [1] [2]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 50.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+Overfull \hbox (26.4321pt too wide) in paragraph at lines 50--543
+\T1/cmtt/m/n/10 ma5># set directory where running "./-bin/-ma5"; set lumi; defi
+ne the signal significance 
+ []
+
+
+Overfull \hbox (10.68594pt too wide) in paragraph at lines 50--543
+\T1/cmtt/m/n/10 ma5>set main.currentdir = /-Users/-elijahsheridan/-MG5_aMC_v2_6
+_5/-axion_pheno # need to
+ []
+
+
+Overfull \hbox (31.68082pt too wide) in paragraph at lines 50--543
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-axion_signal/-
+ []
+
+
+Overfull \hbox (115.66031pt too wide) in paragraph at lines 50--543
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-vbf_diphoton_background_data/-
+ []
+
+
+Overfull \hbox (115.66031pt too wide) in paragraph at lines 50--543
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-vbf_diphoton_background_data/-
+ []
+
+
+Overfull \hbox (115.66031pt too wide) in paragraph at lines 50--543
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-vbf_diphoton_background_data/-
+ []
+
+
+Overfull \hbox (115.66031pt too wide) in paragraph at lines 50--543
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-vbf_diphoton_background_data/-
+ []
+
+
+Overfull \hbox (115.66031pt too wide) in paragraph at lines 50--543
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-vbf_diphoton_background_data/-
+ []
+
+
+Overfull \hbox (115.66031pt too wide) in paragraph at lines 50--543
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-vbf_diphoton_background_data/-
+ []
+
+
+Overfull \hbox (115.66031pt too wide) in paragraph at lines 50--543
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-vbf_diphoton_background_data/-
+ []
+
+
+Overfull \hbox (115.66031pt too wide) in paragraph at lines 50--543
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-vbf_diphoton_background_data/-
+ []
+
+
+Overfull \hbox (152.40134pt too wide) in paragraph at lines 50--543
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-diphoton_double_isr_background_data/-
+ []
+
+
+Overfull \hbox (152.40134pt too wide) in paragraph at lines 50--543
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-diphoton_double_isr_background_data/-
+ []
+
+
+Overfull \hbox (10.68594pt too wide) in paragraph at lines 50--543
+\T1/cmtt/m/n/10 merged_lhe/-diphoton_double_isr_background_ht_100_200_merged.lh
+e.gz as bg_dip_100_200 
+ []
+
+
+Overfull \hbox (152.40134pt too wide) in paragraph at lines 50--543
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-diphoton_double_isr_background_data/-
+ []
+
+
+Overfull \hbox (10.68594pt too wide) in paragraph at lines 50--543
+\T1/cmtt/m/n/10 merged_lhe/-diphoton_double_isr_background_ht_200_400_merged.lh
+e.gz as bg_dip_200_400 
+ []
+
+
+Overfull \hbox (152.40134pt too wide) in paragraph at lines 50--543
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-diphoton_double_isr_background_data/-
+ []
+
+
+Overfull \hbox (10.68594pt too wide) in paragraph at lines 50--543
+\T1/cmtt/m/n/10 merged_lhe/-diphoton_double_isr_background_ht_400_600_merged.lh
+e.gz as bg_dip_400_600 
+ []
+
+
+Overfull \hbox (152.40134pt too wide) in paragraph at lines 50--543
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-diphoton_double_isr_background_data/-
+ []
+
+
+Overfull \hbox (10.68594pt too wide) in paragraph at lines 50--543
+\T1/cmtt/m/n/10 merged_lhe/-diphoton_double_isr_background_ht_600_800_merged.lh
+e.gz as bg_dip_600_800 
+ []
+
+
+Overfull \hbox (152.40134pt too wide) in paragraph at lines 50--543
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-diphoton_double_isr_background_data/-
+ []
+
+
+Overfull \hbox (21.18338pt too wide) in paragraph at lines 50--543
+\T1/cmtt/m/n/10 merged_lhe/-diphoton_double_isr_background_ht_800_1200_merged.l
+he.gz as bg_dip_800_1200 
+ []
+
+
+Overfull \hbox (152.40134pt too wide) in paragraph at lines 50--543
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-diphoton_double_isr_background_data/-
+ []
+
+
+Overfull \hbox (31.68082pt too wide) in paragraph at lines 50--543
+\T1/cmtt/m/n/10 merged_lhe/-diphoton_double_isr_background_ht_1200_1600_merged.
+lhe.gz as bg_dip_1200_1600 
+ []
+
+
+Overfull \hbox (152.40134pt too wide) in paragraph at lines 50--543
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-diphoton_double_isr_background_data/-
+ []
+
+
+Overfull \hbox (21.18338pt too wide) in paragraph at lines 50--543
+\T1/cmtt/m/n/10 merged_lhe/-diphoton_double_isr_background_ht_1600_inf_merged.l
+he.gz as bg_dip_1600_inf 
+ []
+
+
+Overfull \hbox (31.68082pt too wide) in paragraph at lines 50--543
+\T1/cmtt/m/n/10 ma5>select (sdETA(jets[1] jets[2]) > 3.1 or sdETA(jets[1] jets[
+2]) < -3.1) and M(jets[1]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--543
+
+ []
+
+[3] [4] [5] [6] [7]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 546.
+
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 546.
+ [8]
+Underfull \hbox (badness 10000) in paragraph at lines 572--572
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 572--572
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 572--572
+\T1/cmr/m/n/10 axion_pheno/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 572--572
+\T1/cmr/m/n/10 madgraph_data/-axion_signal/-
+ []
+
+
+Overfull \hbox (25.2988pt too wide) in paragraph at lines 572--572
+\T1/cmr/m/n/10 axion_signal_gurrola_cuts_1MeV.lhe.gz| 
+ []
+
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 568--575
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 594--594
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 594--594
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 594--594
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 594--594
+\T1/cmr/m/n/10 vbf_diphoton_background_data/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 594--594
+\T1/cmr/m/n/10 merged_lhe/-
+ []
+
+
+Overfull \hbox (82.11826pt too wide) in paragraph at lines 594--594
+\T1/cmr/m/n/10 vbf_diphoton_background_ht_0_100_merged.lhe.gz| 
+ []
+
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 590--597
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 616--616
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 616--616
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 616--616
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 616--616
+\T1/cmr/m/n/10 vbf_diphoton_background_data/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 616--616
+\T1/cmr/m/n/10 merged_lhe/-
+ []
+
+
+Overfull \hbox (92.11581pt too wide) in paragraph at lines 616--616
+\T1/cmr/m/n/10 vbf_diphoton_background_ht_100_200_merged.lhe.gz| 
+ []
+
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 612--619
+ [] 
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 638--638
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 638--638
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 638--638
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 638--638
+\T1/cmr/m/n/10 vbf_diphoton_background_data/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 638--638
+\T1/cmr/m/n/10 merged_lhe/-
+ []
+
+
+Overfull \hbox (92.11581pt too wide) in paragraph at lines 638--638
+\T1/cmr/m/n/10 vbf_diphoton_background_ht_200_400_merged.lhe.gz| 
+ []
+
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 634--641
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 660--660
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 660--660
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 660--660
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 660--660
+\T1/cmr/m/n/10 vbf_diphoton_background_data/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 660--660
+\T1/cmr/m/n/10 merged_lhe/-
+ []
+
+
+Overfull \hbox (92.11581pt too wide) in paragraph at lines 660--660
+\T1/cmr/m/n/10 vbf_diphoton_background_ht_400_600_merged.lhe.gz| 
+ []
+
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 656--663
+ [] 
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 682--682
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 682--682
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 682--682
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 682--682
+\T1/cmr/m/n/10 vbf_diphoton_background_data/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 682--682
+\T1/cmr/m/n/10 merged_lhe/-
+ []
+
+
+Overfull \hbox (92.11581pt too wide) in paragraph at lines 682--682
+\T1/cmr/m/n/10 vbf_diphoton_background_ht_600_800_merged.lhe.gz| 
+ []
+
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 678--685
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 704--704
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 704--704
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 704--704
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 704--704
+\T1/cmr/m/n/10 vbf_diphoton_background_data/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 704--704
+\T1/cmr/m/n/10 merged_lhe/-
+ []
+
+
+Overfull \hbox (97.1146pt too wide) in paragraph at lines 704--704
+\T1/cmr/m/n/10 vbf_diphoton_background_ht_800_1200_merged.lhe.gz| 
+ []
+
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 700--707
+ [] 
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 726--726
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 726--726
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 726--726
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 726--726
+\T1/cmr/m/n/10 vbf_diphoton_background_data/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 726--726
+\T1/cmr/m/n/10 merged_lhe/-
+ []
+
+
+Overfull \hbox (102.11337pt too wide) in paragraph at lines 726--726
+\T1/cmr/m/n/10 vbf_diphoton_background_ht_1200_1600_merged.lhe.gz| 
+ []
+
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 722--729
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 748--748
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 748--748
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 748--748
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 748--748
+\T1/cmr/m/n/10 vbf_diphoton_background_data/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 748--748
+\T1/cmr/m/n/10 merged_lhe/-
+ []
+
+
+Overfull \hbox (93.50436pt too wide) in paragraph at lines 748--748
+\T1/cmr/m/n/10 vbf_diphoton_background_ht_1600_inf_merged.lhe.gz| 
+ []
+
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 744--751
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 770--770
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 770--770
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 770--770
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+ []
+
+
+Overfull \hbox (31.35287pt too wide) in paragraph at lines 770--770
+\T1/cmr/m/n/10 diphoton_double_isr_background_data/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 770--770
+\T1/cmr/m/n/10 merged_lhe/-
+ []
+
+
+Overfull \hbox (115.52676pt too wide) in paragraph at lines 770--770
+\T1/cmr/m/n/10 diphoton_double_isr_background_ht_0_100_merged.lhe.gz| 
+ []
+
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 766--773
+ [] 
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 792--792
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 792--792
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 792--792
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+ []
+
+
+Overfull \hbox (31.35287pt too wide) in paragraph at lines 792--792
+\T1/cmr/m/n/10 diphoton_double_isr_background_data/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 792--792
+\T1/cmr/m/n/10 merged_lhe/-
+ []
+
+
+Overfull \hbox (125.52432pt too wide) in paragraph at lines 792--792
+\T1/cmr/m/n/10 diphoton_double_isr_background_ht_100_200_merged.lhe.gz| 
+ []
+
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 788--795
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 814--814
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 814--814
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 814--814
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+ []
+
+
+Overfull \hbox (31.35287pt too wide) in paragraph at lines 814--814
+\T1/cmr/m/n/10 diphoton_double_isr_background_data/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 814--814
+\T1/cmr/m/n/10 merged_lhe/-
+ []
+
+
+Overfull \hbox (125.52432pt too wide) in paragraph at lines 814--814
+\T1/cmr/m/n/10 diphoton_double_isr_background_ht_200_400_merged.lhe.gz| 
+ []
+
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 810--817
+ [] 
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 836--836
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 836--836
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 836--836
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+ []
+
+
+Overfull \hbox (31.35287pt too wide) in paragraph at lines 836--836
+\T1/cmr/m/n/10 diphoton_double_isr_background_data/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 836--836
+\T1/cmr/m/n/10 merged_lhe/-
+ []
+
+
+Overfull \hbox (125.52432pt too wide) in paragraph at lines 836--836
+\T1/cmr/m/n/10 diphoton_double_isr_background_ht_400_600_merged.lhe.gz| 
+ []
+
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 832--839
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 858--858
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 858--858
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 858--858
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+ []
+
+
+Overfull \hbox (31.35287pt too wide) in paragraph at lines 858--858
+\T1/cmr/m/n/10 diphoton_double_isr_background_data/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 858--858
+\T1/cmr/m/n/10 merged_lhe/-
+ []
+
+
+Overfull \hbox (125.52432pt too wide) in paragraph at lines 858--858
+\T1/cmr/m/n/10 diphoton_double_isr_background_ht_600_800_merged.lhe.gz| 
+ []
+
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 854--861
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 880--880
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 880--880
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 880--880
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+ []
+
+
+Overfull \hbox (31.35287pt too wide) in paragraph at lines 880--880
+\T1/cmr/m/n/10 diphoton_double_isr_background_data/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 880--880
+\T1/cmr/m/n/10 merged_lhe/-
+ []
+
+
+Overfull \hbox (130.5231pt too wide) in paragraph at lines 880--880
+\T1/cmr/m/n/10 diphoton_double_isr_background_ht_800_1200_merged.lhe.gz| 
+ []
+
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 876--883
+ [] 
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 902--902
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 902--902
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 902--902
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+ []
+
+
+Overfull \hbox (31.35287pt too wide) in paragraph at lines 902--902
+\T1/cmr/m/n/10 diphoton_double_isr_background_data/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 902--902
+\T1/cmr/m/n/10 merged_lhe/-
+ []
+
+
+Overfull \hbox (135.52188pt too wide) in paragraph at lines 902--902
+\T1/cmr/m/n/10 diphoton_double_isr_background_ht_1200_1600_merged.lhe.gz| 
+ []
+
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 898--905
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 924--924
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 924--924
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 924--924
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+ []
+
+
+Overfull \hbox (31.35287pt too wide) in paragraph at lines 924--924
+\T1/cmr/m/n/10 diphoton_double_isr_background_data/-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 924--924
+\T1/cmr/m/n/10 merged_lhe/-
+ []
+
+
+Overfull \hbox (126.91287pt too wide) in paragraph at lines 924--924
+\T1/cmr/m/n/10 diphoton_double_isr_background_ht_1600_inf_merged.lhe.gz| 
+ []
+
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 920--927
+ [] 
+ []
+
+[15]
+Underfull \hbox (badness 4872) in paragraph at lines 944--945
+[]|\T1/cmr/m/n/10 Rejected events:
+ []
+
+
+Overfull \hbox (10.85573pt too wide) in paragraph at lines 951--951
+[]|\T1/cmr/m/n/10 bg_vbf_0_100| 
+ []
+
+
+Overfull \hbox (20.85329pt too wide) in paragraph at lines 953--953
+[]|\T1/cmr/m/n/10 bg_vbf_100_200| 
+ []
+
+
+Overfull \hbox (20.85329pt too wide) in paragraph at lines 955--955
+[]|\T1/cmr/m/n/10 bg_vbf_200_400| 
+ []
+
+
+Overfull \hbox (20.85329pt too wide) in paragraph at lines 957--957
+[]|\T1/cmr/m/n/10 bg_vbf_400_600| 
+ []
+
+
+Overfull \hbox (20.85329pt too wide) in paragraph at lines 959--959
+[]|\T1/cmr/m/n/10 bg_vbf_600_800| 
+ []
+
+
+Overfull \hbox (25.85207pt too wide) in paragraph at lines 961--961
+[]|\T1/cmr/m/n/10 bg_vbf_800_1200| 
+ []
+
+
+Overfull \hbox (30.85085pt too wide) in paragraph at lines 963--963
+[]|\T1/cmr/m/n/10 bg_vbf_1200_1600| 
+ []
+
+
+Overfull \hbox (22.24184pt too wide) in paragraph at lines 965--965
+[]|\T1/cmr/m/n/10 bg_vbf_1600_inf| 
+ []
+
+
+Overfull \hbox (10.85573pt too wide) in paragraph at lines 967--967
+[]|\T1/cmr/m/n/10 bg_dip_0_100| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 967--967
+[]|\T1/cmr/m/n/10 0.263642 +/--
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 967--968
+[]|\T1/cmr/m/n/10 0.263642 +/--
+ []
+
+
+Overfull \hbox (20.85329pt too wide) in paragraph at lines 969--969
+[]|\T1/cmr/m/n/10 bg_dip_100_200| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 969--969
+[]|\T1/cmr/m/n/10 0.781001 +/--
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 969--970
+[]|\T1/cmr/m/n/10 0.781001 +/--
+ []
+
+
+Overfull \hbox (20.85329pt too wide) in paragraph at lines 971--971
+[]|\T1/cmr/m/n/10 bg_dip_200_400| 
+ []
+
+
+Overfull \hbox (20.85329pt too wide) in paragraph at lines 973--973
+[]|\T1/cmr/m/n/10 bg_dip_400_600| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 973--973
+[]|\T1/cmr/m/n/10 0.993665 +/--
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 973--974
+[]|\T1/cmr/m/n/10 0.993665 +/--
+ []
+
+
+Overfull \hbox (20.85329pt too wide) in paragraph at lines 975--975
+[]|\T1/cmr/m/n/10 bg_dip_600_800| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 975--975
+[]|\T1/cmr/m/n/10 0.997689 +/--
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 975--976
+[]|\T1/cmr/m/n/10 0.997689 +/--
+ []
+
+
+Overfull \hbox (25.85207pt too wide) in paragraph at lines 977--977
+[]|\T1/cmr/m/n/10 bg_dip_800_1200| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 977--977
+[]|\T1/cmr/m/n/10 0.999192 +/--
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 977--978
+[]|\T1/cmr/m/n/10 0.999192 +/--
+ []
+
+
+Overfull \hbox (30.85085pt too wide) in paragraph at lines 979--979
+[]|\T1/cmr/m/n/10 bg_dip_1200_1600| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 979--979
+[]|\T1/cmr/m/n/10 0.999669 +/--
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 979--980
+[]|\T1/cmr/m/n/10 0.999669 +/--
+ []
+
+
+Overfull \hbox (22.24184pt too wide) in paragraph at lines 981--981
+[]|\T1/cmr/m/n/10 bg_dip_1600_inf| 
+ []
+
+
+Overfull \hbox (27.68684pt too wide) in paragraph at lines 941--984
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 938--985
+
+ []
+
+[16]
+Overfull \hbox (2.3199pt too wide) in paragraph at lines 999--999
+[]|\T1/cmr/m/n/10 bg_vbf_0_100| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1001--1001
+[]|\T1/cmr/m/n/10 bg_vbf_100_200| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1003--1003
+[]|\T1/cmr/m/n/10 bg_vbf_200_400| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1005--1005
+[]|\T1/cmr/m/n/10 bg_vbf_400_600| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1007--1007
+[]|\T1/cmr/m/n/10 bg_vbf_600_800| 
+ []
+
+
+Overfull \hbox (17.31624pt too wide) in paragraph at lines 1009--1009
+[]|\T1/cmr/m/n/10 bg_vbf_800_1200| 
+ []
+
+
+Overfull \hbox (22.31502pt too wide) in paragraph at lines 1011--1011
+[]|\T1/cmr/m/n/10 bg_vbf_1200_1600| 
+ []
+
+
+Overfull \hbox (13.70601pt too wide) in paragraph at lines 1013--1013
+[]|\T1/cmr/m/n/10 bg_vbf_1600_inf| 
+ []
+
+
+Overfull \hbox (2.3199pt too wide) in paragraph at lines 1015--1015
+[]|\T1/cmr/m/n/10 bg_dip_0_100| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1017--1017
+[]|\T1/cmr/m/n/10 bg_dip_100_200| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1019--1019
+[]|\T1/cmr/m/n/10 bg_dip_200_400| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1021--1021
+[]|\T1/cmr/m/n/10 bg_dip_400_600| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1023--1023
+[]|\T1/cmr/m/n/10 bg_dip_600_800| 
+ []
+
+
+Overfull \hbox (17.31624pt too wide) in paragraph at lines 1025--1025
+[]|\T1/cmr/m/n/10 bg_dip_800_1200| 
+ []
+
+
+Overfull \hbox (22.31502pt too wide) in paragraph at lines 1027--1027
+[]|\T1/cmr/m/n/10 bg_dip_1200_1600| 
+ []
+
+
+Overfull \hbox (13.70601pt too wide) in paragraph at lines 1029--1029
+[]|\T1/cmr/m/n/10 bg_dip_1600_inf| 
+ []
+
+
+Overfull \hbox (55.33208pt too wide) in paragraph at lines 993--1032
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 990--1033
+
+ []
+
+<selection_0.png, id=300, 999.735pt x 473.77pt>
+File: selection_0.png Graphic file (type png)
+<use selection_0.png>
+Package pdftex.def Info: selection_0.png  used on input line 1037.
+(pdftex.def)             Requested size: 449.87659pt x 213.19452pt.
+
+Overfull \hbox (19.6702pt too wide) in paragraph at lines 1037--1037
+ [] 
+ []
+
+[17pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1041       \newpage
+                      <./selection_0.png>]
+Overfull \hbox (2.3199pt too wide) in paragraph at lines 1053--1053
+[]|\T1/cmr/m/n/10 bg_vbf_0_100| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1055--1055
+[]|\T1/cmr/m/n/10 bg_vbf_100_200| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1057--1057
+[]|\T1/cmr/m/n/10 bg_vbf_200_400| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1059--1059
+[]|\T1/cmr/m/n/10 bg_vbf_400_600| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1059--1059
+[]|\T1/cmr/m/n/10 -
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1061--1061
+[]|\T1/cmr/m/n/10 bg_vbf_600_800| 
+ []
+
+
+Overfull \hbox (17.31624pt too wide) in paragraph at lines 1063--1063
+[]|\T1/cmr/m/n/10 bg_vbf_800_1200| 
+ []
+
+
+Overfull \hbox (22.31502pt too wide) in paragraph at lines 1065--1065
+[]|\T1/cmr/m/n/10 bg_vbf_1200_1600| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1065--1065
+[]|\T1/cmr/m/n/10 -
+ []
+
+
+Overfull \hbox (13.70601pt too wide) in paragraph at lines 1067--1067
+[]|\T1/cmr/m/n/10 bg_vbf_1600_inf| 
+ []
+
+
+Overfull \hbox (2.3199pt too wide) in paragraph at lines 1069--1069
+[]|\T1/cmr/m/n/10 bg_dip_0_100| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1071--1071
+[]|\T1/cmr/m/n/10 bg_dip_100_200| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1073--1073
+[]|\T1/cmr/m/n/10 bg_dip_200_400| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1075--1075
+[]|\T1/cmr/m/n/10 bg_dip_400_600| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1077--1077
+[]|\T1/cmr/m/n/10 bg_dip_600_800| 
+ []
+
+
+Overfull \hbox (17.31624pt too wide) in paragraph at lines 1079--1079
+[]|\T1/cmr/m/n/10 bg_dip_800_1200| 
+ []
+
+
+Overfull \hbox (22.31502pt too wide) in paragraph at lines 1081--1081
+[]|\T1/cmr/m/n/10 bg_dip_1200_1600| 
+ []
+
+
+Overfull \hbox (13.70601pt too wide) in paragraph at lines 1083--1083
+[]|\T1/cmr/m/n/10 bg_dip_1600_inf| 
+ []
+
+
+Overfull \hbox (55.33208pt too wide) in paragraph at lines 1047--1086
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1044--1087
+
+ []
+
+<selection_1.png, id=308, 999.735pt x 473.77pt>
+File: selection_1.png Graphic file (type png)
+<use selection_1.png>
+Package pdftex.def Info: selection_1.png  used on input line 1091.
+(pdftex.def)             Requested size: 449.87659pt x 213.19452pt.
+
+Overfull \hbox (19.6702pt too wide) in paragraph at lines 1091--1091
+ [] 
+ []
+
+[18pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1095       \newpage
+                      <./selection_1.png>]
+Overfull \hbox (2.3199pt too wide) in paragraph at lines 1107--1107
+[]|\T1/cmr/m/n/10 bg_vbf_0_100| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1109--1109
+[]|\T1/cmr/m/n/10 bg_vbf_100_200| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1111--1111
+[]|\T1/cmr/m/n/10 bg_vbf_200_400| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1113--1113
+[]|\T1/cmr/m/n/10 bg_vbf_400_600| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1115--1115
+[]|\T1/cmr/m/n/10 bg_vbf_600_800| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1115--1115
+[]|\T1/cmr/m/n/10 -
+ []
+
+
+Overfull \hbox (17.31624pt too wide) in paragraph at lines 1117--1117
+[]|\T1/cmr/m/n/10 bg_vbf_800_1200| 
+ []
+
+
+Overfull \hbox (22.31502pt too wide) in paragraph at lines 1119--1119
+[]|\T1/cmr/m/n/10 bg_vbf_1200_1600| 
+ []
+
+
+Overfull \hbox (13.70601pt too wide) in paragraph at lines 1121--1121
+[]|\T1/cmr/m/n/10 bg_vbf_1600_inf| 
+ []
+
+
+Overfull \hbox (2.3199pt too wide) in paragraph at lines 1123--1123
+[]|\T1/cmr/m/n/10 bg_dip_0_100| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1125--1125
+[]|\T1/cmr/m/n/10 bg_dip_100_200| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1127--1127
+[]|\T1/cmr/m/n/10 bg_dip_200_400| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1129--1129
+[]|\T1/cmr/m/n/10 bg_dip_400_600| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1131--1131
+[]|\T1/cmr/m/n/10 bg_dip_600_800| 
+ []
+
+
+Overfull \hbox (17.31624pt too wide) in paragraph at lines 1133--1133
+[]|\T1/cmr/m/n/10 bg_dip_800_1200| 
+ []
+
+
+Overfull \hbox (22.31502pt too wide) in paragraph at lines 1135--1135
+[]|\T1/cmr/m/n/10 bg_dip_1200_1600| 
+ []
+
+
+Overfull \hbox (13.70601pt too wide) in paragraph at lines 1137--1137
+[]|\T1/cmr/m/n/10 bg_dip_1600_inf| 
+ []
+
+
+Overfull \hbox (55.33208pt too wide) in paragraph at lines 1101--1140
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1098--1141
+
+ []
+
+<selection_2.png, id=315, 999.735pt x 473.77pt>
+File: selection_2.png Graphic file (type png)
+<use selection_2.png>
+Package pdftex.def Info: selection_2.png  used on input line 1145.
+(pdftex.def)             Requested size: 449.87659pt x 213.19452pt.
+
+Overfull \hbox (19.6702pt too wide) in paragraph at lines 1145--1145
+ [] 
+ []
+
+[19pdfTeX warning (ext4): destination with the same identifier (name{figure.3})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1149       \newpage
+                      <./selection_2.png>]
+Overfull \hbox (2.3199pt too wide) in paragraph at lines 1161--1161
+[]|\T1/cmr/m/n/10 bg_vbf_0_100| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1163--1163
+[]|\T1/cmr/m/n/10 bg_vbf_100_200| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1165--1165
+[]|\T1/cmr/m/n/10 bg_vbf_200_400| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1167--1167
+[]|\T1/cmr/m/n/10 bg_vbf_400_600| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1169--1169
+[]|\T1/cmr/m/n/10 bg_vbf_600_800| 
+ []
+
+
+Overfull \hbox (17.31624pt too wide) in paragraph at lines 1171--1171
+[]|\T1/cmr/m/n/10 bg_vbf_800_1200| 
+ []
+
+
+Overfull \hbox (22.31502pt too wide) in paragraph at lines 1173--1173
+[]|\T1/cmr/m/n/10 bg_vbf_1200_1600| 
+ []
+
+
+Overfull \hbox (13.70601pt too wide) in paragraph at lines 1175--1175
+[]|\T1/cmr/m/n/10 bg_vbf_1600_inf| 
+ []
+
+
+Overfull \hbox (2.3199pt too wide) in paragraph at lines 1177--1177
+[]|\T1/cmr/m/n/10 bg_dip_0_100| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1179--1179
+[]|\T1/cmr/m/n/10 bg_dip_100_200| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1181--1181
+[]|\T1/cmr/m/n/10 bg_dip_200_400| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1183--1183
+[]|\T1/cmr/m/n/10 bg_dip_400_600| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1185--1185
+[]|\T1/cmr/m/n/10 bg_dip_600_800| 
+ []
+
+
+Overfull \hbox (17.31624pt too wide) in paragraph at lines 1187--1187
+[]|\T1/cmr/m/n/10 bg_dip_800_1200| 
+ []
+
+
+Overfull \hbox (22.31502pt too wide) in paragraph at lines 1189--1189
+[]|\T1/cmr/m/n/10 bg_dip_1200_1600| 
+ []
+
+
+Overfull \hbox (13.70601pt too wide) in paragraph at lines 1191--1191
+[]|\T1/cmr/m/n/10 bg_dip_1600_inf| 
+ []
+
+
+Overfull \hbox (55.33208pt too wide) in paragraph at lines 1155--1194
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1152--1195
+
+ []
+
+<selection_3.png, id=321, 999.735pt x 473.77pt>
+File: selection_3.png Graphic file (type png)
+<use selection_3.png>
+Package pdftex.def Info: selection_3.png  used on input line 1199.
+(pdftex.def)             Requested size: 449.87659pt x 213.19452pt.
+
+Overfull \hbox (19.6702pt too wide) in paragraph at lines 1199--1199
+ [] 
+ []
+
+[20pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1203       \newpage
+                      <./selection_3.png>]
+Overfull \hbox (2.3199pt too wide) in paragraph at lines 1215--1215
+[]|\T1/cmr/m/n/10 bg_vbf_0_100| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1217--1217
+[]|\T1/cmr/m/n/10 bg_vbf_100_200| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1219--1219
+[]|\T1/cmr/m/n/10 bg_vbf_200_400| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1221--1221
+[]|\T1/cmr/m/n/10 bg_vbf_400_600| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1221--1221
+[]|\T1/cmr/m/n/10 -
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1223--1223
+[]|\T1/cmr/m/n/10 bg_vbf_600_800| 
+ []
+
+
+Overfull \hbox (17.31624pt too wide) in paragraph at lines 1225--1225
+[]|\T1/cmr/m/n/10 bg_vbf_800_1200| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1225--1225
+[]|\T1/cmr/m/n/10 -
+ []
+
+
+Overfull \hbox (22.31502pt too wide) in paragraph at lines 1227--1227
+[]|\T1/cmr/m/n/10 bg_vbf_1200_1600| 
+ []
+
+
+Overfull \hbox (13.70601pt too wide) in paragraph at lines 1229--1229
+[]|\T1/cmr/m/n/10 bg_vbf_1600_inf| 
+ []
+
+
+Overfull \hbox (2.3199pt too wide) in paragraph at lines 1231--1231
+[]|\T1/cmr/m/n/10 bg_dip_0_100| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1233--1233
+[]|\T1/cmr/m/n/10 bg_dip_100_200| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1235--1235
+[]|\T1/cmr/m/n/10 bg_dip_200_400| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1237--1237
+[]|\T1/cmr/m/n/10 bg_dip_400_600| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1237--1237
+[]|\T1/cmr/m/n/10 -
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1239--1239
+[]|\T1/cmr/m/n/10 bg_dip_600_800| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1239--1239
+[]|\T1/cmr/m/n/10 -
+ []
+
+
+Overfull \hbox (17.31624pt too wide) in paragraph at lines 1241--1241
+[]|\T1/cmr/m/n/10 bg_dip_800_1200| 
+ []
+
+
+Overfull \hbox (22.31502pt too wide) in paragraph at lines 1243--1243
+[]|\T1/cmr/m/n/10 bg_dip_1200_1600| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1243--1243
+[]|\T1/cmr/m/n/10 -
+ []
+
+
+Overfull \hbox (13.70601pt too wide) in paragraph at lines 1245--1245
+[]|\T1/cmr/m/n/10 bg_dip_1600_inf| 
+ []
+
+
+Overfull \hbox (55.33208pt too wide) in paragraph at lines 1209--1248
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1206--1249
+
+ []
+
+<selection_4.png, id=327, 999.735pt x 473.77pt>
+File: selection_4.png Graphic file (type png)
+<use selection_4.png>
+Package pdftex.def Info: selection_4.png  used on input line 1253.
+(pdftex.def)             Requested size: 449.87659pt x 213.19452pt.
+
+Overfull \hbox (19.6702pt too wide) in paragraph at lines 1253--1253
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21]
+[22pdfTeX warning (ext4): destination with the same identifier (name{figure.5})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1257       \newpage
+                      <./selection_4.png>]
+Overfull \hbox (2.3199pt too wide) in paragraph at lines 1269--1269
+[]|\T1/cmr/m/n/10 bg_vbf_0_100| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1271--1271
+[]|\T1/cmr/m/n/10 bg_vbf_100_200| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1273--1273
+[]|\T1/cmr/m/n/10 bg_vbf_200_400| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1275--1275
+[]|\T1/cmr/m/n/10 bg_vbf_400_600| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1277--1277
+[]|\T1/cmr/m/n/10 bg_vbf_600_800| 
+ []
+
+
+Overfull \hbox (17.31624pt too wide) in paragraph at lines 1279--1279
+[]|\T1/cmr/m/n/10 bg_vbf_800_1200| 
+ []
+
+
+Overfull \hbox (22.31502pt too wide) in paragraph at lines 1281--1281
+[]|\T1/cmr/m/n/10 bg_vbf_1200_1600| 
+ []
+
+
+Overfull \hbox (13.70601pt too wide) in paragraph at lines 1283--1283
+[]|\T1/cmr/m/n/10 bg_vbf_1600_inf| 
+ []
+
+
+Overfull \hbox (2.3199pt too wide) in paragraph at lines 1285--1285
+[]|\T1/cmr/m/n/10 bg_dip_0_100| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1287--1287
+[]|\T1/cmr/m/n/10 bg_dip_100_200| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1289--1289
+[]|\T1/cmr/m/n/10 bg_dip_200_400| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1291--1291
+[]|\T1/cmr/m/n/10 bg_dip_400_600| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1293--1293
+[]|\T1/cmr/m/n/10 bg_dip_600_800| 
+ []
+
+
+Overfull \hbox (17.31624pt too wide) in paragraph at lines 1295--1295
+[]|\T1/cmr/m/n/10 bg_dip_800_1200| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1295--1295
+[]|\T1/cmr/m/n/10 -
+ []
+
+
+Overfull \hbox (22.31502pt too wide) in paragraph at lines 1297--1297
+[]|\T1/cmr/m/n/10 bg_dip_1200_1600| 
+ []
+
+
+Overfull \hbox (13.70601pt too wide) in paragraph at lines 1299--1299
+[]|\T1/cmr/m/n/10 bg_dip_1600_inf| 
+ []
+
+
+Overfull \hbox (55.33208pt too wide) in paragraph at lines 1263--1302
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1260--1303
+
+ []
+
+<selection_5.png, id=337, 999.735pt x 473.77pt>
+File: selection_5.png Graphic file (type png)
+<use selection_5.png>
+Package pdftex.def Info: selection_5.png  used on input line 1307.
+(pdftex.def)             Requested size: 449.87659pt x 213.19452pt.
+
+Overfull \hbox (19.6702pt too wide) in paragraph at lines 1307--1307
+ [] 
+ []
+
+[23pdfTeX warning (ext4): destination with the same identifier (name{figure.6})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1311       \newpage
+                      <./selection_5.png>]
+Overfull \hbox (2.3199pt too wide) in paragraph at lines 1323--1323
+[]|\T1/cmr/m/n/10 bg_vbf_0_100| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1325--1325
+[]|\T1/cmr/m/n/10 bg_vbf_100_200| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1327--1327
+[]|\T1/cmr/m/n/10 bg_vbf_200_400| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1329--1329
+[]|\T1/cmr/m/n/10 bg_vbf_400_600| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1331--1331
+[]|\T1/cmr/m/n/10 bg_vbf_600_800| 
+ []
+
+
+Overfull \hbox (17.31624pt too wide) in paragraph at lines 1333--1333
+[]|\T1/cmr/m/n/10 bg_vbf_800_1200| 
+ []
+
+
+Overfull \hbox (22.31502pt too wide) in paragraph at lines 1335--1335
+[]|\T1/cmr/m/n/10 bg_vbf_1200_1600| 
+ []
+
+
+Overfull \hbox (13.70601pt too wide) in paragraph at lines 1337--1337
+[]|\T1/cmr/m/n/10 bg_vbf_1600_inf| 
+ []
+
+
+Overfull \hbox (2.3199pt too wide) in paragraph at lines 1339--1339
+[]|\T1/cmr/m/n/10 bg_dip_0_100| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1341--1341
+[]|\T1/cmr/m/n/10 bg_dip_100_200| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1343--1343
+[]|\T1/cmr/m/n/10 bg_dip_200_400| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1345--1345
+[]|\T1/cmr/m/n/10 bg_dip_400_600| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1347--1347
+[]|\T1/cmr/m/n/10 bg_dip_600_800| 
+ []
+
+
+Overfull \hbox (17.31624pt too wide) in paragraph at lines 1349--1349
+[]|\T1/cmr/m/n/10 bg_dip_800_1200| 
+ []
+
+
+Overfull \hbox (22.31502pt too wide) in paragraph at lines 1351--1351
+[]|\T1/cmr/m/n/10 bg_dip_1200_1600| 
+ []
+
+
+Overfull \hbox (13.70601pt too wide) in paragraph at lines 1353--1353
+[]|\T1/cmr/m/n/10 bg_dip_1600_inf| 
+ []
+
+
+Overfull \hbox (55.33208pt too wide) in paragraph at lines 1317--1356
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1314--1357
+
+ []
+
+<selection_6.png, id=343, 999.735pt x 473.77pt>
+File: selection_6.png Graphic file (type png)
+<use selection_6.png>
+Package pdftex.def Info: selection_6.png  used on input line 1361.
+(pdftex.def)             Requested size: 449.87659pt x 213.19452pt.
+
+Overfull \hbox (19.6702pt too wide) in paragraph at lines 1361--1361
+ [] 
+ []
+
+[24pdfTeX warning (ext4): destination with the same identifier (name{figure.7})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1365       \newpage
+                      <./selection_6.png>]
+Overfull \hbox (2.3199pt too wide) in paragraph at lines 1377--1377
+[]|\T1/cmr/m/n/10 bg_vbf_0_100| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1379--1379
+[]|\T1/cmr/m/n/10 bg_vbf_100_200| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1381--1381
+[]|\T1/cmr/m/n/10 bg_vbf_200_400| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1383--1383
+[]|\T1/cmr/m/n/10 bg_vbf_400_600| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1385--1385
+[]|\T1/cmr/m/n/10 bg_vbf_600_800| 
+ []
+
+
+Overfull \hbox (17.31624pt too wide) in paragraph at lines 1387--1387
+[]|\T1/cmr/m/n/10 bg_vbf_800_1200| 
+ []
+
+
+Overfull \hbox (22.31502pt too wide) in paragraph at lines 1389--1389
+[]|\T1/cmr/m/n/10 bg_vbf_1200_1600| 
+ []
+
+
+Overfull \hbox (13.70601pt too wide) in paragraph at lines 1391--1391
+[]|\T1/cmr/m/n/10 bg_vbf_1600_inf| 
+ []
+
+
+Overfull \hbox (2.3199pt too wide) in paragraph at lines 1393--1393
+[]|\T1/cmr/m/n/10 bg_dip_0_100| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1395--1395
+[]|\T1/cmr/m/n/10 bg_dip_100_200| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1397--1397
+[]|\T1/cmr/m/n/10 bg_dip_200_400| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1399--1399
+[]|\T1/cmr/m/n/10 bg_dip_400_600| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1401--1401
+[]|\T1/cmr/m/n/10 bg_dip_600_800| 
+ []
+
+
+Overfull \hbox (17.31624pt too wide) in paragraph at lines 1403--1403
+[]|\T1/cmr/m/n/10 bg_dip_800_1200| 
+ []
+
+
+Overfull \hbox (22.31502pt too wide) in paragraph at lines 1405--1405
+[]|\T1/cmr/m/n/10 bg_dip_1200_1600| 
+ []
+
+
+Overfull \hbox (13.70601pt too wide) in paragraph at lines 1407--1407
+[]|\T1/cmr/m/n/10 bg_dip_1600_inf| 
+ []
+
+
+Overfull \hbox (55.33208pt too wide) in paragraph at lines 1371--1410
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1368--1411
+
+ []
+
+<selection_7.png, id=350, 999.735pt x 473.77pt>
+File: selection_7.png Graphic file (type png)
+<use selection_7.png>
+Package pdftex.def Info: selection_7.png  used on input line 1415.
+(pdftex.def)             Requested size: 449.87659pt x 213.19452pt.
+
+Overfull \hbox (19.6702pt too wide) in paragraph at lines 1415--1415
+ [] 
+ []
+
+[25pdfTeX warning (ext4): destination with the same identifier (name{figure.8})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1419       \newpage
+                      <./selection_7.png>]
+Overfull \hbox (2.3199pt too wide) in paragraph at lines 1431--1431
+[]|\T1/cmr/m/n/10 bg_vbf_0_100| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1433--1433
+[]|\T1/cmr/m/n/10 bg_vbf_100_200| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1435--1435
+[]|\T1/cmr/m/n/10 bg_vbf_200_400| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1437--1437
+[]|\T1/cmr/m/n/10 bg_vbf_400_600| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1439--1439
+[]|\T1/cmr/m/n/10 bg_vbf_600_800| 
+ []
+
+
+Overfull \hbox (17.31624pt too wide) in paragraph at lines 1441--1441
+[]|\T1/cmr/m/n/10 bg_vbf_800_1200| 
+ []
+
+
+Overfull \hbox (22.31502pt too wide) in paragraph at lines 1443--1443
+[]|\T1/cmr/m/n/10 bg_vbf_1200_1600| 
+ []
+
+
+Overfull \hbox (13.70601pt too wide) in paragraph at lines 1445--1445
+[]|\T1/cmr/m/n/10 bg_vbf_1600_inf| 
+ []
+
+
+Overfull \hbox (2.3199pt too wide) in paragraph at lines 1447--1447
+[]|\T1/cmr/m/n/10 bg_dip_0_100| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1449--1449
+[]|\T1/cmr/m/n/10 bg_dip_100_200| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1451--1451
+[]|\T1/cmr/m/n/10 bg_dip_200_400| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1453--1453
+[]|\T1/cmr/m/n/10 bg_dip_400_600| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1455--1455
+[]|\T1/cmr/m/n/10 bg_dip_600_800| 
+ []
+
+
+Overfull \hbox (17.31624pt too wide) in paragraph at lines 1457--1457
+[]|\T1/cmr/m/n/10 bg_dip_800_1200| 
+ []
+
+
+Overfull \hbox (22.31502pt too wide) in paragraph at lines 1459--1459
+[]|\T1/cmr/m/n/10 bg_dip_1200_1600| 
+ []
+
+
+Overfull \hbox (13.70601pt too wide) in paragraph at lines 1461--1461
+[]|\T1/cmr/m/n/10 bg_dip_1600_inf| 
+ []
+
+
+Overfull \hbox (55.33208pt too wide) in paragraph at lines 1425--1464
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1422--1465
+
+ []
+
+<selection_8.png, id=356, 999.735pt x 473.77pt>
+File: selection_8.png Graphic file (type png)
+<use selection_8.png>
+Package pdftex.def Info: selection_8.png  used on input line 1469.
+(pdftex.def)             Requested size: 449.87659pt x 213.19452pt.
+
+Overfull \hbox (19.6702pt too wide) in paragraph at lines 1469--1469
+ [] 
+ []
+
+[26pdfTeX warning (ext4): destination with the same identifier (name{figure.9})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1473       \newpage
+                      <./selection_8.png>]
+Overfull \hbox (2.3199pt too wide) in paragraph at lines 1485--1485
+[]|\T1/cmr/m/n/10 bg_vbf_0_100| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1487--1487
+[]|\T1/cmr/m/n/10 bg_vbf_100_200| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1489--1489
+[]|\T1/cmr/m/n/10 bg_vbf_200_400| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1491--1491
+[]|\T1/cmr/m/n/10 bg_vbf_400_600| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1491--1491
+[]|\T1/cmr/m/n/10 -
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1493--1493
+[]|\T1/cmr/m/n/10 bg_vbf_600_800| 
+ []
+
+
+Overfull \hbox (17.31624pt too wide) in paragraph at lines 1495--1495
+[]|\T1/cmr/m/n/10 bg_vbf_800_1200| 
+ []
+
+
+Overfull \hbox (22.31502pt too wide) in paragraph at lines 1497--1497
+[]|\T1/cmr/m/n/10 bg_vbf_1200_1600| 
+ []
+
+
+Overfull \hbox (13.70601pt too wide) in paragraph at lines 1499--1499
+[]|\T1/cmr/m/n/10 bg_vbf_1600_inf| 
+ []
+
+
+Overfull \hbox (2.3199pt too wide) in paragraph at lines 1501--1501
+[]|\T1/cmr/m/n/10 bg_dip_0_100| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1503--1503
+[]|\T1/cmr/m/n/10 bg_dip_100_200| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1505--1505
+[]|\T1/cmr/m/n/10 bg_dip_200_400| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1507--1507
+[]|\T1/cmr/m/n/10 bg_dip_400_600| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1509--1509
+[]|\T1/cmr/m/n/10 bg_dip_600_800| 
+ []
+
+
+Overfull \hbox (17.31624pt too wide) in paragraph at lines 1511--1511
+[]|\T1/cmr/m/n/10 bg_dip_800_1200| 
+ []
+
+
+Overfull \hbox (22.31502pt too wide) in paragraph at lines 1513--1513
+[]|\T1/cmr/m/n/10 bg_dip_1200_1600| 
+ []
+
+
+Overfull \hbox (13.70601pt too wide) in paragraph at lines 1515--1515
+[]|\T1/cmr/m/n/10 bg_dip_1600_inf| 
+ []
+
+
+Overfull \hbox (55.33208pt too wide) in paragraph at lines 1479--1518
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1476--1519
+
+ []
+
+<selection_9.png, id=362, 999.735pt x 473.77pt>
+File: selection_9.png Graphic file (type png)
+<use selection_9.png>
+Package pdftex.def Info: selection_9.png  used on input line 1523.
+(pdftex.def)             Requested size: 449.87659pt x 213.19452pt.
+
+Overfull \hbox (19.6702pt too wide) in paragraph at lines 1523--1523
+ [] 
+ []
+
+[27pdfTeX warning (ext4): destination with the same identifier (name{figure.10}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1527       \newpage
+                      <./selection_9.png>]
+Overfull \hbox (2.3199pt too wide) in paragraph at lines 1539--1539
+[]|\T1/cmr/m/n/10 bg_vbf_0_100| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1541--1541
+[]|\T1/cmr/m/n/10 bg_vbf_100_200| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1543--1543
+[]|\T1/cmr/m/n/10 bg_vbf_200_400| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1545--1545
+[]|\T1/cmr/m/n/10 bg_vbf_400_600| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1547--1547
+[]|\T1/cmr/m/n/10 bg_vbf_600_800| 
+ []
+
+
+Overfull \hbox (17.31624pt too wide) in paragraph at lines 1549--1549
+[]|\T1/cmr/m/n/10 bg_vbf_800_1200| 
+ []
+
+
+Overfull \hbox (22.31502pt too wide) in paragraph at lines 1551--1551
+[]|\T1/cmr/m/n/10 bg_vbf_1200_1600| 
+ []
+
+
+Overfull \hbox (13.70601pt too wide) in paragraph at lines 1553--1553
+[]|\T1/cmr/m/n/10 bg_vbf_1600_inf| 
+ []
+
+
+Overfull \hbox (2.3199pt too wide) in paragraph at lines 1555--1555
+[]|\T1/cmr/m/n/10 bg_dip_0_100| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1557--1557
+[]|\T1/cmr/m/n/10 bg_dip_100_200| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1559--1559
+[]|\T1/cmr/m/n/10 bg_dip_200_400| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1561--1561
+[]|\T1/cmr/m/n/10 bg_dip_400_600| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1563--1563
+[]|\T1/cmr/m/n/10 bg_dip_600_800| 
+ []
+
+
+Overfull \hbox (17.31624pt too wide) in paragraph at lines 1565--1565
+[]|\T1/cmr/m/n/10 bg_dip_800_1200| 
+ []
+
+
+Overfull \hbox (22.31502pt too wide) in paragraph at lines 1567--1567
+[]|\T1/cmr/m/n/10 bg_dip_1200_1600| 
+ []
+
+
+Overfull \hbox (13.70601pt too wide) in paragraph at lines 1569--1569
+[]|\T1/cmr/m/n/10 bg_dip_1600_inf| 
+ []
+
+
+Overfull \hbox (55.33208pt too wide) in paragraph at lines 1533--1572
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1530--1573
+
+ []
+
+<selection_10.png, id=368, 999.735pt x 473.77pt>
+File: selection_10.png Graphic file (type png)
+<use selection_10.png>
+Package pdftex.def Info: selection_10.png  used on input line 1577.
+(pdftex.def)             Requested size: 449.87659pt x 213.19452pt.
+
+Overfull \hbox (19.6702pt too wide) in paragraph at lines 1577--1577
+ [] 
+ []
+
+[28pdfTeX warning (ext4): destination with the same identifier (name{figure.11}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1581       \newpage
+                      <./selection_10.png>]
+Overfull \hbox (2.3199pt too wide) in paragraph at lines 1593--1593
+[]|\T1/cmr/m/n/10 bg_vbf_0_100| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1595--1595
+[]|\T1/cmr/m/n/10 bg_vbf_100_200| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1597--1597
+[]|\T1/cmr/m/n/10 bg_vbf_200_400| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1599--1599
+[]|\T1/cmr/m/n/10 bg_vbf_400_600| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1601--1601
+[]|\T1/cmr/m/n/10 bg_vbf_600_800| 
+ []
+
+
+Overfull \hbox (17.31624pt too wide) in paragraph at lines 1603--1603
+[]|\T1/cmr/m/n/10 bg_vbf_800_1200| 
+ []
+
+
+Overfull \hbox (22.31502pt too wide) in paragraph at lines 1605--1605
+[]|\T1/cmr/m/n/10 bg_vbf_1200_1600| 
+ []
+
+
+Overfull \hbox (13.70601pt too wide) in paragraph at lines 1607--1607
+[]|\T1/cmr/m/n/10 bg_vbf_1600_inf| 
+ []
+
+
+Overfull \hbox (2.3199pt too wide) in paragraph at lines 1609--1609
+[]|\T1/cmr/m/n/10 bg_dip_0_100| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1611--1611
+[]|\T1/cmr/m/n/10 bg_dip_100_200| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1613--1613
+[]|\T1/cmr/m/n/10 bg_dip_200_400| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1615--1615
+[]|\T1/cmr/m/n/10 bg_dip_400_600| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1617--1617
+[]|\T1/cmr/m/n/10 bg_dip_600_800| 
+ []
+
+
+Overfull \hbox (17.31624pt too wide) in paragraph at lines 1619--1619
+[]|\T1/cmr/m/n/10 bg_dip_800_1200| 
+ []
+
+
+Overfull \hbox (22.31502pt too wide) in paragraph at lines 1621--1621
+[]|\T1/cmr/m/n/10 bg_dip_1200_1600| 
+ []
+
+
+Overfull \hbox (13.70601pt too wide) in paragraph at lines 1623--1623
+[]|\T1/cmr/m/n/10 bg_dip_1600_inf| 
+ []
+
+
+Overfull \hbox (55.33208pt too wide) in paragraph at lines 1587--1626
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1584--1627
+
+ []
+
+<selection_11.png, id=374, 999.735pt x 473.77pt>
+File: selection_11.png Graphic file (type png)
+<use selection_11.png>
+Package pdftex.def Info: selection_11.png  used on input line 1631.
+(pdftex.def)             Requested size: 449.87659pt x 213.19452pt.
+
+Overfull \hbox (19.6702pt too wide) in paragraph at lines 1631--1631
+ [] 
+ []
+
+[29pdfTeX warning (ext4): destination with the same identifier (name{figure.12}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1635       \newpage
+                      <./selection_11.png>]
+Overfull \hbox (2.3199pt too wide) in paragraph at lines 1647--1647
+[]|\T1/cmr/m/n/10 bg_vbf_0_100| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1649--1649
+[]|\T1/cmr/m/n/10 bg_vbf_100_200| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1651--1651
+[]|\T1/cmr/m/n/10 bg_vbf_200_400| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1653--1653
+[]|\T1/cmr/m/n/10 bg_vbf_400_600| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1655--1655
+[]|\T1/cmr/m/n/10 bg_vbf_600_800| 
+ []
+
+
+Overfull \hbox (17.31624pt too wide) in paragraph at lines 1657--1657
+[]|\T1/cmr/m/n/10 bg_vbf_800_1200| 
+ []
+
+
+Overfull \hbox (22.31502pt too wide) in paragraph at lines 1659--1659
+[]|\T1/cmr/m/n/10 bg_vbf_1200_1600| 
+ []
+
+
+Overfull \hbox (13.70601pt too wide) in paragraph at lines 1661--1661
+[]|\T1/cmr/m/n/10 bg_vbf_1600_inf| 
+ []
+
+
+Overfull \hbox (2.3199pt too wide) in paragraph at lines 1663--1663
+[]|\T1/cmr/m/n/10 bg_dip_0_100| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1665--1665
+[]|\T1/cmr/m/n/10 bg_dip_100_200| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1667--1667
+[]|\T1/cmr/m/n/10 bg_dip_200_400| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1669--1669
+[]|\T1/cmr/m/n/10 bg_dip_400_600| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1671--1671
+[]|\T1/cmr/m/n/10 bg_dip_600_800| 
+ []
+
+
+Overfull \hbox (17.31624pt too wide) in paragraph at lines 1673--1673
+[]|\T1/cmr/m/n/10 bg_dip_800_1200| 
+ []
+
+
+Overfull \hbox (22.31502pt too wide) in paragraph at lines 1675--1675
+[]|\T1/cmr/m/n/10 bg_dip_1200_1600| 
+ []
+
+
+Overfull \hbox (13.70601pt too wide) in paragraph at lines 1677--1677
+[]|\T1/cmr/m/n/10 bg_dip_1600_inf| 
+ []
+
+
+Overfull \hbox (55.33208pt too wide) in paragraph at lines 1641--1680
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1638--1681
+
+ []
+
+<selection_12.png, id=380, 999.735pt x 473.77pt>
+File: selection_12.png Graphic file (type png)
+<use selection_12.png>
+Package pdftex.def Info: selection_12.png  used on input line 1685.
+(pdftex.def)             Requested size: 449.87659pt x 213.19452pt.
+
+Overfull \hbox (19.6702pt too wide) in paragraph at lines 1685--1685
+ [] 
+ []
+
+[30pdfTeX warning (ext4): destination with the same identifier (name{figure.13}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1689       \newpage
+                      <./selection_12.png>]
+Overfull \hbox (2.3199pt too wide) in paragraph at lines 1701--1701
+[]|\T1/cmr/m/n/10 bg_vbf_0_100| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1703--1703
+[]|\T1/cmr/m/n/10 bg_vbf_100_200| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1705--1705
+[]|\T1/cmr/m/n/10 bg_vbf_200_400| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1707--1707
+[]|\T1/cmr/m/n/10 bg_vbf_400_600| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1709--1709
+[]|\T1/cmr/m/n/10 bg_vbf_600_800| 
+ []
+
+
+Overfull \hbox (17.31624pt too wide) in paragraph at lines 1711--1711
+[]|\T1/cmr/m/n/10 bg_vbf_800_1200| 
+ []
+
+
+Overfull \hbox (22.31502pt too wide) in paragraph at lines 1713--1713
+[]|\T1/cmr/m/n/10 bg_vbf_1200_1600| 
+ []
+
+
+Overfull \hbox (13.70601pt too wide) in paragraph at lines 1715--1715
+[]|\T1/cmr/m/n/10 bg_vbf_1600_inf| 
+ []
+
+
+Overfull \hbox (2.3199pt too wide) in paragraph at lines 1717--1717
+[]|\T1/cmr/m/n/10 bg_dip_0_100| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1719--1719
+[]|\T1/cmr/m/n/10 bg_dip_100_200| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1721--1721
+[]|\T1/cmr/m/n/10 bg_dip_200_400| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1723--1723
+[]|\T1/cmr/m/n/10 bg_dip_400_600| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1725--1725
+[]|\T1/cmr/m/n/10 bg_dip_600_800| 
+ []
+
+
+Overfull \hbox (17.31624pt too wide) in paragraph at lines 1727--1727
+[]|\T1/cmr/m/n/10 bg_dip_800_1200| 
+ []
+
+
+Overfull \hbox (22.31502pt too wide) in paragraph at lines 1729--1729
+[]|\T1/cmr/m/n/10 bg_dip_1200_1600| 
+ []
+
+
+Overfull \hbox (13.70601pt too wide) in paragraph at lines 1731--1731
+[]|\T1/cmr/m/n/10 bg_dip_1600_inf| 
+ []
+
+
+Overfull \hbox (55.33208pt too wide) in paragraph at lines 1695--1734
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1692--1735
+
+ []
+
+<selection_13.png, id=387, 999.735pt x 473.77pt>
+File: selection_13.png Graphic file (type png)
+<use selection_13.png>
+Package pdftex.def Info: selection_13.png  used on input line 1739.
+(pdftex.def)             Requested size: 449.87659pt x 213.19452pt.
+
+Overfull \hbox (19.6702pt too wide) in paragraph at lines 1739--1739
+ [] 
+ []
+
+[31pdfTeX warning (ext4): destination with the same identifier (name{figure.14}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1743       \newpage
+                      <./selection_13.png>]
+Overfull \hbox (2.3199pt too wide) in paragraph at lines 1755--1755
+[]|\T1/cmr/m/n/10 bg_vbf_0_100| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1757--1757
+[]|\T1/cmr/m/n/10 bg_vbf_100_200| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1759--1759
+[]|\T1/cmr/m/n/10 bg_vbf_200_400| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1761--1761
+[]|\T1/cmr/m/n/10 bg_vbf_400_600| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1763--1763
+[]|\T1/cmr/m/n/10 bg_vbf_600_800| 
+ []
+
+
+Overfull \hbox (17.31624pt too wide) in paragraph at lines 1765--1765
+[]|\T1/cmr/m/n/10 bg_vbf_800_1200| 
+ []
+
+
+Overfull \hbox (22.31502pt too wide) in paragraph at lines 1767--1767
+[]|\T1/cmr/m/n/10 bg_vbf_1200_1600| 
+ []
+
+
+Overfull \hbox (13.70601pt too wide) in paragraph at lines 1769--1769
+[]|\T1/cmr/m/n/10 bg_vbf_1600_inf| 
+ []
+
+
+Overfull \hbox (2.3199pt too wide) in paragraph at lines 1771--1771
+[]|\T1/cmr/m/n/10 bg_dip_0_100| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1773--1773
+[]|\T1/cmr/m/n/10 bg_dip_100_200| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1775--1775
+[]|\T1/cmr/m/n/10 bg_dip_200_400| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1777--1777
+[]|\T1/cmr/m/n/10 bg_dip_400_600| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1779--1779
+[]|\T1/cmr/m/n/10 bg_dip_600_800| 
+ []
+
+
+Overfull \hbox (17.31624pt too wide) in paragraph at lines 1781--1781
+[]|\T1/cmr/m/n/10 bg_dip_800_1200| 
+ []
+
+
+Overfull \hbox (22.31502pt too wide) in paragraph at lines 1783--1783
+[]|\T1/cmr/m/n/10 bg_dip_1200_1600| 
+ []
+
+
+Overfull \hbox (13.70601pt too wide) in paragraph at lines 1785--1785
+[]|\T1/cmr/m/n/10 bg_dip_1600_inf| 
+ []
+
+
+Overfull \hbox (55.33208pt too wide) in paragraph at lines 1749--1788
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1746--1789
+
+ []
+
+<selection_14.png, id=393, 999.735pt x 473.77pt>
+File: selection_14.png Graphic file (type png)
+<use selection_14.png>
+Package pdftex.def Info: selection_14.png  used on input line 1793.
+(pdftex.def)             Requested size: 449.87659pt x 213.19452pt.
+
+Overfull \hbox (19.6702pt too wide) in paragraph at lines 1793--1793
+ [] 
+ []
+
+[32pdfTeX warning (ext4): destination with the same identifier (name{figure.15}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1797       \newpage
+                      <./selection_14.png>]
+Overfull \hbox (2.3199pt too wide) in paragraph at lines 1809--1809
+[]|\T1/cmr/m/n/10 bg_vbf_0_100| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1811--1811
+[]|\T1/cmr/m/n/10 bg_vbf_100_200| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1813--1813
+[]|\T1/cmr/m/n/10 bg_vbf_200_400| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1815--1815
+[]|\T1/cmr/m/n/10 bg_vbf_400_600| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1817--1817
+[]|\T1/cmr/m/n/10 bg_vbf_600_800| 
+ []
+
+
+Overfull \hbox (17.31624pt too wide) in paragraph at lines 1819--1819
+[]|\T1/cmr/m/n/10 bg_vbf_800_1200| 
+ []
+
+
+Overfull \hbox (22.31502pt too wide) in paragraph at lines 1821--1821
+[]|\T1/cmr/m/n/10 bg_vbf_1200_1600| 
+ []
+
+
+Overfull \hbox (13.70601pt too wide) in paragraph at lines 1823--1823
+[]|\T1/cmr/m/n/10 bg_vbf_1600_inf| 
+ []
+
+
+Overfull \hbox (2.3199pt too wide) in paragraph at lines 1825--1825
+[]|\T1/cmr/m/n/10 bg_dip_0_100| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1827--1827
+[]|\T1/cmr/m/n/10 bg_dip_100_200| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1829--1829
+[]|\T1/cmr/m/n/10 bg_dip_200_400| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1831--1831
+[]|\T1/cmr/m/n/10 bg_dip_400_600| 
+ []
+
+
+Overfull \hbox (12.31746pt too wide) in paragraph at lines 1833--1833
+[]|\T1/cmr/m/n/10 bg_dip_600_800| 
+ []
+
+
+Overfull \hbox (17.31624pt too wide) in paragraph at lines 1835--1835
+[]|\T1/cmr/m/n/10 bg_dip_800_1200| 
+ []
+
+
+Overfull \hbox (22.31502pt too wide) in paragraph at lines 1837--1837
+[]|\T1/cmr/m/n/10 bg_dip_1200_1600| 
+ []
+
+
+Overfull \hbox (13.70601pt too wide) in paragraph at lines 1839--1839
+[]|\T1/cmr/m/n/10 bg_dip_1600_inf| 
+ []
+
+
+Overfull \hbox (55.33208pt too wide) in paragraph at lines 1803--1842
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1800--1843
+
+ []
+
+<selection_15.png, id=399, 999.735pt x 473.77pt>
+File: selection_15.png Graphic file (type png)
+<use selection_15.png>
+Package pdftex.def Info: selection_15.png  used on input line 1847.
+(pdftex.def)             Requested size: 449.87659pt x 213.19452pt.
+
+Overfull \hbox (19.6702pt too wide) in paragraph at lines 1847--1847
+ [] 
+ []
+
+[33pdfTeX warning (ext4): destination with the same identifier (name{figure.16}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1851       \newpage
+                      <./selection_15.png>]
+Underfull \hbox (badness 4872) in paragraph at lines 1860--1861
+[]|\T1/cmr/m/n/10 Rejected events:
+ []
+
+
+Overfull \hbox (10.85573pt too wide) in paragraph at lines 1867--1867
+[]|\T1/cmr/m/n/10 bg_vbf_0_100| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1867--1868
+[]|\T1/cmr/m/n/10 0.009570 +/--
+ []
+
+
+Overfull \hbox (20.85329pt too wide) in paragraph at lines 1869--1869
+[]|\T1/cmr/m/n/10 bg_vbf_100_200| 
+ []
+
+
+Overfull \hbox (20.85329pt too wide) in paragraph at lines 1871--1871
+[]|\T1/cmr/m/n/10 bg_vbf_200_400| 
+ []
+
+
+Overfull \hbox (20.85329pt too wide) in paragraph at lines 1873--1873
+[]|\T1/cmr/m/n/10 bg_vbf_400_600| 
+ []
+
+
+Overfull \hbox (20.85329pt too wide) in paragraph at lines 1875--1875
+[]|\T1/cmr/m/n/10 bg_vbf_600_800| 
+ []
+
+
+Overfull \hbox (25.85207pt too wide) in paragraph at lines 1877--1877
+[]|\T1/cmr/m/n/10 bg_vbf_800_1200| 
+ []
+
+
+Overfull \hbox (30.85085pt too wide) in paragraph at lines 1879--1879
+[]|\T1/cmr/m/n/10 bg_vbf_1200_1600| 
+ []
+
+
+Overfull \hbox (22.24184pt too wide) in paragraph at lines 1881--1881
+[]|\T1/cmr/m/n/10 bg_vbf_1600_inf| 
+ []
+
+
+Overfull \hbox (10.85573pt too wide) in paragraph at lines 1883--1883
+[]|\T1/cmr/m/n/10 bg_dip_0_100| 
+ []
+
+
+Overfull \hbox (20.85329pt too wide) in paragraph at lines 1885--1885
+[]|\T1/cmr/m/n/10 bg_dip_100_200| 
+ []
+
+
+Overfull \hbox (20.85329pt too wide) in paragraph at lines 1887--1887
+[]|\T1/cmr/m/n/10 bg_dip_200_400| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1887--1887
+[]|\T1/cmr/m/n/10 0.003138 +/--
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1887--1888
+[]|\T1/cmr/m/n/10 0.003074 +/--
+ []
+
+
+Overfull \hbox (20.85329pt too wide) in paragraph at lines 1889--1889
+[]|\T1/cmr/m/n/10 bg_dip_400_600| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1889--1889
+[]|\T1/cmr/m/n/10 0.018358 +/--
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1889--1890
+[]|\T1/cmr/m/n/10 0.018241 +/--
+ []
+
+
+Overfull \hbox (20.85329pt too wide) in paragraph at lines 1891--1891
+[]|\T1/cmr/m/n/10 bg_dip_600_800| 
+ []
+
+
+Overfull \hbox (25.85207pt too wide) in paragraph at lines 1893--1893
+[]|\T1/cmr/m/n/10 bg_dip_800_1200| 
+ []
+
+
+Overfull \hbox (30.85085pt too wide) in paragraph at lines 1895--1895
+[]|\T1/cmr/m/n/10 bg_dip_1200_1600| 
+ []
+
+
+Overfull \hbox (22.24184pt too wide) in paragraph at lines 1897--1897
+[]|\T1/cmr/m/n/10 bg_dip_1600_inf| 
+ []
+
+
+Overfull \hbox (27.68684pt too wide) in paragraph at lines 1857--1900
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1854--1901
+
+ []
+
+[34]
+Overfull \hbox (20.97742pt too wide) in paragraph at lines 1917--1928
+ [] 
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1931.
+[35]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1931.
+ (./main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1931.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1931.
+
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 547C0496E4CCC2189F264D313BD0582B;2740.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1931.
+ ) 
+Here is how much of TeX's memory you used:
+ 7420 strings out of 492616
+ 103997 string characters out of 6129482
+ 214085 words of memory out of 5000000
+ 11125 multiletter control sequences out of 15000+600000
+ 16009 words of font info for 37 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 39i,13n,35p,380b,389s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></u
+sr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
+r/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/
+local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/lo
+cal/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/loca
+l/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/
+texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb></usr/local/te
+xlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texl
+ive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texliv
+e/2019/texmf-dist/fonts/type1/public/cm-super/sfsx1000.pfb></usr/local/texlive/
+2019/texmf-dist/fonts/type1/public/cm-super/sfsx1728.pfb></usr/local/texlive/20
+19/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2019
+/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on main.pdf (36 pages, 677477 bytes).
+PDF statistics:
+ 480 PDF objects out of 1000 (max. 8388607)
+ 407 compressed objects within 5 object streams
+ 96 named destinations out of 1000 (max. 500000)
+ 422 words of extra memory for PDF output out of 10000 (max. 10000000)
+

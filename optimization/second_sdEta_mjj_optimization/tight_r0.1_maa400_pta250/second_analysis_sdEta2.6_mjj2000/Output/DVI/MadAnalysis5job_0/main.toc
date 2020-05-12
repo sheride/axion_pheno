@@ -1,0 +1,26 @@
+\contentsline {section}{\numberline {1} Setup}{2}{section.1}% 
+\contentsline {subsection}{\numberline {1.1} Command history}{2}{subsection.1.1}% 
+\contentsline {subsection}{\numberline {1.2} Configuration}{4}{subsection.1.2}% 
+\contentsline {section}{\numberline {2} Datasets}{5}{section.2}% 
+\contentsline {subsection}{\numberline {2.1} signal}{5}{subsection.2.1}% 
+\contentsline {subsection}{\numberline {2.2} bg\_vbf\_0\_100}{5}{subsection.2.2}% 
+\contentsline {subsection}{\numberline {2.3} bg\_vbf\_100\_200}{5}{subsection.2.3}% 
+\contentsline {subsection}{\numberline {2.4} bg\_vbf\_200\_400}{6}{subsection.2.4}% 
+\contentsline {subsection}{\numberline {2.5} bg\_vbf\_400\_600}{6}{subsection.2.5}% 
+\contentsline {subsection}{\numberline {2.6} bg\_vbf\_600\_800}{7}{subsection.2.6}% 
+\contentsline {subsection}{\numberline {2.7} bg\_vbf\_800\_1200}{7}{subsection.2.7}% 
+\contentsline {subsection}{\numberline {2.8} bg\_vbf\_1200\_1600}{8}{subsection.2.8}% 
+\contentsline {subsection}{\numberline {2.9} bg\_vbf\_1600\_inf}{8}{subsection.2.9}% 
+\contentsline {subsection}{\numberline {2.10} bg\_dip\_0\_100}{8}{subsection.2.10}% 
+\contentsline {subsection}{\numberline {2.11} bg\_dip\_100\_200}{9}{subsection.2.11}% 
+\contentsline {subsection}{\numberline {2.12} bg\_dip\_200\_400}{9}{subsection.2.12}% 
+\contentsline {subsection}{\numberline {2.13} bg\_dip\_400\_600}{10}{subsection.2.13}% 
+\contentsline {subsection}{\numberline {2.14} bg\_dip\_600\_800}{10}{subsection.2.14}% 
+\contentsline {subsection}{\numberline {2.15} bg\_dip\_800\_1200}{10}{subsection.2.15}% 
+\contentsline {subsection}{\numberline {2.16} bg\_dip\_1200\_1600}{11}{subsection.2.16}% 
+\contentsline {subsection}{\numberline {2.17} bg\_dip\_1600\_inf}{11}{subsection.2.17}% 
+\contentsline {section}{\numberline {3} Histos and cuts}{12}{section.3}% 
+\contentsline {subsection}{\numberline {3.1}Cut 1}{12}{subsection.3.1}% 
+\contentsline {subsection}{\numberline {3.2}Cut 2}{13}{subsection.3.2}% 
+\contentsline {section}{\numberline {4} Summary}{14}{section.4}% 
+\contentsline {subsection}{\numberline {4.1}Cut-flow charts}{14}{subsection.4.1}% 

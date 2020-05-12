@@ -1,0 +1,56 @@
+################################################################################
+#                  MADANALYSIS5 CONFIGURATION FILE FOR PLOTS                   #
+#                      produced by MadAnalysis5 version                        #
+#                                                                              #
+################################################################################
+
+################################################################################
+#                               Files and Paths                                #
+################################################################################
+<Files>
+  jodir = /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/optimization/ma_scripts/inspecting_sdeta
+  html = 1
+  latex = 1
+  pdflatex = 1
+</Files>
+
+################################################################################
+#                   Global information related to the layout                   #
+################################################################################
+<Main>
+  lumi = 40.0 # fb^{-1}
+  stack = 1
+</Main>
+
+################################################################################
+#                            Definition of datasets                            #
+################################################################################
+<Dataset name="signal">
+  <Physics>
+    background = False
+    weight = 1.0
+    xsection = 0.0
+  </Physics>
+  <Layout>
+    title = signal
+    linecolor = 0
+    linestyle = 0
+    lineshade = 0
+    linewidth = 1
+    backcolor = 0
+    backstyle = 1
+    backshade = 0
+  </Layout>
+</Dataset>
+
+################################################################################
+#              Definition of the selection : histograms and cuts               #
+################################################################################
+<Histogram name="selection0">
+  stack = 0
+  titleX = "sd#eta [ jets_{1} jets_{2} ] "
+  titleY = "Events "
+  xmin = -10.0
+  xmax = 10.0
+</Histogram>
+
