@@ -124,14 +124,16 @@ def second_sdEta_mjj_optimization_heatmap(smooth=False, contour=False):
                         xlabel=r'$m^{jj}$ (GeV)', ylabel=r'$\Delta \eta^{jj}$',
                         file_name=file_name, smooth=smooth, contour=contour,
                         save=True)
+            print(r, folders[i][-13:])
+            print(dataset)
 
 
-sdEta_mjj_optimization_heatmap()
-sdEta_mjj_optimization_heatmap(smooth=True)
-sdEta_mjj_optimization_heatmap(contour=True)
-pta_maa_optimization_heatmap()
-pta_maa_optimization_heatmap(smooth=True)
-pta_maa_optimization_heatmap(contour=True)
+#sdEta_mjj_optimization_heatmap()
+#sdEta_mjj_optimization_heatmap(smooth=True)
+#sdEta_mjj_optimization_heatmap(contour=True)
+#pta_maa_optimization_heatmap()
+#pta_maa_optimization_heatmap(smooth=True)
+#pta_maa_optimization_heatmap(contour=True)
 second_sdEta_mjj_optimization_heatmap()
-second_sdEta_mjj_optimization_heatmap(smooth=True)
-second_sdEta_mjj_optimization_heatmap(contour=True)
+#second_sdEta_mjj_optimization_heatmap(smooth=True)
+#second_sdEta_mjj_optimization_heatmap(contour=True)

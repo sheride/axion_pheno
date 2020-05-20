@@ -127,13 +127,36 @@ def no_mg_cuts_mjj_more_zoom_histos():
               r'$pp \; \to \; jj + \gamma\gamma \; (QCD = 0)$',
               r'$pp \; \to \; jj + \gamma\gamma$']
 
-    xlabel = r'$m^{jj}$ (GeV)'
+    xlabel = r'$\Delta \eta^{jj}$'
 
     divisions = [0]  # for some reason gen_norm_one_histo overwrites?
     opt.gen_histo(file_name, divisions,
                   out_file_name=out_file_name, labels=labels,
                   ylabel=ylabel, save=True, norm_one=True,
                   xlabel=xlabel)
+
+
+def no_mg_cuts_no_gg_sdeta_plot():
+    file_name = ('./pre_optimization/no_gg_sdeta_plots/ma_files' +
+                 '/Output/Histos/MadAnalysis5job_0/selection_0.py')
+    out_file_name = (
+            './pre_optimization/no_gg_sdeta_plots/selection_8.png')
+    ylabel = r'Arbitrary Units (Normalized to Unity)'
+
+    labels = [r"$qq' \; \to \; jj + ax \; (\to \; \gamma\gamma)$",
+              r'$pp \; \to \; jj + \gamma\gamma \; (QCD = 0)$',
+              r'$pp \; \to \; jj + \gamma\gamma$']
+
+    xlabel = r'$\Delta \eta^{jj}$ (GeV)'
+
+    min_x = 2.4
+    max_x = 8
+
+    divisions = [0, 1, 9]  # for some reason gen_norm_one_histo overwrites?
+    opt.gen_histo(file_name, divisions,
+                  out_file_name=out_file_name, labels=labels,
+                  ylabel=ylabel, save=True, norm_one=True,
+                  xlabel=xlabel, min_x=min_x, max_x=max_x)
 
 
 def just_sdeta_cut_histos():
@@ -178,7 +201,7 @@ def ht_stitching_confirm():
     file_name = ('./pre_optimization/no_ma_cuts/ma_files/Output/Histos/'
                  + 'MadAnalysis5job_0/selection_12.py')
     plot_name = './pre_optimization/no_ma_cuts/kin_norm_one/THT_stitch'
-    ylabel = r'Arbitrary Units (Normalized to Unity)'
+    ylabel = r'Events ($\mathcal{L}_{int} = 40$ fb$^{-1}$)'
     labels = [r'$pp \; \to \; jj + ax \; (\to \; \gamma\gamma)$',
               r'$pp \; \to \; jj + \gamma\gamma \; (QCD = 0)$',
               r'$pp \; \to \; jj + \gamma\gamma$']
@@ -228,6 +251,49 @@ def no_ma_cuts_histos():
                       ylabel=norm_one_ylabel, save=True, norm_one=True,
                       xlabel=label, max_x=x_max, min_x=x_min)
         divisions = [0, 1, 9]  # for some reason gen_norm_one_histo overwrites?
+        opt.gen_histo(file_name, divisions,
+                      out_file_name=s_file, labels=labels,
+                      ylabel=stacked_ylabel, save=True, norm_one=False,
+                      xlabel=label, max_x=x_max, min_x=x_min)
+
+
+def no_ma_cuts_100GeV_histos():
+    file_names = ['./pre_optimization/no_ma_cuts_100GeV/ma_files/Output/'
+                  + 'Histos/MadAnalysis5job_0/selection_' + str(i) + '.py'
+                  for i in range(12)]
+    norm_one_file_names = [
+            './pre_optimization/no_ma_cuts_100GeV/kin_norm_one/selection_'
+            + str(i) for i in range(12)]
+    stacked_file_names = [
+            './pre_optimization/no_ma_cuts_100GeV/kin_stacked/selection_'
+            + str(i) for i in range(12)]
+    norm_one_ylabel = r'Arbitrary Units (Normalized to Unity)'
+    stacked_ylabel = r'Events ($\mathcal{L}_{int} = 40$ fb$^{-1}$)'
+
+    labels = [r'$pp \; \to \; jj + ax \; (\to \; \gamma\gamma)$',
+              r'$pp \; \to \; jj + \gamma\gamma \; (QCD = 0)$',
+              r'$pp \; \to \; jj + \gamma\gamma$']
+
+    xlabels = [r'$p_T^{j_1}$ (GeV)', r'$\eta^{j_1}$', r'$\phi^{j_1}$',
+               r'$p_T^{j_2}$ (GeV)', r'$\eta^{j_2}$', r'$\phi^{j_2}$',
+               r'$\Delta R^{jj}$', r'$m^{jj}$ (GeV)',
+               r'$\Delta \eta^{jj}$',
+               r'$THT$ (GeV)', r'$MET$ (GeV)', r'$TET$ (GeV)']
+
+    x_mins = [None, None, None, None, None, None, None, 120, 2.4, None, None,
+              None, None, None, None]
+    x_maxes = [None, None, None, None, None, None, None, 2000, None, None,
+               None, None, None, None, None]
+
+    for file_name, n_file, s_file, label, x_min, x_max in zip(
+            file_names, norm_one_file_names, stacked_file_names, xlabels,
+            x_mins, x_maxes):
+        divisions = [0]  # for some reason gen_norm_one_histo overwrites?
+        opt.gen_histo(file_name, divisions,
+                      out_file_name=n_file, labels=labels,
+                      ylabel=norm_one_ylabel, save=True, norm_one=True,
+                      xlabel=label, max_x=x_max, min_x=x_min)
+        divisions = [0]
         opt.gen_histo(file_name, divisions,
                       out_file_name=s_file, labels=labels,
                       ylabel=stacked_ylabel, save=True, norm_one=False,
@@ -512,4 +578,6 @@ def four_cuts_stacked_histos_custom_bins():
 # ht_stitching_confirm()
 # sdEta_mjj_tight_norm_one_log_histos()
 # no_mg_cuts_mjj_zoom_histos()
-no_mg_cuts_mjj_more_zoom_histos()
+# no_mg_cuts_mjj_more_zoom_histos()
+# no_ma_cuts_100GeV_histos()
+no_mg_cuts_no_gg_sdeta_plot()

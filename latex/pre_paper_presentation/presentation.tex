@@ -1,4 +1,4 @@
-\documentclass[]{beamer}
+\documentclass[handout]{beamer}
 \usepackage[utf8]{inputenc}
 \usetheme{Madrid}
 \usepackage{fancyvrb}
@@ -39,11 +39,15 @@
 % BEAMER SETTINGS
 %
 \setbeamertemplate{itemize item}{\color{black}$\bullet$}
+\setbeamertemplate{itemize subitem}{\color{black}$\bullet$}
 \setbeamerfont{block title}{size=\small}
 \setbeamerfont{block body}{size=\tiny}
+\setbeamertemplate{itemize/enumerate body begin}{\tiny}
+\setbeamertemplate{itemize/enumerate subbody begin}{\tiny}
 \AtBeginEnvironment{tabular}{\tiny}
 \tikzset{font=\tiny}
-%\includeonlyframes{current}
+\setbeamertemplate{navigation symbols}{}
+% \includeonlyframes{current}
 
 %
 % TITLE SLIDE INFO
@@ -79,31 +83,28 @@
 % 3) MOTIVATING AXIONS
 \begin{frame}{Motivating Axions}
     \begin{block}<+(1)->{Theoretical Origins}
-        \begin{itemize}
-            \item The structure of quantum chromodynamics permits a violation of the combined charge conjugation-parity symmetry, but experimental constraints (stemming from symmetry breaking repercussions on the neutron electric dipole moment) require this violation to be small
-            \item It is unclear why this symmetry violation should simultaneously exist and be so small: this is the \textbf{strong CP problem}
-            \item Roberto Peccei and Helen Quinn addressed this conundrum in 1977 by promoting the CP violation phase $\overline{\Theta}$---previously a Standard Model input requiring experimental measurement---to a scalar field which spontaneously breaks a new global symmetry (a Peccei–Quinn symmetry)
+        \begin{itemize}[<+(1)->]
+            \item The structure of quantum chromodynamics permits a CP (charge conjugation-parity) symmetry violation, but experimental constraints require this violation to be small 
+            % this is similar to the weak force, but we observe/have explained CP violation there, but we haven't even seen it for the strong force
+            % stemming from symmetry breaking repercussions on the neutron electric dipole moment
+            \item It is unclear why this symmetry violation should simultaneously exist and be so small: this is the \textbf{strong CP problem} 
+            \item In 1977, Roberto Peccei and Helen Quinn addressed this conundrum by promoting the CP violation phase $\overline{\Theta}$---previously a Standard Model input requiring experimental measurement---to a scalar field which spontaneously breaks a new global symmetry (a Peccei–Quinn symmetry)
             \item The quanta (or boson) of this new scalar field is the \textbf{axion}
         \end{itemize}
     \end{block}
-    
-    \smallskip
-    
     \begin{block}<+(1)->{Axion Properties}
-        \begin{itemize}
+        \begin{itemize}[<+(1)->]
             \item The axion is a neutral spin-$0$ boson, and different models permit widely varied mass values
-            \item If the axion is sufficiently light, it presents itself as a dark matter candidate particle
-            \item Axion theories require minor modifications to classical electrodynamics, as the presence of the axion serves to ``rotate'' the electric and magnetic fields into each other to an extent proportional to axion coupling and field strength 
+            \item Sufficiently light axions are compatible with current dark matter relic density calculations, making these light axions dark matter candidates
+            \item Axion theories modify classical electrodynamics: the axion ``rotates'' the electric and magnetic fields into each other by an amount proportional to axion coupling and field strength 
         \end{itemize}
     \end{block}
-    
-    \smallskip
-    
     \begin{block}<+(1)->{Axion Literature}
-        \begin{itemize}
+        \begin{itemize}[<+(1)->]
             \item Astrophysics/cosmological experiments place bounds on axions and axion-like particles (ALPs) masses in some models, requiring them to be eV scale or lighter
+            % Berenji et al. obtained a 95% confidence interval upper limit on the axion mass of 0.079 eV.
             \item However, there still exist models which enable axions and ALPs to have masses in the MeV and GeV scales
-            \item ``Heavy axions'' have been studied at the LHC, but primarily at higher mass scales due to sensitivity limitations  
+            \item Heavy axions have been studied at the LHC, but primarily at higher mass scales ($\sim 100$ GeV) due to sensitivity limitations  
         \end{itemize}
     \end{block}
 \end{frame}
@@ -112,7 +113,7 @@
 \begin{frame}{Motivating the Vector Boson Fusion Approach}
     \centering
     \uncover<+(1)->{
-        \scalebox{0.8}{
+        \scalebox{1.5}{
             \begin{tikzpicture}
                 \begin{feynman}[small]
                     % top to bottom, pre-axion
@@ -145,11 +146,13 @@
     }
     
     \begin{block}<+(1)->{Description}
-        \begin{itemize}
-            \item Vector boson fusion processes (VBF; exhibited above) are experimentally important due to their distinctiveness at the LHC
-            \item In particular, the so-called ``tagged jets'' (the outgoing quarks in the above diagram) carry tell-tale high pseudorapidities
-            \item This VBF kinematic signature suppresses background
-            \item VBF cross sections typically surpass those of other topologies (Drell-Yan, etc) in new-physics processes with heavy new particles
+        \begin{itemize}[<+(1)->]
+            \item Vector boson fusion processes (VBF) are experimentally important due to their distinctiveness at the LHC (prototypical Feynman diagram given above)
+            \begin{itemize}[<+(1)->]
+                \item In particular, the ``tagged jets'' (outgoing quarks above) carry tell-tale high pseudorapidities
+                \item This VBF kinematic signature suppresses many background channels, including those both with and without QCD vertices 
+            \end{itemize}
+            \item VBF cross sections typically surpass those of other topologies (Drell-Yan, etc) in new-physics processes with sufficiently heavy new particles
         \end{itemize}
     \end{block}
 \end{frame}
@@ -165,79 +168,80 @@
 \begin{frame}{Signal Generation}
     \begin{center}
         \begin{block}<+(1)->{Process}
-            Signal generated using \textbf{MadGraph} (version \textbf{2.6.5}).
+            \begin{itemize}[<+(1)->]
+                \item Signal generated using \textbf{MadGraph} (version \textbf{2.6.5}) with the following command
             
-            \smallskip
+                \smallskip
             
-            \texttt{import model ALP\_chiral\_UFO} \newline
-            \texttt{generate p p > ax j j QCD=0, ax > a a}
+                \texttt{import model ALP\_chiral\_UFO} \newline
+                \texttt{generate p p > ax j j QCD=0, ax > a a}
             
-            \smallskip
+                \smallskip
             
-            We choose to consider an axion mass of \textbf{1 MeV}. Only default MadGraph cuts employed: e.g., $p_T^j > 20$ GeV, $p_T^\gamma > 10$ GeV
+                \item Our studies focus on an axion mass of \textbf{1 MeV}
+                \item Only default MadGraph cuts employed: e.g., $p_T^j > 20$ GeV, $p_T^\gamma > 10$ GeV
+            \end{itemize}
         \end{block}
         
-    \uncover<+(1)->{
-        \scalebox{0.75}{
-            \begin{tikzpicture}
-                \begin{feynman}[small]
-                    % top to bottom, pre-axion
-                    \vertex (v1); % top jet vertex
-                    \vertex [left=of v1] (in1) {$p \equiv$}; % top incoming particle
-                    \vertex [above right=of v1] (j1) ; % top jet
-                    \vertex [below right=of v1] (v3); % axion vertex
-                    \vertex [below left=of v3] (v2); % bottom jet vertex
-                    \vertex [below right=of v2] (j2);  % bottom jet
-                    \vertex [left=of v2] (in2) {$p \equiv $};  % bottom incoming particle
-                    % axion onward
-                    \vertex [right=of v3] (ax);
-                    \vertex [above right=of ax] (p1);
-                    \vertex [below right=of ax] (p2);
-                    
-                    \diagram*{
-                        (in1) -- [plain, edge label=$q$] (v1),
-                        (in2) -- [plain, edge label=$q'$] (v2),
-                        (v1) -- [plain, edge label=$q$] (j1),
-                        (v2) -- [plain, edge label'=$q'$] (j2),
-                        (v1) -- [boson, edge label=$Z/\gamma$] (v3),
-                        (v2) -- [boson, edge label'=$Z/\gamma$] (v3),
-                        (v3) -- [scalar, edge label=$A$] (ax),
-                        (ax) -- [boson, edge label=$\gamma$] (p1),
-                        (ax) -- [boson, edge label'=$\gamma$] (p2),
-                    };
-                \end{feynman}
-            \end{tikzpicture}
-        }
-    }
-            
-    \begin{block}<+(1)->{Comments}
-        \begin{itemize}
-            \item \texttt{QCD = 0} selected due to our interest in axions with \textbf{negligible strong force couplings}
-            \item \texttt{ax > a a} channel selected due to our emphasis on \textbf{lighter axions} (photons dominating heavier bosons)
-            \item The significance of our studies arises in part from small axion mass scales probed
-        \end{itemize}
-    \end{block}
+        \bigskip
         
+        \uncover<+(1)->{
+            \scalebox{0.9}{
+                \begin{tikzpicture}
+                    \begin{feynman}[small]
+                        % top to bottom, pre-axion
+                        \vertex (v1); % top jet vertex
+                        \vertex [left=of v1] (in1) {$p \equiv$}; % top incoming particle
+                        \vertex [above right=of v1] (j1) ; % top jet
+                        \vertex [below right=of v1] (v3); % axion vertex
+                        \vertex [below left=of v3] (v2); % bottom jet vertex
+                        \vertex [below right=of v2] (j2);  % bottom jet
+                        \vertex [left=of v2] (in2) {$p \equiv $};  % bottom incoming particle
+                        % axion onward
+                        \vertex [right=of v3] (ax);
+                        \vertex [above right=of ax] (p1);
+                        \vertex [below right=of ax] (p2);
+                        
+                        \diagram*{
+                            (in1) -- [plain, edge label=$q$] (v1),
+                            (in2) -- [plain, edge label=$q'$] (v2),
+                            (v1) -- [plain, edge label=$q$] (j1),
+                            (v2) -- [plain, edge label'=$q'$] (j2),
+                            (v1) -- [boson, edge label=$Z/\gamma$] (v3),
+                            (v2) -- [boson, edge label'=$Z/\gamma$] (v3),
+                            (v3) -- [scalar, edge label=$A$] (ax),
+                            (ax) -- [boson, edge label=$\gamma$] (p1),
+                            (ax) -- [boson, edge label'=$\gamma$] (p2),
+                        };
+                    \end{feynman}
+                \end{tikzpicture}
+            }
+        }
+        \begin{block}<+(1)->{Comments}
+            \begin{itemize}[<+(1)->]
+                \item \texttt{QCD = 0} selected due to our interest in axions with \textbf{negligible strong force couplings}
+                \item \texttt{ax > a a} channel selected due to our emphasis on \textbf{lighter axions} (photons dominating heavier bosons)
+                \item The significance of our studies arises in part from small axion mass scales probed
+            \end{itemize}
+        \end{block}
     \end{center}
 \end{frame}
 
 % 6) INITIAL KINEMATICS
 \begin{frame}{Initial Kinematics}
     \begin{columns}
-        \begin{column}{0.45\linewidth}
+        \begin{column}{.4\linewidth}
             \centering
-            \includegraphics<+(1)->[width=0.8\linewidth]{images/no_mg_cuts_kinematics/selection_8.png} % delta eta jj\\
-            
-            \bigskip
-            
-            \includegraphics<+(1)->[width=0.8\linewidth]{images/no_mg_cuts_kinematics/selection_7.png} % m jj
+            \includegraphics<+(1)->[width=.8\linewidth]{images/no_mg_cuts_kinematics/selection_8.png} % delta eta jj\\
+            \includegraphics<+(1)->[width=.8\linewidth]{images/no_mg_cuts_kinematics/selection_7.png} % m jj
+            \includegraphics<+(1)->[width=.8\linewidth]{images/no_mg_cuts_kinematics/mjj_more_zoom.png} % m jj zoom
         \end{column}
         \begin{column}{0.5\linewidth}
             \begin{block}<+(1)->{Comments}
-                \begin{itemize}
+                \begin{itemize}[<+(1)->]
+                    \item VBF processes are characterized by high $|\Delta \eta^{jj}|$, so a peak at $0$ indicates the dominance of other processes
+                    \item The $m^{jj}$ peak at approx. $80$-$90$ GeV points to contributions from \texttt{Z/W+/W- > j j} processes
                     \item Total cross section for signal is $0.786 \pm 0.001$ pb
-                    \item VBF processes are characterized by high $|\Delta \eta^{jj}|$, so a peak at $0$ indicates that other processes dominate
-                    \item An $m^{jj}$ peak at approx. $80$-$90$ GeV indicates dominating \texttt{Z/W+/W- > j j} processes
                     
                     \smallskip
                     
@@ -256,8 +260,11 @@
                     
                     \item Channel with next highest cross section on order of $1$ fb.
                     \item \texttt{q q > ax q q} processes can take on a VBF topology, but the \texttt{g g > ax g g} channel does not
-                    \item Despite the higher cross section, we avoid gluon-gluon processes due to their extensive prior analysis in the axion conext
-                    \item Additionally, gluon-gluon approaches are insensitive to light axions
+                    \item Despite the higher cross section, we avoid gluon-gluon processes for two reasons
+                    \begin{itemize}[<+(1)->]
+                        \item The gluon-gluon topology has been extensively studied in previous axion research
+                        \item Gluon-gluon approaches have been shown to be largely insensitive to light axions
+                    \end{itemize}
                 \end{itemize}
             \end{block}
         \end{column}
@@ -269,11 +276,11 @@
     \begin{columns}
         \begin{column}{0.45\linewidth}
             \begin{block}<+(1)->{Objective}
-                \begin{itemize}
+                \begin{itemize}[<+(1)->]
                     \item Want to generate signal events in a phase space region which emphasizes our eventual optimization (ensuring sufficient statistics)
-                    \item Equivalently, want to generate signal events primarily with the particular topologies (VBF) we will later select
+                    \item Equivalently, want to generate signal events with the particular topologies (VBF) we will later select
                     \item Thus before comparing with background, want to impose \textbf{MadGraph-level cuts} on signal events
-                    \item We select two topologies to try and minimize with such cuts: \texttt{g g > ax g g} and \texttt{Z > j j}
+                    \item Two topologies being targeted by our cuts: \texttt{g g > ax g g} and \texttt{Z/W > j j}
                 \end{itemize}
             \end{block}
             
@@ -347,29 +354,34 @@
         \end{column}
         \begin{column}{0.45\linewidth}
             \begin{block}<+(1)->{Final Approach}
-                Choose to generate $1000000$ signal events with all of the previous commands/setting, along with the following additional MadGraph selections. \newline
-                $|\Delta \eta^{jj}| > 2.4$, $m^{jj} > 120$ GeV
-                \begin{itemize}
-                    \item The gluon-gluon channel exhibits predominately low $|\Delta \eta^{jj}|$, so we apply a cut with the hopes of reducing its cross section
-                    \item The vector boson resonance channel satisfies $m^{jj} \approx 80$ GeV, so we apply an $m^{jj}$ cut with the hopes of also reducing that cross section
+                \begin{itemize}[<+(1)->]
+                    \item Choose to generate $1000000$ signal events with all of the previous commands/setting, along with the following additional MadGraph selections. 
+                    
+                    \smallskip
+                    
+                    $|\Delta \eta^{jj}| > 2.4$, $m^{jj} > 120$ GeV
+                    \begin{itemize}[<+(1)->]
+                        \item The gluon-gluon channel exhibits predominately low $|\Delta \eta^{jj}|$, so we apply a cut there to reduce its cross section
+                        \item As noted, the vector boson resonance channel satisfies $m^{jj} \approx 80$ GeV, so we apply an $m^{jj}$ cut to reducing that cross section as well
+                    \end{itemize}
+                    \item The cross section for this signal is $0.10235 \pm 2.82\text{e-}5$ pb
+                    \begin{center}
+                        \uncover<+(1)->{
+                            \begin{tabular}{|c|c|}
+                                \hline
+                                Channel & Cross-Section (pb) \\
+                                \hline
+                                \hline
+                                \texttt{g g > ax g g} & $0.06911 \pm 2.28\text{e-}5$\\
+                                VBF channel & $0.03324 \pm 5.1\text{e-}5$\\
+                                \hline
+                            \end{tabular}
+                        }
+                    \end{center}
+                    \item While the gluon-gluon channel still dominates, we've achieved a VBF signal purity sufficient to achieve the necessary statistics during optimization 
+                    % Now it's ~2 times as abundant as VBF-potential, instead of ~13 times
                 \end{itemize}
-                The cross section for this signal is $0.10235 \pm 2.82\text{e-}5$ pb, and the following breakdown of individual channel cross-sections gives a first indication of our success. While the gluon-gluon channel still dominates, we've achieved a VBF signal purity sufficient to achieve the necessary statistics during optimization.
             \end{block}
-            
-            \bigskip
-            
-            \centering
-            \uncover<+(1)->{
-                \begin{tabular}{|c|c|}
-                    \hline
-                    Channel & Cross-Section (pb) \\
-                    \hline
-                    \hline
-                    \texttt{g g > ax g g} & $0.06911 \pm 2.28\text{e-}5$\\
-                    VBF channel & $0.03324 \pm 5.1\text{e-}5$\\
-                    \hline
-                \end{tabular}
-            }
         \end{column}
     \end{columns}
 \end{frame}
@@ -377,36 +389,30 @@
 % 8) BACKGROUND GENERATION
 \begin{frame}{Background Generation}
     \begin{block}<+(1)->{Process}
-        We're interested in comparing our signal with \textbf{two} background processes. First, a general dijet, diphoton channel which we generate as follows.
-        
-        \smallskip
-        
-        \texttt{generate p p > j j a a}
-        
-        \smallskip
-        
-        Second, a more specific, VBF-oriented background with no QCD vertices, mimicking our signal generation.
-        
-        \smallskip
-        
-        \texttt{generate p p > j j a a QCD=0}
-        
-        \smallskip
-        
-        Recognizing that during optimization we will be selecting events with high momentum (VBF jets being boosted by the heavy vector boson production), for both background processes we generate events in $H_T$ bins. In particular, we sought to simulate $1000000$ events per background process per each of the following bins (all values given in GeV).
-        
-        \smallskip
-        
-        $[0,100], [100,200], [200,400], [400,600], [600,800],$ \newline 
-        $[800,1200], [1200,1600], [1600,\infty)$
-        
-        \smallskip
-        
-        We note that MadGraph was unable to produce the full million events for higher $H_T$ bins (likely due to diagram complexity), but a sufficient number of events to reach desired optimization statistics was still achieved. 
-        
-        \smallskip
-        
-        Prototypical Feynman diagrams are given for the general (top) and QCD $= 0$ (bottom) cases.
+        We're interested in comparing our signal with \textbf{two} background processes. 
+        \begin{itemize}[<+(1)->]
+            \item First, a general dijet, diphoton channel generated as follows.
+            
+            \smallskip
+            
+            \texttt{generate p p > j j a a}
+            \item Second, a more specific, VBF-oriented background with no QCD vertices, mimicking our signal generation.
+            
+            \smallskip
+            
+            \texttt{generate p p > j j a a QCD=0}
+            \item Recognizing our eventual selection of high jet momentum events (VBF jets being boosted by heavy vector boson production), we generate background events in $H_T$ bins
+            \begin{itemize}[<+(1)->]
+                \item In particular, we sought to simulate $1000000$ events per background process per each of the following bins (all values given in GeV).
+            
+                \smallskip
+            
+                $[0,100], [100,200], [200,400], [400,600], [600,800], [800,1200], [1200,1600], [1600,\infty)$
+                \item MadGraph was unable to produce the full million events for higher $H_T$ bins (likely due to diagram complexity)
+                \item However, the number of events generated was sufficient to reach desired optimization statistics
+            \end{itemize}
+            \item Prototypical Feynman diagrams are given for the general (left) and QCD $= 0$ (right) cases.
+        \end{itemize}
     \end{block}
     
     \begin{columns}
@@ -485,7 +491,7 @@
 \end{frame}
 
 % 9) MG-CUTS KINEMATICS
-\begin{frame}{Kinematics with MG-Level Cuts}
+\begin{frame}[label=current]{Kinematics with MG-Level Cuts}
     \begin{columns}
         \begin{column}{0.33\linewidth}
             \centering
@@ -493,7 +499,7 @@
         \end{column}
         \begin{column}{0.33\linewidth}
             \centering
-            \includegraphics<+(1)->[width=0.9\linewidth]{images/no_ma_cuts_kinematics/selection_7.png} % m gamma gamma
+            \includegraphics<+(1)->[width=0.9\linewidth]{images/no_ma_cuts_kinematics/selection_7.png} % m j j
         \end{column}
         \begin{column}{0.33\linewidth}
             \centering
@@ -501,25 +507,27 @@
         \end{column}
     \end{columns}
     \begin{columns}
-        \begin{column}{0.5\linewidth}
-            \centering
-            \includegraphics<+(1)->[width=0.6\linewidth]{images/no_ma_cuts_kinematics/selection_10.png} % delta eta jj
+        \begin{column}{0.1\linewidth}
         \end{column}
-        \begin{column}{0.5\linewidth}
+        \begin{column}{0.33\linewidth}
             \centering
-            \includegraphics<+(1)->[width=0.6\linewidth]{images/no_ma_cuts_kinematics/THT_stitch.png} % THT
+            \includegraphics<+(1)->[width=0.9\linewidth]{images/no_ma_cuts_kinematics/selection_10.png} % pt gamma
+        \end{column}
+        \begin{column}{0.33\linewidth}
+            \centering
+            \includegraphics<+(1)->[width=0.9\linewidth]{images/no_ma_cuts_kinematics/THT_stitch.png} % THT
+        \end{column}
+        \begin{column}{0.1\linewidth}
         \end{column}
     \end{columns}
     \begin{block}<+(1)->{Comments}
-        The first four kinematic plots exhibit high signal-background discriminating power in the following kinematic variables.
-        
-        \smallskip
-        
-        $\Delta \eta^{jj}, m^{jj}, m^{\gamma \gamma}, p_T^{\gamma}$
-        
-        \smallskip
-        
-        This is a little more subtle in the $\Delta \eta^{jj}$ case, but the VBF subset of our signal has higher $\Delta \eta^{jj}$ so cuts in this variable will boost significance. These plots motivate our optimization. The final kinematic plot demonstrates how our $H_T$-binned background samples are ``stiched'' together smoothly (noise occurring only at the higher end of our final $H_T$ bin).
+        \begin{itemize}[<+(1)->]
+            \item First four kinematic plots exhibit high signal-background discriminating power in the variables $\Delta \eta^{jj}, m^{jj}, m^{\gamma \gamma}, p_T^{\gamma}$, motivating our upcoming optimization procedure
+            \begin{itemize}[<+(1)->]
+                \item More subtle in the $\Delta \eta^{jj}$ case: only the VBF subset of the signal has high $\Delta \eta^{jj}$, so disc. power appears only when omitting gluon-gluon signal events (removing $g$ from the MadGraph proton definition)
+            \end{itemize}
+            \item The final kinematic plot demonstrates how our $H_T$-binned background samples are ``stiched'' together smoothly when normalized to cross section (noise occurring only at the higher end of our final $H_T$ bin).
+        \end{itemize}
     \end{block}
 \end{frame}
 
@@ -532,35 +540,43 @@
 % 10) FIRST (JET) OPTIMIZATION
 \begin{frame}{Jet Variable Selection Optimization ($\Delta \eta^{jj}$, $m^{jj}$)}
     \begin{block}<+(1)->{Process}
-        We begin by optimizing the $\Delta \eta^{jj}$ and $m^{jj}$ selections simultaneously (to account for correlations). We perform a gridsearch on pairs of selections of the form $|\Delta \eta^{jj}| > \eta_0$, $m^{jj} > m^j_0$ on the following values ($m^{jj}$ given in GeV).
-        
-        \smallskip
-        
-        $(\eta_0, m^j_0) \in \{2.6, 3.1, 3.6, 4.1, 4.6, 5.1, 5.6, 6.1\} \times \{120, 500, 750, 1000, 1250, 1500, 1750, 2000\}$
-        
-        \smallskip
-        
-        We compute significance in two ways on each of these $8 \cdot 8 = 64$ scenarios: without (left) and with (right) a systematic uncertainty term. To avoid divergences arising from low background yield, we alter the base significance form $\frac{S}{B}$ to $\frac{S}{\sqrt{S + B}}$ and implement a systematic uncertainty approximation with the modification $S/\sqrt{S + B + (r \cdot B)^2}$ for $r \in [0,1]$
+        \begin{itemize}[<+(1)->]
+            \item Optimized $\Delta \eta^{jj}$ and $m^{jj}$ selections simultaneously (to account for correlations)
+            \item Performed a gridsearch on pairs of selections $|\Delta \eta^{jj}| > \eta_0$, $m^{jj} > m^j_0$ for the following values ($m^j_0$ given in GeV)
+            
+            \smallskip
+            
+            $(\eta_0, m^j_0) \in \{2.6, 3.1, 3.6, 4.1, 4.6, 5.1, 5.6, 6.1\} \times \{120, 500, 750, 1000, 1250, 1500, 1750, 2000\}$
+            \item Significance computed twice on each of $8 \cdot 8 = 64$ scenarios: without (left) and with (right) systematic uncertainty
+            \begin{itemize}[<+(1)->]
+                \item To avoid misleadingly high significance for insufficient signal statistics, we chose $\frac{S}{\sqrt{S + B}}$ over $\frac{S}{B}$ 
+                \item Systematic uncertainty approximation then implemented via denominator term $(r \cdot B)^2$ for $r \in [0,1]$
+            \end{itemize}
+        \end{itemize}
     \end{block}
     \begin{columns}
-        \begin{column}{0.5\linewidth}
+        \begin{column}{0.4\linewidth}
             \centering
-            \includegraphics<+(1)->[width=0.6\linewidth]{images/first_optimization/heatmaps/sdeta_mjj_optimization_heatmap_r0.png} % r=0
+            \includegraphics<+(1)->[width=0.7\linewidth]{images/first_optimization/heatmaps/sdeta_mjj_optimization_heatmap_r0.png} % r=0
         \end{column}
-        \begin{column}{0.5\linewidth}
+        \begin{column}{0.4\linewidth}
             \centering
-            \includegraphics<+(1)->[width=0.6\linewidth]{images/first_optimization/heatmaps/sdeta_mjj_optimization_heatmap_r025.png} % r=0.25
+            \includegraphics<+(1)->[width=0.7\linewidth]{images/first_optimization/heatmaps/sdeta_mjj_optimization_heatmap_r025.png} % r=0.25
         \end{column}
     \end{columns}
-    \begin{block}<4->{Conclusions}
-        Experimental constraints motivate prioritization of higher $\Delta \eta^{jj}$ cuts, and our approximation of sys. uncert. fails at higher $m^{jj}$ cuts. Thus, we invoke the non-sys. uncert. results and pursue two selection pairs: a tight (lower significance/more experimental feasibility) cut $(\eta_0, m^j_0) = (3.6, 1250)$ and a loose (higher significance/less experimental feasibility) cut $(\eta_0, m^j_0) = (2.6, 1250)$.
+    \begin{block}<+(1)->{Conclusions}
+        Experimental constraints motivate prioritizing higher $\Delta \eta^{jj}$ cuts, and our sys. uncert. approximation fails at higher $m^{jj}$ cuts, so we invoke the non-sys. uncert. results and pursue two selection pairs:
+        \begin{itemize}
+            \item A tight (lower significance/more experimental feasibility) cut $(\eta_0, m^j_0) = (3.6, 1250)$
+            \item A loose (higher significance/less experimental feasibility) cut $(\eta_0, m^j_0) = (2.6, 1250)$
+        \end{itemize} 
     \end{block}
 \end{frame}
 
 % 11) PHOTON DISCRIMINATION CHECK
 \begin{frame}{Checking Photon Discriminating Power}
-    \begin{block}<+(1)->{Confirmation}
-        Before proceeding to the optimization for the other two variables---$m^{\gamma \gamma}, p_T^\gamma$---we quickly check that our tight/loose $\Delta \eta^{jj}, m^{jj}$ cuts haven't reduced discriminating power. We consider kinematic plots in the tight cuts scenario.
+    \begin{block}<+(1)->{Objective}
+        Before proceeding to the optimization for the other two variables---$m^{\gamma \gamma}, p_T^\gamma$---we check that our tight/loose $\Delta \eta^{jj}, m^{jj}$ cuts haven't lost discriminating power.
     \end{block}
     
     \bigskip
@@ -575,30 +591,26 @@
             \includegraphics<+(1)->[width=0.75\linewidth]{images/first_optimization/tight_kinematics/selection_10.png} % r=0
         \end{column}
     \end{columns}
-    
-    \bigskip
-    
-    
-    \begin{block}<4->{Conclusions}
-        Our discriminating power has been preserved (these plots behave similarly in the loose cuts scenario), allowing us to continue on to a photon kinematics optimization routine.
+    \begin{block}<+(1)->{Conclusions}
+        These are ``tight cut'' plots, but they behave similarly in the loose cuts scenario. Discriminating power has therefore been preserved, allowing continuation onto a photon kinematics optimization routine.
     \end{block}
 \end{frame}
 
 % 12) SECOND (PHOTON) OPTIMIZATION
 \begin{frame}{Photon Variable Selection Optimization ($m^{\gamma \gamma}$, $p_T^{\gamma}$)}
     \begin{block}<+(1)->{Process}
-        We now optimize the $m^{\gamma \gamma}$ and $p_T^{\gamma}$ selections simultaneously, performing a gridsearch on pairs of selections of the form $m^{\gamma \gamma} > m^\gamma_0$, $p_T^\gamma > \gamma_0$ on the following values (both variables given in GeV).
-        
-        \smallskip
-        
-        $(m^\gamma_0, \gamma_0) \in \{200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700\} \times \{100, 150, 200, 250, 300, 350, 400, 450, 500\}$
-        
-        \smallskip
-        
-        We compute significance in two ways on each of these $11 \cdot 9 = 99$ scenarios---in particular, using different systematic uncertainty coefficients---for both the tight (left two plots) and loose (right two plots) jet kinematic selections.
+        \begin{itemize}[<+(1)->]
+            \item Optimized $m^{\gamma \gamma}$ and $p_T^{\gamma}$ selections simultaneously, performing a gridsearch on pairs of selections $m^{\gamma \gamma} > m^\gamma_0$, $p_T^\gamma > \gamma_0$ on the following values (both variables in GeV)
+            
+            \smallskip
+            
+            $(m^\gamma_0, \gamma_0) \in \{200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700\} \times \{100, 150, 200, 250, 300, 350, 400, 450, 500\}$
+            
+            \item Computed significance in two ways on each of the $11 \cdot 9 = 99$ scenarios---in particular, using different systematic uncertainty coefficients---for both the tight (left plots) and loose (right plots) selections.
+        \end{itemize}
     \end{block}
     
-    \smallskip
+    \bigskip
     
     \begin{columns}
         \begin{column}{0.25\linewidth}
@@ -621,34 +633,33 @@
     
     \smallskip
     
-    \begin{block}<6->{Conclusions}
+    \begin{block}<+(1)->{Conclusions}
         Each heatmap provides us with a slightly different local maxima for significance: we therefore decide to pursue four $(m^\gamma_0, \gamma_0)$ selections (ordering coinciding with the heatmap ordering).
-        
-        \smallskip
-        
-        $(m^\gamma_0, \gamma_0) \in \{(400, 250), (500, 300), (350, 250), (400, 350)\}$
+        \begin{center}
+            $(m^\gamma_0, \gamma_0) \in \{(400, 250), (500, 300), (350, 250), (400, 350)\}$
+        \end{center}
     \end{block}
 \end{frame}
 
 % 13) THIRD (JET) OPTIMIZATION
 \begin{frame}{Jet Variable Selection Optimization, Again ($\Delta \eta^{jj}$, $m^{jj}$)}
     \begin{block}<+(1)->{Process}
-        Given our four pairs of $m^{\gamma \gamma}$, $p_T^{\gamma}$ selections, we now return to the jet kinematic variables to explore significance in the $\Delta \eta^{jj}$, $m^{jj}$ phase space for each photon kinematics selection. This time, we perform a gridsearch on a smaller phase space region, with pairs of selections of the form $|\Delta \eta^{jj}| > \eta_0$, $m^{jj} > m^j_0$ on the following values ($m^{jj}$ again given in GeV).
-        
-        \smallskip
-        
-        $(\eta_1, m^j_1) \in \{2.6, 3.1, 3.6, 4.1\} \times \{750, 1000, 1250, 1500, 1750, 2000\}$
-        
-        \smallskip
-        
-        We compute significance in just one way on each of these $4 \cdot 6 = 24$ scenarios, simply using the systematic uncertainty coefficient which led to the selection of that particular $m^{\gamma \gamma}$, $p_T^{\gamma}$ selections. Our plots are then ordered as follows.
-        
-        \smallskip
-        
-        $(m^\gamma_0, \gamma_0) = (400, 250), (m^\gamma_0, \gamma_0) = (500, 300), (m^\gamma_0, \gamma_0) = (350, 250), (m^\gamma_0, \gamma_0) = (400, 350)$
+        \begin{itemize}[<+(1)->]
+            \item Returned to the jet variables to study significance in $\Delta \eta^{jj}$, $m^{jj}$ phase space for each of our four pairs of $m^{\gamma \gamma}$, $p_T^{\gamma}$ cuts           
+            \item Performed smaller gridsearch, with selection pairs $|\Delta \eta^{jj}| > \eta_0$, $m^{jj} > m^j_1$ in the following values ($m^j_1$ also in GeV)
+            
+            \smallskip
+            
+            $(\eta_1, m^j_1) \in \{2.6, 3.1, 3.6, 4.1\} \times \{750, 1000, 1250, 1500, 1750, 2000\}$
+            \item Computed significance just once on each of these $4 \cdot 6 = 24$ scenarios, using the systematic uncertainty coefficient which led to the choice of that particular $m^{\gamma \gamma}$, $p_T^{\gamma}$ selection; plots are ordered as follows
+            
+            \smallskip
+            
+            $(m^\gamma_0, \gamma_0) = (400, 250), (m^\gamma_0, \gamma_0) = (500, 300), (m^\gamma_0, \gamma_0) = (350, 250), (m^\gamma_0, \gamma_0) = (400, 350)$
+        \end{itemize}
     \end{block}
     
-    \smallskip
+    \bigskip
     
     \begin{columns}
         \begin{column}{0.25\linewidth}
@@ -669,44 +680,48 @@
         \end{column}
     \end{columns}
     
-    \begin{block}<6->{Conclusions}
-        Our four scenarios exhibit an approximately uniform shape, with a maximum near $(\eta_1, m^j_1) = (2.6, 750)$. Once again, we consider high $\Delta \eta^{jj}$ selections to be more experimentally feasible. We also seek to incorporate a realistically high systematic uncertainty. These priorities motivate the following selections.
-        
-        \smallskip
-        
-        $|\Delta \eta^{jj}| > 3.6, m^{jj} > 750, m^{\gamma \gamma} > 500, p_T^\gamma > 300$
+    \begin{block}<+(1)->{Conclusions}
+        \begin{itemize}[<+(1)->]
+            \item Our four scenarios exhibit an approximately uniform shape, with a maximum near $(\eta_1, m^j_1) = (2.6, 750)$
+            \begin{itemize}[<+(1)->]
+                \item Once again, we consider high $\Delta \eta^{jj}$ selections to be more experimentally feasible
+                \item We also seek to incorporate a realistically high systematic uncertainty
+            \end{itemize}
+            \item These priorities motivate the following selections: $|\Delta \eta^{jj}| > 3.6, m^{jj} > 750, m^{\gamma \gamma} > 500, p_T^\gamma > 300$
+            % the highest mjj-delta eta pair significance with 0.25 uncertainty
+        \end{itemize}
     \end{block}
 \end{frame}
 
 % 14) SELECTION SIGNIFICANCE
 \begin{frame}{Selection Significance}
+    \begin{block}<+(1)->{Objective}
+        We seek to quickly evaluate our new parameter selections.
+        \begin{itemize}[<+(1)->]
+            \item Want to compare signal-background kinematic plots normalized to cross section between before (left) and after (center) selections are made
+            \item Want to examine how significance scales with luminosity for different significance metrics (right)
+        \end{itemize}
+    \end{block}
+    
+    \bigskip
+    
     \begin{columns}
-        \begin{column}{0.45\linewidth}
-            \begin{block}<+(1)->{Objective}
-                Given our new parameter selections, want to quickly summarize our progress.
-                \begin{itemize}
-                    \item Want to compare signal-background kinematic plots normalized to cross section between before (below) and after (right, top) selections are made
-                    \item Want to examine how significance scales with luminosity for different significance metrics (right, bottom)
-                \end{itemize}
-            \end{block}
-            
-            \bigskip
-            
+        \begin{column}{0.33\linewidth}
             \centering
-            \includegraphics<+(1)->[width=0.8\linewidth]{images/pre_post_stacked_comparison/pre_selection_7.png}
+            \includegraphics<+(1)->[width=\linewidth]{images/pre_post_stacked_comparison/pre_selection_7.png}
         \end{column}
-        \begin{column}{0.45\linewidth}
+        \begin{column}{0.33\linewidth}
             \centering
-            \includegraphics<+(1)->[width=0.8\linewidth]{images/pre_post_stacked_comparison/post_selection_7.png}
-            \includegraphics<+(1)->[width=0.8\linewidth]{images/third_optimization/second_lum_comparison_plot.png}
-            
-            \smallskip
-            
-            \begin{block}<5->{Conclusions}
-                We've selected a region of phase space where our new physics processes dominate and discovery potential is high.
-            \end{block}
+            \includegraphics<+(1)->[width=\linewidth]{images/pre_post_stacked_comparison/post_selection_7.png}
+        \end{column}
+        \begin{column}{0.33\linewidth}
+            \centering
+            \includegraphics<+(1)->[width=\linewidth]{images/third_optimization/second_lum_comparison_plot.png}
         \end{column}
     \end{columns}
+    \begin{block}<+(1)->{Conclusions}
+            We've selected a region of phase space where our new physics processes dominate and discovery potential is high.
+    \end{block}
 \end{frame}
 
 %
@@ -715,9 +730,9 @@
 \section{Final Thoughts}
 
 % 15) FINAL THOUGHTS
-\begin{frame}[label=current]{Final Thoughts}
+\begin{frame}{Final Thoughts}
     \begin{block}<+(1)->{Summary}
-        \begin{itemize}
+        \begin{itemize}[<+(1)->]
             \item Introduced the theory of our particular BSM interest---the axion---and the collider topology we plan to use to study it, vector boson fusion (VBF)
             \item Discussed our generation of signal events, including imposed MadGraph-level selections to increase VBF purity
             \item Examined our generation of background events, including the choice of two distinct background channels and our $H_T$ binning process
@@ -726,13 +741,13 @@
         \end{itemize}
     \end{block}
     
-    \bigskip
+    \smallskip
     
     \begin{block}<+(1)->{Next Steps}
-            \begin{itemize}
+            \begin{itemize}[<+(1)->]
                 \item Resolve technical issues (potentially relating to \texttt{ax > a a} decay) and study how our findings vary with axions of different masses
-                \item Investigate why virtual axion processes dominate (thoughts?)
-                \item Anything else?
+                \item Investigate why virtual axion processes dominate
+                \item Begin formalizing our results and writing a paper  
             \end{itemize}
     \end{block}
 \end{frame}
