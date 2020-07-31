@@ -1,0 +1,19 @@
+<SAFheader>
+</SAFheader>
+
+<SampleGlobalInfo>
+# xsection     xsection_error nevents        sum_weight+    sum_weight-    
+8.522844e+00   7.564719e-02   1000           8.515320e+03   0.000000e+00   
+</SampleGlobalInfo>
+
+<FileInfo>
+"/Users/elijahsheridan/MG5_aMC_v2_6_5/axion_signal/Events/100GeV_gurrola_cuts_cross_sec/unweighted_events.lhe.gz" # file 1 / 1
+</FileInfo>
+
+<SampleDetailedInfo>
+# xsection     xsection_error nevents        sum_weight+    sum_weight-    
+8.522844e+00   7.564719e-02   1000           8.515320e+03   0.000000e+00    # file 1 / 1
+</SampleDetailedInfo>
+
+<SAFfooter>
+</SAFfooter>

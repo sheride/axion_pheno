@@ -1,4 +1,4 @@
-\documentclass[handout]{beamer}
+\documentclass[]{beamer}
 \usepackage[utf8]{inputenc}
 \usetheme{Madrid}
 \usepackage{fancyvrb}
@@ -78,7 +78,7 @@
 %
 % SEC: PROJECT INTRODUCTION
 %
-\section{Project Introduction}
+\section{Background and Project Introduction}
 
 % 3) MOTIVATING AXIONS
 \begin{frame}{Motivating Axions}
@@ -94,65 +94,103 @@
     \end{block}
     \begin{block}<+(1)->{Axion Properties}
         \begin{itemize}[<+(1)->]
-            \item The axion is a neutral spin-$0$ boson, and different models permit widely varied mass values
-            \item Sufficiently light axions are compatible with current dark matter relic density calculations, making these light axions dark matter candidates
-            \item Axion theories modify classical electrodynamics: the axion ``rotates'' the electric and magnetic fields into each other by an amount proportional to axion coupling and field strength 
+            \item The axion is a \textbf{neutral spin-0 boson}, with different models permitting widely varied mass values
+            \item Light axions are compatible with current dark matter relic density calculations, making them dark matter candidates
+            \item Axion theories modify classical electrodynamics: in particular, the axion ``rotates'' the electric and magnetic fields into each other by an amount proportional to axion coupling and field strength 
         \end{itemize}
     \end{block}
     \begin{block}<+(1)->{Axion Literature}
         \begin{itemize}[<+(1)->]
-            \item Astrophysics/cosmological experiments place bounds on axions and axion-like particles (ALPs) masses in some models, requiring them to be eV scale or lighter
-            % Berenji et al. obtained a 95% confidence interval upper limit on the axion mass of 0.079 eV.
-            \item However, there still exist models which enable axions and ALPs to have masses in the MeV and GeV scales
-            \item Heavy axions have been studied at the LHC, but primarily at higher mass scales ($\sim 100$ GeV) due to sensitivity limitations  
+            \item Astrophysics/cosmological experiments investigate axions and axion-like particles (ALPs) with eV scale masses, placing upper bounds on those masses (given certain assumptions on couplings)
+            % Berenji et al. obtained a 95% confidence interval upper limit on the axion mass of 0.079 eV
+            \item However, there still exist models which enable heavy axions and ALPs to have masses in the MeV and GeV scales, which have been studied at the LHC (primarily at the $100$s of GeV scale, due to sensitivity limitations)
+            \item An unexplored gap exists between the probed axion masses at non-collider and at collider experiments (the MeV scale), motivating the focus our phenomenology project
         \end{itemize}
     \end{block}
 \end{frame}
 
 % 4) MOTIVATING VBF
 \begin{frame}{Motivating the Vector Boson Fusion Approach}
-    \centering
-    \uncover<+(1)->{
-        \scalebox{1.5}{
-            \begin{tikzpicture}
-                \begin{feynman}[small]
-                    % top to bottom, pre-axion
-                    \vertex (v1); % top jet vertex
-                    \vertex [left=of v1] (in1) {$p \equiv$}; % top incoming particle
-                    \vertex [above right=of v1] (j1) ; % top jet
-                    \vertex [below right=of v1] (v3); % axion vertex
-                    \vertex [below left=of v3] (v2); % bottom jet vertex
-                    \vertex [below right=of v2] (j2);  % bottom jet
-                    \vertex [left=of v2] (in2) {$p \equiv $};  % bottom incoming particle
-                    % axion onward
-                    \vertex [right=of v3] (ax);
-                    \vertex [above right=of ax] (p1);
-                    \vertex [below right=of ax] (p2);
-                    
-                    \diagram*{
-                        (in1) -- [plain, edge label=$q$] (v1),
-                        (in2) -- [plain, edge label=$q'$] (v2),
-                        (v1) -- [plain, edge label=$q$] (j1),
-                        (v2) -- [plain, edge label'=$q'$] (j2),
-                        (v1) -- [boson, edge label=$Z/\gamma$] (v3),
-                        (v2) -- [boson, edge label'=$Z/\gamma$] (v3),
-                        (v3) -- [boson, edge label=$\gamma/h$] (ax),
-                        (ax) -- [boson, edge label=$\gamma$] (p1),
-                        (ax) -- [boson, edge label'=$\gamma$] (p2),
-                    };
-                \end{feynman}
-            \end{tikzpicture}
-        }
-    }
-    
+    \begin{columns}
+        \begin{column}{0.5\linewidth}
+           \centering
+            \uncover<+(1)->{
+                \scalebox{1}{
+                    \begin{tikzpicture}
+                        \begin{feynman}[small]
+                            % top to bottom, pre-axion
+                            \vertex (v1); % top jet vertex
+                            \vertex [left=of v1] (in1) {$p \equiv$}; % top incoming particle
+                            \vertex [above right=of v1] (j1) ; % top jet
+                            \vertex [below right=of v1] (v3); % axion vertex
+                            \vertex [below left=of v3] (v2); % bottom jet vertex
+                            \vertex [below right=of v2] (j2);  % bottom jet
+                            \vertex [left=of v2] (in2) {$p \equiv $};  % bottom incoming particle
+                            % axion onward
+                            \vertex [right=of v3] (ax);
+                            \vertex [above right=of ax] (p1);
+                            \vertex [below right=of ax] (p2);
+                            
+                            \diagram*{
+                                (in1) -- [plain, edge label=$q$] (v1),
+                                (in2) -- [plain, edge label=$q$] (v2),
+                                (v1) -- [plain, edge label=$q'$] (j1),
+                                (v2) -- [plain, edge label'=$q'$] (j2),
+                                (v1) -- [boson, edge label=$W^+$] (v3),
+                                (v2) -- [boson, edge label'=$W^-$] (v3),
+                                (v3) -- [boson, edge label=$Z/\gamma/h$] (ax),
+                                (ax) -- [boson, edge label=$\gamma$] (p1),
+                                (ax) -- [boson, edge label'=$\gamma$] (p2),
+                            };
+                        \end{feynman}
+                    \end{tikzpicture}
+                }
+            }
+        \end{column}
+        \begin{column}{0.5\linewidth}
+            \centering
+            \uncover<+(1)->{
+                \scalebox{1}{
+                    \begin{tikzpicture}
+                        \begin{feynman}[small]
+                            % top to bottom, pre-axion
+                            \vertex (v1); % top jet vertex
+                            \vertex [left=of v1] (in1) {$p \equiv$}; % top incoming particle
+                            \vertex [above right=of v1] (j1) ; % top jet
+                            \vertex [below right=of v1] (v3); % axion vertex
+                            \vertex [below left=of v3] (v2); % bottom jet vertex
+                            \vertex [below right=of v2] (j2);  % bottom jet
+                            \vertex [left=of v2] (in2) {$p \equiv $};  % bottom incoming particle
+                            % axion onward
+                            \vertex [right=of v3] (ax);
+                            \vertex [above right=of ax] (p1);
+                            \vertex [below right=of ax] (p2);
+                            
+                            \diagram*{
+                                (in1) -- [plain, edge label=$q$] (v1),
+                                (in2) -- [plain, edge label=$q'$] (v2),
+                                (v1) -- [plain, edge label=$q$] (j1),
+                                (v2) -- [plain, edge label'=$q'$] (j2),
+                                (v1) -- [boson, edge label=$Z/\gamma$] (v3),
+                                (v2) -- [boson, edge label'=$Z/\gamma$] (v3),
+                                (v3) -- [boson, edge label=$h/\gamma$] (ax),
+                                (ax) -- [boson, edge label=$\gamma$] (p1),
+                                (ax) -- [boson, edge label'=$\gamma$] (p2),
+                            };
+                        \end{feynman}
+                    \end{tikzpicture}
+                }
+            }
+        \end{column}
+    \end{columns}
     \begin{block}<+(1)->{Description}
         \begin{itemize}[<+(1)->]
             \item Vector boson fusion processes (VBF) are experimentally important due to their distinctiveness at the LHC (prototypical Feynman diagram given above)
             \begin{itemize}[<+(1)->]
-                \item In particular, the ``tagged jets'' (outgoing quarks above) carry tell-tale high pseudorapidities
+                \item In particular, the ``tagged jets'' (produced by the outgoing quarks) carry a high difference between their \textbf{pseudorapidities}
                 \item This VBF kinematic signature suppresses many background channels, including those both with and without QCD vertices 
             \end{itemize}
-            \item VBF cross sections typically surpass those of other topologies (Drell-Yan, etc) in new-physics processes with sufficiently heavy new particles
+            \item VBF cross sections typically surpass those of other topologies (Drell-Yan, etc) in new-physics processes with sufficiently heavy new particles (at around the TeV scale)
         \end{itemize}
     \end{block}
 \end{frame}
@@ -239,8 +277,8 @@
         \begin{column}{0.5\linewidth}
             \begin{block}<+(1)->{Comments}
                 \begin{itemize}[<+(1)->]
-                    \item VBF processes are characterized by high $|\Delta \eta^{jj}|$, so a peak at $0$ indicates the dominance of other processes
-                    \item The $m^{jj}$ peak at approx. $80$-$90$ GeV points to contributions from \texttt{Z/W+/W- > j j} processes
+                    \item VBF processes are characterized by high $|\Delta \eta^{jj}|$: a peak at $0$ indicates the dominance of other processes
+                    \item The $m^{jj}$ peak at approx. $80$-$90$ GeV points to contributions from \texttt{Z/W+/W- > j j} processes (associated axion production)
                     \item Total cross section for signal is $0.786 \pm 0.001$ pb
                     
                     \smallskip
@@ -260,10 +298,11 @@
                     
                     \item Channel with next highest cross section on order of $1$ fb.
                     \item \texttt{q q > ax q q} processes can take on a VBF topology, but the \texttt{g g > ax g g} channel does not
-                    \item Despite the higher cross section, we avoid gluon-gluon processes for two reasons
+                    \item Despite the higher cross section, we avoid gluon-gluon processes for several reasons
                     \begin{itemize}[<+(1)->]
-                        \item The gluon-gluon topology has been extensively studied in previous axion research
-                        \item Gluon-gluon approaches have been shown to be largely insensitive to light axions
+                        \item Predominately low $|\Delta \eta^{jj}|$ (lower discriminating power)
+                        \item Extensively studied in previous axion research
+                        \item Shown to be largely insensitive to light axions
                     \end{itemize}
                 \end{itemize}
             \end{block}
@@ -361,8 +400,8 @@
                     
                     $|\Delta \eta^{jj}| > 2.4$, $m^{jj} > 120$ GeV
                     \begin{itemize}[<+(1)->]
-                        \item The gluon-gluon channel exhibits predominately low $|\Delta \eta^{jj}|$, so we apply a cut there to reduce its cross section
-                        \item As noted, the vector boson resonance channel satisfies $m^{jj} \approx 80$ GeV, so we apply an $m^{jj}$ cut to reducing that cross section as well
+                        \item The gluon-gluon channel primarily exhibits low $|\Delta \eta^{jj}|$, so we apply a cut there to reduce its cross section
+                        \item As noted, associated axion production satisfies $m^{jj} \approx 80$ GeV, so we apply an $m^{jj}$ cut to reduce that cross section as well
                     \end{itemize}
                     \item The cross section for this signal is $0.10235 \pm 2.82\text{e-}5$ pb
                     \begin{center}
@@ -408,6 +447,9 @@
                 \smallskip
             
                 $[0,100], [100,200], [200,400], [400,600], [600,800], [800,1200], [1200,1600], [1600,\infty)$
+                
+                \smallskip
+                
                 \item MadGraph was unable to produce the full million events for higher $H_T$ bins (likely due to diagram complexity)
                 \item However, the number of events generated was sufficient to reach desired optimization statistics
             \end{itemize}
@@ -473,12 +515,12 @@
                             
                             \diagram*{
                                 (in1) -- [plain, edge label=$q$] (v1),
-                                (in2) -- [plain, edge label=$q'$] (v2),
-                                (v1) -- [plain, edge label=$q$] (j1),
+                                (in2) -- [plain, edge label=$q$] (v2),
+                                (v1) -- [plain, edge label=$q'$] (j1),
                                 (v2) -- [plain, edge label'=$q'$] (j2),
-                                (v1) -- [boson, edge label=$Z/\gamma$] (v3),
-                                (v2) -- [boson, edge label'=$Z/\gamma$] (v3),
-                                (v3) -- [boson, edge label=$\gamma/h$] (ax),
+                                (v1) -- [boson, edge label=$W^+$] (v3),
+                                (v2) -- [boson, edge label'=$W^-$] (v3),
+                                (v3) -- [boson, edge label=$Z/\gamma/h$] (ax),
                                 (ax) -- [boson, edge label=$\gamma$] (p1),
                                 (ax) -- [boson, edge label'=$\gamma$] (p2),
                             };
@@ -526,7 +568,7 @@
             \begin{itemize}[<+(1)->]
                 \item More subtle in the $\Delta \eta^{jj}$ case: only the VBF subset of the signal has high $\Delta \eta^{jj}$, so disc. power appears only when omitting gluon-gluon signal events (removing $g$ from the MadGraph proton definition)
             \end{itemize}
-            \item The final kinematic plot demonstrates how our $H_T$-binned background samples are ``stiched'' together smoothly when normalized to cross section (noise occurring only at the higher end of our final $H_T$ bin).
+            \item The final kinematic plot demonstrates how our $H_T$-binned background samples are ``stiched'' together smoothly when normalized to cross section
         \end{itemize}
     \end{block}
 \end{frame}
@@ -566,7 +608,7 @@
     \end{columns}
     \begin{block}<+(1)->{Conclusions}
         Experimental constraints motivate prioritizing higher $\Delta \eta^{jj}$ cuts, and our sys. uncert. approximation fails at higher $m^{jj}$ cuts, so we invoke the non-sys. uncert. results and pursue two selection pairs:
-        \begin{itemize}
+        \begin{itemize}[<+(1)->]
             \item A tight (lower significance/more experimental feasibility) cut $(\eta_0, m^j_0) = (3.6, 1250)$
             \item A loose (higher significance/less experimental feasibility) cut $(\eta_0, m^j_0) = (2.6, 1250)$
         \end{itemize} 
@@ -576,7 +618,7 @@
 % 11) PHOTON DISCRIMINATION CHECK
 \begin{frame}{Checking Photon Discriminating Power}
     \begin{block}<+(1)->{Objective}
-        Before proceeding to the optimization for the other two variables---$m^{\gamma \gamma}, p_T^\gamma$---we check that our tight/loose $\Delta \eta^{jj}, m^{jj}$ cuts haven't lost discriminating power.
+        Before proceeding to the optimization for the other two variables---$m^{\gamma \gamma}, p_T^\gamma$---we check that our tight/loose $\Delta \eta^{jj}, m^{jj}$ selections haven't reduced the photon variable discriminating power.
     \end{block}
     
     \bigskip
@@ -592,7 +634,7 @@
         \end{column}
     \end{columns}
     \begin{block}<+(1)->{Conclusions}
-        These are ``tight cut'' plots, but they behave similarly in the loose cuts scenario. Discriminating power has therefore been preserved, allowing continuation onto a photon kinematics optimization routine.
+        These are ``tight cut'' plots, but they behave similarly in the loose cuts scenario: thus, discriminating power has been preserved and we can continue onto a photon kinematics optimization routine.
     \end{block}
 \end{frame}
 
@@ -646,7 +688,7 @@
     \begin{block}<+(1)->{Process}
         \begin{itemize}[<+(1)->]
             \item Returned to the jet variables to study significance in $\Delta \eta^{jj}$, $m^{jj}$ phase space for each of our four pairs of $m^{\gamma \gamma}$, $p_T^{\gamma}$ cuts           
-            \item Performed smaller gridsearch, with selection pairs $|\Delta \eta^{jj}| > \eta_0$, $m^{jj} > m^j_1$ in the following values ($m^j_1$ also in GeV)
+            \item Performed smaller gridsearch, with selection pairs $|\Delta \eta^{jj}| > \eta_1$, $m^{jj} > m^j_1$ in the following values ($m^j_1$ also in GeV)
             
             \smallskip
             
@@ -699,7 +741,7 @@
         We seek to quickly evaluate our new parameter selections.
         \begin{itemize}[<+(1)->]
             \item Want to compare signal-background kinematic plots normalized to cross section between before (left) and after (center) selections are made
-            \item Want to examine how significance scales with luminosity for different significance metrics (right)
+            \item Want to examine how significance scales with luminosity for different systematic uncertainties (right)
         \end{itemize}
     \end{block}
     

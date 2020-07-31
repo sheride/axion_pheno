@@ -1,0 +1,11 @@
+\contentsline {section}{\numberline {1} Setup}{2}{section.1}% 
+\contentsline {subsection}{\numberline {1.1} Command history}{2}{subsection.1.1}% 
+\contentsline {subsection}{\numberline {1.2} Configuration}{2}{subsection.1.2}% 
+\contentsline {section}{\numberline {2} Datasets}{3}{section.2}% 
+\contentsline {subsection}{\numberline {2.1} signal1mev}{3}{subsection.2.1}% 
+\contentsline {subsection}{\numberline {2.2} signal100gev1tev}{3}{subsection.2.2}% 
+\contentsline {subsection}{\numberline {2.3} signal100gev1p5tev}{3}{subsection.2.3}% 
+\contentsline {subsection}{\numberline {2.4} signal100gev4tev}{4}{subsection.2.4}% 
+\contentsline {section}{\numberline {3} Histos and cuts}{5}{section.3}% 
+\contentsline {subsection}{\numberline {3.1} Histogram 1}{5}{subsection.3.1}% 
+\contentsline {subsection}{\numberline {3.2} Histogram 2}{6}{subsection.3.2}% 

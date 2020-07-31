@@ -1,0 +1,21 @@
+\contentsline {section}{\numberline {1} Setup}{2}{section.1}% 
+\contentsline {subsection}{\numberline {1.1} Command history}{2}{subsection.1.1}% 
+\contentsline {subsection}{\numberline {1.2} Configuration}{4}{subsection.1.2}% 
+\contentsline {section}{\numberline {2} Datasets}{5}{section.2}% 
+\contentsline {subsection}{\numberline {2.1} signal1mev}{5}{subsection.2.1}% 
+\contentsline {subsection}{\numberline {2.2} signal100gev1tev}{5}{subsection.2.2}% 
+\contentsline {subsection}{\numberline {2.3} signal100gev1p5tev}{5}{subsection.2.3}% 
+\contentsline {subsection}{\numberline {2.4} signal100gev4tev}{6}{subsection.2.4}% 
+\contentsline {section}{\numberline {3} Histos and cuts}{7}{section.3}% 
+\contentsline {subsection}{\numberline {3.1} Histogram 1}{7}{subsection.3.1}% 
+\contentsline {subsection}{\numberline {3.2} Histogram 2}{8}{subsection.3.2}% 
+\contentsline {subsection}{\numberline {3.3} Histogram 3}{9}{subsection.3.3}% 
+\contentsline {subsection}{\numberline {3.4} Histogram 4}{10}{subsection.3.4}% 
+\contentsline {subsection}{\numberline {3.5} Histogram 5}{11}{subsection.3.5}% 
+\contentsline {subsection}{\numberline {3.6} Histogram 6}{12}{subsection.3.6}% 
+\contentsline {subsection}{\numberline {3.7} Histogram 7}{13}{subsection.3.7}% 
+\contentsline {subsection}{\numberline {3.8} Histogram 8}{14}{subsection.3.8}% 
+\contentsline {subsection}{\numberline {3.9} Histogram 9}{15}{subsection.3.9}% 
+\contentsline {subsection}{\numberline {3.10} Histogram 10}{16}{subsection.3.10}% 
+\contentsline {subsection}{\numberline {3.11} Histogram 11}{17}{subsection.3.11}% 
+\contentsline {subsection}{\numberline {3.12} Histogram 12}{18}{subsection.3.12}% 

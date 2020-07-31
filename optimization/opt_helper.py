@@ -13,6 +13,9 @@ from lxml import html
 import pandas as pd
 import seaborn as sb
 import plotly.graph_objs as go
+import bisect as bs
+import matplotlib.patches as mpatches
+import os
 
 
 def gen_histo(file_name, divisions, out_file_name=None, norm_one=True,
@@ -130,6 +133,8 @@ def gen_histo(file_name, divisions, out_file_name=None, norm_one=True,
         max_b_index = next(i for i, val in reversed(list(enumerate(xBinning)))
                            if val <= max_x)
 
+#    print(labels)
+
     # Making plots
     y = [None] * len(combined_data)
     for i, data in enumerate(combined_data):
@@ -145,7 +150,7 @@ def gen_histo(file_name, divisions, out_file_name=None, norm_one=True,
     plt.rc('text', usetex=False)
     plt.xlabel(xlabel, fontsize=16, color="black")
     plt.ylabel(ylabel, fontsize=16, color="black")
-    ymax = max([elem.max() for elem in y]) * 1.1
+    ymax = np.array([elem.max() for elem in y]).max() * 1.1
     ymin = 0
     if logx:
         plt.gca().set_xscale("log", nonposy="clip")
@@ -165,9 +170,9 @@ def curve_comparison_1d(x, y, labels=None, xlabel=None, ylabel=None,
                         markers=None, colors=None, file_name=None, logy=False,
                         save=False):
     """
-    Takes a 1d array of x values and a 3d array of y values and produces a
+    Takes a 1d array of x values and a 2d array of y values and produces a
     plot comparing the data sets contained in y such that similar rows have the
-    same color and similar columns have the same marker
+    same color
 
     x         - 1d array of x values
     y         - 2d array, or 2d array where each 'element' is a dataset
@@ -356,3 +361,123 @@ def sig_heatmap_html_extract(files):
             signal[i][j], _, bg[i][j], __ = sig_and_bg_from_html(file)
 
     return [np.array(signal), np.array(bg)]
+
+
+def condition(m, L): return L < 2 * m
+
+
+def assemble_sig_data_CMSH(M, L, f, filename, xres, yres, log_mode=False):
+    sigs = []
+    for l in range(yres):
+        temp = []
+        for m in range(xres):
+            x = M[0] + ((M[-1] - M[0]) / xres) * m
+            y = L[0] + ((L[-1] - L[0]) / yres) * l
+            sig = f[bs.bisect_right(M, x) - 1][bs.bisect_right(L, y) - 1](y)
+            temp.append(sig if sig < 50 else 50)
+        sigs.append(temp)
+
+    print(sigs[:2])
+    test_M = np.linspace(M[0], M[-1], xres)
+    test_L = np.linspace(L[0], L[-1], yres)
+    test_sigs = [[
+            f[bs.bisect_right(M, x) - 1][bs.bisect_right(L, y) - 1](y)
+            for y in test_L] for x in test_M]
+
+    print(test_sigs[:2])
+
+    # np.save(filename, sigs)
+
+
+def assemble_banned_region_CMSH(M, L, filename, xres, yres, cond,
+                                log_mode=False):
+    banned = []
+    for l in range(yres):
+        temp = []
+        for m in range(xres):
+            x = M[0] + ((M[-1] - M[0]) / xres) * m
+            y = L[0] + ((L[-1] - L[0]) / yres) * l
+            temp.append([0,0,0,0.5] if cond(x,y) else [1,1,1,0])
+        banned.append(temp)
+
+    np.save(filename, banned)
+
+
+def coupling_mass_sig_heatmap(m, L, f, datafile, bannedfile, xlabel, ylabel,
+                              cond=condition, cmap='plasma',
+                              force_assemble=False, xres=1000, yres=1000,
+                              savefile='heatmap', log_mode=False):
+    """
+    Produces a heatmap similar to Fig. 12 in "Anapole Dark Matter via Vector
+    Boson Fusion Processes at the LHC" and "Probing heavy spin-2 bosons with
+    γγ final states from vector boson fusion processes at the LHC" (modeled
+    after the former)
+
+    m           - strictly increasing list, boundaries of mass "columns" being
+                  considered separately (i.e., have function(s) for each mass
+                  "bin" established by list). first and last entries define
+                  x-axis bounds of plot
+    L           - strictly increasing list, boundaries of coupling "columns"
+                  being considered separately (i.e., have function(s) for each
+                  coupling "bin"  established by list). first and last entries
+                  define y-axis bounds of plot
+    f           - list of lists of functions with dimension
+                  [len(m) - 1] x [len(L) - 1] (i.e., function for each m-bin,
+                  L-bin pair). these are the functions for significance in
+                  terms of coupling for a given mass (vertical slices of
+                  significance)
+    datafile    - name of file containing significance data to be created/used
+    bannedfile  - name of file containing banned region data to be created/used
+    cmap        - string, valid matplotlib color map name to be used for the
+                  heatmap
+    """
+
+    labels = ['Discovery Contour', r'$\Lambda < 2m_\chi$']
+
+    # fetching/making significance data/banned region files
+    sigs = None
+    banned = None
+    if log_mode:
+
+    else:
+        if not os.path.isfile(datafile + '.npy') or force_assemble:
+            assemble_sig_data_CMSH(m, L, f, datafile, xres, yres)
+        if not os.path.isfile(bannedfile + '.npy') or force_assemble:
+            assemble_banned_region_CMSH(m, L, bannedfile, xres, yres, cond)
+    sigs = np.load(datafile + '.npy')
+    banned = np.load(bannedfile + '.npy')
+
+    # heatmap
+    plt.imshow(sigs, cmap='plasma', origin='lower',
+               extent = (m[0], m[-1], L[0], L[-1]))
+    cbar = plt.colorbar()
+    plt.xscale('log')
+
+    m, L = [np.array(m), np.array(L)]
+
+    # 5 sigma curve
+    x = ((m - m[0]) * (len(sigs[0])/(m[-1] - m[0]))).astype(int)
+    y = []
+    for i in x:
+        i = i if i < 1000 else 999
+        for j in range(yres):
+            if sigs[j][i] < 5:
+                y.append(L[0] + ((L[-1] - L[0]) / yres) * j)
+                break
+    curve = plt.plot(m, y, linewidth=3, linestyle='dashed', color='gray')
+
+    # banned region
+    plt.imshow(banned, cmap='binary', origin='lower',
+               extent = (m[0], m[-1], L[0], L[-1]))
+    zone = mpatches.Patch(color=[0,0,0,0.5])
+
+    # figure settings
+    plt.legend(handles=[curve[0], zone], labels=labels,
+               bbox_to_anchor=(0.02, 0.98), loc=2, borderaxespad=0.)
+    plt.ylabel(r'{}'.format(ylabel))
+    plt.xlabel(r'{}'.format(xlabel))
+    cbar.set_label('Signal Significance', rotation=90)
+    cbar.ax.get_yaxis().labelpad = 8
+    fig = plt.gcf()
+    fig.set_size_inches(12, 8)
+    plt.savefig(savefile, dpi=300, bbox_inches='tight')

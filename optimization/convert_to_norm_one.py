@@ -565,6 +565,96 @@ def four_cuts_stacked_histos_custom_bins():
                       min_x=c)
 
 
+def Lambda_kinematics_comparison():
+    # ma analysis still erroneously has photon stuff
+    consider = [0, 1, 2, 3, 4, 5, 6, 7, 8, 12, 13, 14, 15]
+
+    file_names = ['../post_optimization_studies/mad_analyses/'
+                  + 'Lambda_kinematics_compare/Output/Histos/'
+                  + 'MadAnalysis5job_0/selection_' + str(i) + '.py'
+                  for i in consider]
+
+    norm_plot_file_names = ['../post_optimization_studies/mad_analyses/'
+                            + 'Lambda_kinematics_compare/norm_one_plots'
+                            + '/selection_' + str(i) for i in consider]
+    stack_plot_file_names = ['../post_optimization_studies/mad_analyses/'
+                             + 'Lambda_kinematics_compare/stacked_plots'
+                             + '/selection_' + str(i) for i in consider]
+    labels = [
+            r'$pp \; \to \; jj + ax$, $\Lambda = 1$ TeV',
+            r'$pp \; \to \; jj + ax$, $\Lambda = 4$ TeV']
+    stacked_ylabel = r'Events ($\mathcal{L}_{int} = 40$ fb$^{-1}$)'
+
+    xlabels = [r'$p_T^{j_1}$ (GeV)', r'$\eta^{j_1}$', r'$\phi^{j_1}$',
+               r'$p_T^{j_2}$ (GeV)', r'$\eta^{j_2}$', r'$\phi^{j_2}$',
+               r'$\Delta R^{jj}$', r'$m^{jj}$ (GeV)',
+               r'$\Delta \eta^{jj}$', r'$THT$ (GeV)', r'$MET$ (GeV)',
+               r'$TET$ (GeV)']
+
+    # four cuts
+    cut = [None, None, None, None, None, None, None, 120, 2.4, None, None,
+           None]
+
+    for file_name, norm_name, stack_namem, label, c in zip(
+            file_names, norm_plot_file_names, stack_plot_file_names,
+            xlabels, cut):
+        divisions = [0, 1]  # for some reason gen_norm_one_histo overwrites?
+        opt.gen_histo(file_name, divisions,
+                      out_file_name=norm_name, labels=labels,
+                      save=True, norm_one=True,
+                      logy=False, xlabel=label)
+        divisions = [0, 1]  # for some reason gen_norm_one_histo overwrites?
+        opt.gen_histo(file_name, divisions,
+                      out_file_name=stack_namem, labels=labels,
+                      ylabel=stacked_ylabel, save=True, norm_one=False,
+                      logy=False, xlabel=label)
+
+
+def axion_mass_kinematics_comparison():
+    file_names = ['../post_optimization_studies/mad_analyses/'
+                  + 'axion_masses_kinematics_compare/Output/Histos/'
+                  + 'MadAnalysis5job_0/selection_' + str(i) + '.py'
+                  for i in range(12)]
+
+    norm_plot_file_names = ['../post_optimization_studies/mad_analyses/'
+                            + 'axion_masses_kinematics_compare/norm_one_plots'
+                            + '/selection_' + str(i) for i in range(12)]
+    stack_plot_file_names = ['../post_optimization_studies/mad_analyses/'
+                             + 'axion_masses_kinematics_compare/stacked_plots'
+                             + '/selection_' + str(i) for i in range(12)]
+    labels = [
+            r'$pp \; \to \; jj + ax$, $m_a = 1$ MeV, $\Lambda = 1$ TeV',
+            r'$pp \; \to \; jj + ax$, $m_a = 100$ GeV, $\Lambda = 1$ TeV',
+            r'$pp \; \to \; jj + ax$, $m_a = 100$ GeV, $\Lambda = 1.5$ TeV',
+            r'$pp \; \to \; jj + ax$, $m_a = 100$ GeV, $\Lambda = 4$ TeV',
+            ]
+    stacked_ylabel = r'Events ($\mathcal{L}_{int} = 40$ fb$^{-1}$)'
+
+    xlabels = [r'$p_T^{j_1}$ (GeV)', r'$\eta^{j_1}$', r'$\phi^{j_1}$',
+               r'$p_T^{j_2}$ (GeV)', r'$\eta^{j_2}$', r'$\phi^{j_2}$',
+               r'$\Delta R^{jj}$', r'$m^{jj}$ (GeV)',
+               r'$\Delta \eta^{jj}$', r'$THT$ (GeV)', r'$MET$ (GeV)',
+               r'$TET$ (GeV)']
+
+    # four cuts
+    cut = [None, None, None, None, None, None, None, 120, 2.4, None, None,
+           None]
+
+    for file_name, norm_name, stack_namem, label, c in zip(
+            file_names, norm_plot_file_names, stack_plot_file_names,
+            xlabels, cut):
+        divisions = [0, 1, 2, 3]  # for some reason gen_norm_one_histo overwrites?
+        opt.gen_histo(file_name, divisions,
+                      out_file_name=norm_name, labels=labels,
+                      save=True, norm_one=True,
+                      logy=False, xlabel=label)
+        divisions = [0, 1, 2, 3]  # for some reason gen_norm_one_histo overwrites?
+        opt.gen_histo(file_name, divisions,
+                      out_file_name=stack_namem, labels=labels,
+                      ylabel=stacked_ylabel, save=True, norm_one=False,
+                      logy=False, xlabel=label)
+
+
 # no_mg_cuts_histos()
 # no_mg_cuts_no_gg_histos()
 # just_sdeta_cut_histos()
@@ -580,4 +670,6 @@ def four_cuts_stacked_histos_custom_bins():
 # no_mg_cuts_mjj_zoom_histos()
 # no_mg_cuts_mjj_more_zoom_histos()
 # no_ma_cuts_100GeV_histos()
-no_mg_cuts_no_gg_sdeta_plot()
+# no_mg_cuts_no_gg_sdeta_plot()
+Lambda_kinematics_comparison()
+axion_mass_kinematics_comparison()

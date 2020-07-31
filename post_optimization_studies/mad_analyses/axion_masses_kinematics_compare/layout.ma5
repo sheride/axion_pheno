@@ -1,0 +1,198 @@
+################################################################################
+#                  MADANALYSIS5 CONFIGURATION FILE FOR PLOTS                   #
+#                      produced by MadAnalysis5 version                        #
+#                                                                              #
+################################################################################
+
+################################################################################
+#                               Files and Paths                                #
+################################################################################
+<Files>
+  jodir = /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_masses_kinematics_compare
+  html = 1
+  latex = 1
+  pdflatex = 1
+</Files>
+
+################################################################################
+#                   Global information related to the layout                   #
+################################################################################
+<Main>
+  lumi = 40.0 # fb^{-1}
+  stack = 1
+</Main>
+
+################################################################################
+#                            Definition of datasets                            #
+################################################################################
+<Dataset name="signal1mev">
+  <Physics>
+    background = False
+    weight = 1.0
+    xsection = 0.0
+  </Physics>
+  <Layout>
+    title = signal1MeV
+    linecolor = 0
+    linestyle = 0
+    lineshade = 0
+    linewidth = 1
+    backcolor = 0
+    backstyle = 1
+    backshade = 0
+  </Layout>
+</Dataset>
+
+<Dataset name="signal100gev1tev">
+  <Physics>
+    background = False
+    weight = 1.0
+    xsection = 0.0
+  </Physics>
+  <Layout>
+    title = signal100GeV1TeV
+    linecolor = 0
+    linestyle = 0
+    lineshade = 0
+    linewidth = 1
+    backcolor = 0
+    backstyle = 1
+    backshade = 0
+  </Layout>
+</Dataset>
+
+<Dataset name="signal100gev1p5tev">
+  <Physics>
+    background = False
+    weight = 1.0
+    xsection = 0.0
+  </Physics>
+  <Layout>
+    title = signal100GeV1p5TeV
+    linecolor = 0
+    linestyle = 0
+    lineshade = 0
+    linewidth = 1
+    backcolor = 0
+    backstyle = 1
+    backshade = 0
+  </Layout>
+</Dataset>
+
+<Dataset name="signal100gev4tev">
+  <Physics>
+    background = False
+    weight = 1.0
+    xsection = 0.0
+  </Physics>
+  <Layout>
+    title = signal100GeV4TeV
+    linecolor = 0
+    linestyle = 0
+    lineshade = 0
+    linewidth = 1
+    backcolor = 0
+    backstyle = 1
+    backshade = 0
+  </Layout>
+</Dataset>
+
+################################################################################
+#              Definition of the selection : histograms and cuts               #
+################################################################################
+<Histogram name="selection0">
+  stack = 0
+  titleX = "p_{T} [ jets_{1} ] (GeV/c) "
+  titleY = "Events "
+  xmin = 0.0
+  xmax = 2000.0
+</Histogram>
+
+<Histogram name="selection1">
+  stack = 0
+  titleX = "#eta [ jets_{1} ] "
+  titleY = "Events "
+  xmin = -8.0
+  xmax = 8.0
+</Histogram>
+
+<Histogram name="selection2">
+  stack = 0
+  titleX = "#phi [ jets_{1} ] "
+  titleY = "Events "
+  xmin = -3.2
+  xmax = 3.2
+</Histogram>
+
+<Histogram name="selection3">
+  stack = 0
+  titleX = "p_{T} [ jets_{2} ] (GeV/c) "
+  titleY = "Events "
+  xmin = 0.0
+  xmax = 1000.0
+</Histogram>
+
+<Histogram name="selection4">
+  stack = 0
+  titleX = "#eta [ jets_{2} ] "
+  titleY = "Events "
+  xmin = -8.0
+  xmax = 8.0
+</Histogram>
+
+<Histogram name="selection5">
+  stack = 0
+  titleX = "#phi [ jets_{2} ] "
+  titleY = "Events "
+  xmin = -3.2
+  xmax = 3.2
+</Histogram>
+
+<Histogram name="selection6">
+  stack = 0
+  titleX = "#DeltaR [ jets_{1}, jets_{2} ] "
+  titleY = "Events "
+  xmin = 0.0
+  xmax = 15.0
+</Histogram>
+
+<Histogram name="selection7">
+  stack = 0
+  titleX = "M [ jets_{1} jets_{2} ] (GeV/c^{2}) "
+  titleY = "Events "
+  xmin = 0.0
+  xmax = 3000.0
+</Histogram>
+
+<Histogram name="selection8">
+  stack = 0
+  titleX = "sd#eta [ jets_{1} jets_{2} ] "
+  titleY = "Events "
+  xmin = -15.0
+  xmax = 15.0
+</Histogram>
+
+<Histogram name="selection9">
+  stack = 0
+  titleX = "H_{T} (GeV) "
+  titleY = "Events "
+  xmin = 0.0
+  xmax = 4000.0
+</Histogram>
+
+<Histogram name="selection10">
+  stack = 0
+  titleX = "#slash{E}_{T} (GeV) "
+  titleY = "Events "
+  xmin = 0.0
+  xmax = 1000.0
+</Histogram>
+
+<Histogram name="selection11">
+  stack = 0
+  titleX = "E_{T} (GeV) "
+  titleY = "Events "
+  xmin = 0.0
+  xmax = 8000.0
+</Histogram>
+

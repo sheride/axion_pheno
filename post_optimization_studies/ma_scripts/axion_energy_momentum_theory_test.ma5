@@ -1,0 +1,38 @@
+# set directory where running "./bin/ma5"; set lumi; define the signal significance
+set main.currentdir = /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data # need to change this directory path --> exit and type "pwd" to get the path
+set main.lumi = 40
+set main.fom.formula = 5
+set main.fom.x = 0.0
+
+# import samples --> change the path to the LHE file
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_to_photon_signal/Events/run_01/unweighted_events.lhe.gz as signal
+
+# define bg and signal samples
+set signal.type = signal
+
+# a jet can be from a light quark or b quark
+define jets = j
+define e = e+ e-
+define mu = mu+ mu-
+define ta = ta+ ta-
+define lept = e mu ta
+define ax = 9000005
+
+select (PT(a[1]) > 300 and M(a[1] a[2]) > 500)
+
+# define which plots to make
+plot E(a[1] a[2])
+plot P(a[1] a[2])
+
+#set the plot/graph parameters
+set selection[1].xmin = 0
+set selection[1].xmax = 3000
+set selection[1].nbins = 200
+set selection[1].titleX = "E[ax] (GeV)"
+
+set selection[2].xmin = 0
+set selection[2].xmax = 3000
+set selection[2].nbins = 200
+set selection[2].titleX = "P[ax] (GeV)"
+
+submit axion_energy_momentum_theory_test

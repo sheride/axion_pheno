@@ -1,0 +1,19 @@
+<SAFheader>
+</SAFheader>
+
+<SampleGlobalInfo>
+# xsection     xsection_error nevents        sum_weight+    sum_weight-    
+1.788413e-01   4.944728e-04   10000          1.789233e+03   0.000000e+00   
+</SampleGlobalInfo>
+
+<FileInfo>
+"/Users/elijahsheridan/MG5_aMC_v2_6_5/axion_signal/Events/mass100GeV_Lambda4TeV/unweighted_events.lhe.gz" # file 1 / 1
+</FileInfo>
+
+<SampleDetailedInfo>
+# xsection     xsection_error nevents        sum_weight+    sum_weight-    
+1.788413e-01   4.944728e-04   10000          1.789233e+03   0.000000e+00    # file 1 / 1
+</SampleDetailedInfo>
+
+<SAFfooter>
+</SAFfooter>

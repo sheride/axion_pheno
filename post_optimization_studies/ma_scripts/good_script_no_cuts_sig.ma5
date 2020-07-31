@@ -1,0 +1,26 @@
+# set directory where running "./bin/ma5"; set lumi; define the signal significance
+set main.currentdir = /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data # need to change this directory path --> exit and type "pwd" to get the path
+set main.lumi = 40
+set main.fom.formula = 5
+set main.fom.x = 0.0
+
+# import samples --> change the path to the LHE file
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/axion_signal/signal_no_cuts_ma10GeV_Lambda1TeV/axion_signal_no_cuts_ma10GeV_Lambda1TeV.lhe as signal
+
+# define bg and signal samples
+set signal.type = signal
+
+# a jet can be from a light quark or b quark
+define jets = j
+define e = e+ e-
+define mu = mu+ mu-
+define ta = ta+ ta-
+define lept = e mu ta
+define ax = 9000005
+
+select (PT(a[1]) > 300 and M(a[1] a[2]) > 500)
+
+# define which plots to make
+plot M(jets[1] jets[2])
+
+submit no_mg_cuts_mjj_zoom

@@ -1,0 +1,19 @@
+<SAFheader>
+</SAFheader>
+
+<InitialCounter>
+"Initial number of events"      #
+124             0               # nentries
+3.347909e+04    0.000000e+00    # sum of weights
+4.189522e+07    0.000000e+00    # sum of weights^2
+</InitialCounter>
+
+<Counter>
+"1_PT ( a[1] ) > 300.0 and M ( a[1] a[2] ) > 500.0"# 1st cut
+0               0               # nentries
+0.000000e+00    0.000000e+00    # sum of weights
+0.000000e+00    0.000000e+00    # sum of weights^2
+</Counter>
+
+<SAFfooter>
+</SAFfooter>
