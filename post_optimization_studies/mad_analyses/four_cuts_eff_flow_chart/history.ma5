@@ -1,0 +1,147 @@
+set main.currentdir = /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/post_optimization_studies/mad_analyses
+set main.currentdir = /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/optimization/ma_scripts
+# set directory where running "./bin/ma5"
+set main.currentdir = /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data # need to change this directory path --> exit and type "pwd" to get the path
+set main.lumi = 40
+set main.fom.formula = 5
+set main.fom.x = 0.0
+# import samples --> change the path to the LHE file
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/axion_signal/axion_signal_gurrola_cuts_1MeV.lhe.gz as signal
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/vbf_diphoton_background_data/merged_lhe/vbf_diphoton_background_ht_0_100_merged.lhe.gz as bg_vbf_0_100
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/vbf_diphoton_background_data/merged_lhe/vbf_diphoton_background_ht_100_200_merged.lhe.gz as bg_vbf_100_200
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/vbf_diphoton_background_data/merged_lhe/vbf_diphoton_background_ht_200_400_merged.lhe.gz as bg_vbf_200_400
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/vbf_diphoton_background_data/merged_lhe/vbf_diphoton_background_ht_400_600_merged.lhe.gz as bg_vbf_400_600
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/vbf_diphoton_background_data/merged_lhe/vbf_diphoton_background_ht_600_800_merged.lhe.gz as bg_vbf_600_800
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/vbf_diphoton_background_data/merged_lhe/vbf_diphoton_background_ht_800_1200_merged.lhe.gz as bg_vbf_800_1200
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/vbf_diphoton_background_data/merged_lhe/vbf_diphoton_background_ht_1200_1600_merged.lhe.gz as bg_vbf_1200_1600
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/vbf_diphoton_background_data/merged_lhe/vbf_diphoton_background_ht_1600_inf_merged.lhe.gz as bg_vbf_1600_inf
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/diphoton_double_isr_background_data/merged_lhe/diphoton_double_isr_background_ht_0_100_merged.lhe.gz as bg_dip_0_100
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/diphoton_double_isr_background_data/merged_lhe/diphoton_double_isr_background_ht_100_200_merged.lhe.gz as bg_dip_100_200
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/diphoton_double_isr_background_data/merged_lhe/diphoton_double_isr_background_ht_200_400_merged.lhe.gz as bg_dip_200_400
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/diphoton_double_isr_background_data/merged_lhe/diphoton_double_isr_background_ht_400_600_merged.lhe.gz as bg_dip_400_600
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/diphoton_double_isr_background_data/merged_lhe/diphoton_double_isr_background_ht_600_800_merged.lhe.gz as bg_dip_600_800
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/diphoton_double_isr_background_data/merged_lhe/diphoton_double_isr_background_ht_800_1200_merged.lhe.gz as bg_dip_800_1200
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/diphoton_double_isr_background_data/merged_lhe/diphoton_double_isr_background_ht_1200_1600_merged.lhe.gz as bg_dip_1200_1600
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/diphoton_double_isr_background_data/merged_lhe/diphoton_double_isr_background_ht_1600_inf_merged.lhe.gz as bg_dip_1600_inf
+# define bg and signal samples
+set signal.type = signal
+set bg_vbf_0_100.type = background
+set bg_vbf_100_200.type = background
+set bg_vbf_200_400.type  = background
+set bg_vbf_400_600.type  = background
+set bg_vbf_600_800.type  = background
+set bg_vbf_800_1200.type  = background
+set bg_vbf_1200_1600.type  = background
+set bg_vbf_1600_inf.type = background
+set bg_dip_0_100.type = background
+set bg_dip_100_200.type = background
+set bg_dip_200_400.type = background
+set bg_dip_400_600.type = background
+set bg_dip_600_800.type = background
+set bg_dip_800_1200.type = background
+set bg_dip_1200_1600.type = background
+set bg_dip_1600_inf.type = background
+# a jet can be from a light quark or b quark
+define jets = j
+define e = e+ e-
+define mu = mu+ mu-
+define ta = ta+ ta-
+define lept = e mu ta
+define ax = 9000005
+# cuts
+select M(a[1] a[2]) > 500
+select PT(a[1]) > 300
+select M(jets[1] jets[2]) > 750
+select sdETA(jets[1] jets[2]) > 3.6 or sdETA(jets[1] jets[2]) < -3.6
+# define which plots to make
+plot PT(jets[1])
+plot ETA(jets[1])
+plot PHI(jets[1])
+plot PT(jets[2])
+plot ETA(jets[2])
+plot PHI(jets[2])
+plot DELTAR(jets[1], jets[2])
+plot M(jets[1] jets[2])
+plot sdETA(jets[1] jets[2])
+plot M(a[1] a[2])
+plot PT(a[1])
+plot PT(a[2])
+plot THT
+plot MET
+plot TET
+plot DELTAR(a[1], a[2])
+plot sdETA(a[1] a[2])
+#set the plot/graph parameters
+set selection[5].xmin = 0
+set selection[5].xmax = 2000
+set selection[5].nbins = 200
+set selection[5].rank = PTordering
+set selection[5].titleX = "p_{T}[j_{1}] (GeV)"
+set selection[6].xmin = -8
+set selection[6].xmax = 8
+set selection[6].nbins = 160
+set selection[6].rank = PTordering
+set selection[6].titleX = "#eta[j_{1}]"
+set selection[7].xmin = -3.2
+set selection[7].xmax = 3.2
+set selection[7].nbins = 64
+set selection[7].rank = PTordering
+set selection[7].titleX = "#phi[j_{1}]"
+set selection[8].xmin = 0
+set selection[8].xmax = 1000
+set selection[8].nbins = 100
+set selection[8].rank = PTordering
+set selection[8].titleX = "p_{T}[j_{2}] (GeV)"
+set selection[9].xmin = -8
+set selection[9].xmax = 8
+set selection[9].nbins = 160
+set selection[9].rank = PTordering
+set selection[9].titleX = "#eta[j_{2}]"
+set selection[10].xmin = -3.2
+set selection[10].xmax = 3.2
+set selection[10].nbins = 64
+set selection[10].rank = PTordering
+set selection[10].titleX = "#phi[j_{2}]"
+set selection[11].xmin = 0
+set selection[11].xmax = 15
+set selection[11].nbins = 75
+set selection[11].rank = PTordering
+set selection[11].titleX = "#DeltaR[j_{1},j_{2}]"
+set selection[12].xmin = 120
+set selection[12].xmax = 2000
+set selection[12].nbins = 160
+set selection[12].rank = PTordering
+set selection[12].titleX = "M[j_{1},j_{2}] (GeV)"
+set selection[13].xmin = 2.4
+set selection[13].xmax = 8
+set selection[13].titleX = "#Delta#eta(j_{1},j_{2})"
+set selection[14].xmin = 0
+set selection[14].xmax = 1000
+set selection[14].nbins = 400
+set selection[14].rank = PTordering
+set selection[14].titleX = "M[a_{1},a_{2}] (GeV)"
+set selection[15].xmin = 0
+set selection[15].xmax = 1000
+set selection[15].nbins = 80
+set selection[15].rank = PTordering
+set selection[15].titleX = "p_{T}[a_{1}]"
+set selection[16].xmin = 0
+set selection[16].xmax = 2000
+set selection[16].nbins = 400
+set selection[16].rank = PTordering
+set selection[16].titleX = "p_{T}[a_{2}] (GeV)"
+set selection[17].xmin = 0
+set selection[17].xmax = 4000
+set selection[17].nbins = 80
+set selection[17].rank = PTordering
+set selection[17].titleX = "THT"
+set selection[18].xmin = 0
+set selection[18].xmax = 1000
+set selection[18].nbins = 200
+set selection[18].rank = PTordering
+set selection[18].titleX = "MET"
+set selection[19].xmin = 0
+set selection[19].xmax = 8000
+set selection[19].nbins = 80
+set selection[19].rank = PTordering
+set selection[19].titleX = "TET"

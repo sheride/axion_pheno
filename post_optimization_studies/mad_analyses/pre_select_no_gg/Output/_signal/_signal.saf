@@ -1,0 +1,19 @@
+<SAFheader>
+</SAFheader>
+
+<SampleGlobalInfo>
+# xsection     xsection_error nevents        sum_weight+    sum_weight-    
+5.805282e-02   8.281016e-05   1000000        5.809055e+04   0.000000e+00   
+</SampleGlobalInfo>
+
+<FileInfo>
+"/Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/axion_signal/axion_signal_no_cuts_1MeV_no_gg.lhe" # file 1 / 1
+</FileInfo>
+
+<SampleDetailedInfo>
+# xsection     xsection_error nevents        sum_weight+    sum_weight-    
+5.805282e-02   8.281016e-05   1000000        5.809055e+04   0.000000e+00    # file 1 / 1
+</SampleDetailedInfo>
+
+<SAFfooter>
+</SAFfooter>

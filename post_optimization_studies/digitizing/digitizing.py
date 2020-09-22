@@ -48,17 +48,13 @@ def val_to_index(val, min_val, max_val, num_indices, y=False):
         return index
 
 
-
 m, L = [row for row in np.load('contour_data.npy')]
 m, L = [m, -np.log10(L)]
 i, f = np.searchsorted(m, [-2, 3])
 m, L = [np.append(m[i:f],[3.4]), np.append(L[i:f], [L[-1]])]
 
 
-
-
 # NUMBER 1
-#new_region = [[[1., 1., 1., 1.] if i_index <= j <= f_index and  else [0.,0.,0.,0.,] ]]
 
 pix_vals = np.load('big_image.npy')
 w, h = list((7/pix_vals.shape[0]) * np.array(pix_vals.shape[:2]))
@@ -79,10 +75,11 @@ m_indices = np.searchsorted(
 bots = [val_to_index(L[m_index], extent[2], extent[3], len(pix_vals), True)
         for m_index in m_indices]
 # white, except for col indices in cols and above the line
+#
 new_region = [
-        [[178/255, 34/255, 34/255, 1.]
+        [[178/255, 34/255, 34/255, 1]
         if j in cols and (i < bots[np.where(cols==j)[0][0]])
-        and np.sum(pix_vals[i,j,:3]**2) > 3*250**2
+        and np.sum(pix_vals[i,j,:3]**2) > 3*240**2
         else [1.,1.,1.,0.]
         for j in range(len(pix_vals[0]))] for i in range(len(pix_vals))]
 plt.imshow(new_region, extent=extent, aspect='auto')
@@ -119,10 +116,12 @@ m_indices = np.searchsorted(
 bots = [val_to_index(L[m_index], extent[2], extent[3], len(pix_vals), True)
         for m_index in m_indices]
 # white, except for col indices in cols and above the line
+# [178/255, 34/255, 34/255, 1]
+#
 new_region = [
-        [[178/255, 34/255, 34/255, 1.]
+        [[178/255, 34/255, 34/255, 1]
         if j in cols and (i < bots[np.where(cols==j)[0][0]])
-        and np.sum(pix_vals[i,j,:3]**2) > 3*250**2
+        and np.sum(pix_vals[i,j,:3]**2) > 3*240**2
         else [1.,1.,1.,0.]
         for j in range(len(pix_vals[0]))] for i in range(len(pix_vals))]
 plt.imshow(new_region, extent=extent, aspect='auto')

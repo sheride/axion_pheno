@@ -15,12 +15,13 @@ import seaborn as sb
 import plotly.graph_objs as go
 import matplotlib.patches as mpatches
 import os
+import scipy
 
 
 def gen_histo(file_name, divisions, out_file_name=None, norm_one=True,
               labels=None, ylabel=None, colors=None, logx=False, logy=False,
               save=False, bins=None, binResize=False, xlabel=None, min_x=None,
-              max_x=None):
+              max_x=None, stacked=False, histtypes=None, linestyles=None):
     """
     Takes a histogram-generating .py file returned by a MadAnalysis analysis
     and converts the plot with custom groupings of data files such that each
@@ -47,12 +48,17 @@ def gen_histo(file_name, divisions, out_file_name=None, norm_one=True,
     xlabel    - label for histogram x axis
     min_x     - x value at which histogram is begun
     max_x     - x value at which histogram is ended
+    stacked
+    shaded
+    dashed
     """
 
     file_name = file_name
     out_file_name = out_file_name or 'plot'
     labels = labels or ['Plot ' + str(i) for i in range(len(divisions))]
     colors = colors or ['#698252', '#9b8e82', '#7a8e99', '#a9935e', '#c7aec5']
+    histtypes = histtypes or ['step'] * len(divisions)
+    linestyles = linestyles or ['solid'] * len(divisions)
 
     # Variable setup
     xBinning = None
@@ -133,16 +139,28 @@ def gen_histo(file_name, divisions, out_file_name=None, norm_one=True,
         max_b_index = next(i for i, val in reversed(list(enumerate(xBinning)))
                            if val <= max_x)
 
+    # hard coded, bad!
+    if stacked:
+        for i in [1,0]:
+            combined_data[i] += combined_data[i+1]
+
     # Making plots
     y = [None] * len(combined_data)
-    for i, data in enumerate(combined_data):
+    for i, (data, histtype, linestyle) in enumerate(zip(
+            combined_data, histtypes, linestyles)):
+
+        # bad hardcode!
+        minus = 0
+        if i == 0:
+            minus = 2
+
         y[i], _, __ = pad.hist(
             x=xData[min_index:max_index],
             bins=xBinning[min_b_index:max_b_index],
             weights=data[min_index:max_index], label=labels[i],
-            histtype="step", rwidth=1.0, color=colors[i], edgecolor=colors[i],
-            linewidth=4, bottom=None, cumulative=False, density=norm_one,
-            align="mid", orientation="vertical")
+            histtype=histtype, rwidth=1.0, color=colors[i], edgecolor=colors[i],
+            linewidth=4-minus, bottom=None, cumulative=False, density=norm_one,
+            align="mid", orientation="vertical", linestyle=linestyle)
 
     # Formatting plots
     plt.rc('text', usetex=False)
@@ -331,7 +349,7 @@ def heatmap(y, cols, rows, label=None, xlabel=None, ylabel=None, smooth=False,
         frame = frame.iloc[::-1]  # invert y-axis order
 
         # Set up figure
-        ax = sb.heatmap(frame, cmap='YlGnBu',
+        ax = sb.heatmap(frame, #cmap='YlGnBu',
                         cbar_kws={'label': r'{}'.format(label)})
         ax.set_xlabel(r'{}'.format(xlabel))
         ax.set_ylabel(r'{}'.format(ylabel))
@@ -641,4 +659,24 @@ def theta_monte_carlo(file_name, size):
 #                y.append(L[0] + ((L[-1] - L[0]) / yres) * j)
 #                break
 #    curve = plt.plot(m, y, linewidth=3, linestyle='dashed', color='gray')
+
+def smooth_heatmap_from_irreg_grid(xs, ys, data, xlabel, ylabel, clabel,
+                                   res=1000, ext=None, save_file=None):
+    ext = ext or [xs[0], xs[-1], ys[0], ys[-1]]
+    # look into order of "for" statements?
+    pts = np.array([[x,y] for x in xs for y in ys])
+    data = np.array(data).flatten()
+    grid = np.array(
+            [[[x,y] for x in np.linspace(ext[0], ext[1], res)]
+            for y in np.linspace(ext[2], ext[3], res)])
+    interp = scipy.interpolate.griddata(pts, data, grid)
+    plt.imshow(interp, origin='lower', aspect='auto', extent=ext)
+    cbar = plt.colorbar()
+    plt.xlabel(r'{}'.format(xlabel))
+    plt.ylabel(r'{}'.format(ylabel))
+    print(clabel)
+    cbar.set_label(r'{}'.format(clabel), rotation=90)
+    if save_file:
+        plt.savefig(save_file, dpi=300, bbox_inches='tight')
+
 

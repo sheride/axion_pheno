@@ -1,0 +1,43 @@
+\contentsline {section}{\numberline {1} Setup}{3}{section.1}% 
+\contentsline {subsection}{\numberline {1.1} Command history}{3}{subsection.1.1}% 
+\contentsline {subsection}{\numberline {1.2} Configuration}{6}{subsection.1.2}% 
+\contentsline {section}{\numberline {2} Datasets}{7}{section.2}% 
+\contentsline {subsection}{\numberline {2.1} signal\_1pt8tevl}{7}{subsection.2.1}% 
+\contentsline {subsection}{\numberline {2.2} signal\_2tevl}{7}{subsection.2.2}% 
+\contentsline {subsection}{\numberline {2.3} signal\_2pt2tevl}{7}{subsection.2.3}% 
+\contentsline {subsection}{\numberline {2.4} signal\_2pt4tevl}{8}{subsection.2.4}% 
+\contentsline {subsection}{\numberline {2.5} bg\_dip\_0\_100}{8}{subsection.2.5}% 
+\contentsline {subsection}{\numberline {2.6} bg\_dip\_100\_200}{9}{subsection.2.6}% 
+\contentsline {subsection}{\numberline {2.7} bg\_dip\_200\_400}{9}{subsection.2.7}% 
+\contentsline {subsection}{\numberline {2.8} bg\_dip\_400\_600}{10}{subsection.2.8}% 
+\contentsline {subsection}{\numberline {2.9} bg\_dip\_600\_800}{10}{subsection.2.9}% 
+\contentsline {subsection}{\numberline {2.10} bg\_dip\_800\_1200}{10}{subsection.2.10}% 
+\contentsline {subsection}{\numberline {2.11} bg\_dip\_1200\_1600}{11}{subsection.2.11}% 
+\contentsline {subsection}{\numberline {2.12} bg\_dip\_1600\_inf}{11}{subsection.2.12}% 
+\contentsline {subsection}{\numberline {2.13} bg\_vbf\_0\_100}{12}{subsection.2.13}% 
+\contentsline {subsection}{\numberline {2.14} bg\_vbf\_100\_200}{12}{subsection.2.14}% 
+\contentsline {subsection}{\numberline {2.15} bg\_vbf\_200\_400}{12}{subsection.2.15}% 
+\contentsline {subsection}{\numberline {2.16} bg\_vbf\_400\_600}{13}{subsection.2.16}% 
+\contentsline {subsection}{\numberline {2.17} bg\_vbf\_600\_800}{13}{subsection.2.17}% 
+\contentsline {subsection}{\numberline {2.18} bg\_vbf\_800\_1200}{14}{subsection.2.18}% 
+\contentsline {subsection}{\numberline {2.19} bg\_vbf\_1200\_1600}{14}{subsection.2.19}% 
+\contentsline {subsection}{\numberline {2.20} bg\_vbf\_1600\_inf}{14}{subsection.2.20}% 
+\contentsline {section}{\numberline {3} Histos and cuts}{16}{section.3}% 
+\contentsline {subsection}{\numberline {3.1}Cut 1}{16}{subsection.3.1}% 
+\contentsline {subsection}{\numberline {3.2} Histogram 1}{17}{subsection.3.2}% 
+\contentsline {subsection}{\numberline {3.3} Histogram 2}{18}{subsection.3.3}% 
+\contentsline {subsection}{\numberline {3.4} Histogram 3}{19}{subsection.3.4}% 
+\contentsline {subsection}{\numberline {3.5} Histogram 4}{20}{subsection.3.5}% 
+\contentsline {subsection}{\numberline {3.6} Histogram 5}{21}{subsection.3.6}% 
+\contentsline {subsection}{\numberline {3.7} Histogram 6}{22}{subsection.3.7}% 
+\contentsline {subsection}{\numberline {3.8} Histogram 7}{23}{subsection.3.8}% 
+\contentsline {subsection}{\numberline {3.9} Histogram 8}{24}{subsection.3.9}% 
+\contentsline {subsection}{\numberline {3.10} Histogram 9}{25}{subsection.3.10}% 
+\contentsline {subsection}{\numberline {3.11} Histogram 10}{26}{subsection.3.11}% 
+\contentsline {subsection}{\numberline {3.12} Histogram 11}{27}{subsection.3.12}% 
+\contentsline {subsection}{\numberline {3.13} Histogram 12}{28}{subsection.3.13}% 
+\contentsline {subsection}{\numberline {3.14} Histogram 13}{29}{subsection.3.14}% 
+\contentsline {subsection}{\numberline {3.15} Histogram 14}{30}{subsection.3.15}% 
+\contentsline {subsection}{\numberline {3.16} Histogram 15}{31}{subsection.3.16}% 
+\contentsline {section}{\numberline {4} Summary}{32}{section.4}% 
+\contentsline {subsection}{\numberline {4.1}Cut-flow charts}{32}{subsection.4.1}% 
