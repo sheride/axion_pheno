@@ -13,7 +13,7 @@ for ecut in ${etacuts[@]};
 		sed -i "" s/PTCUT/'300'/g $temp
     		sed -i "" s/ETACUT/$ecut/g $temp
 		sed -i "" s/MJJCUT/$mcut/g $temp
-    		sed -i "" s/FILENAME/second_analysis_sdEta${ecut}_mjj${mcut}/g $temp 
+    		sed -i "" s/FILENAME/disc_contour_sdEta${ecut}_mjj${mcut}/g $temp 
     		python2.7 ../../HEPTools/madanalysis5/madanalysis5/bin/ma5 -s $temp
 	done
 done

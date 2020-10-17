@@ -674,7 +674,6 @@ def smooth_heatmap_from_irreg_grid(xs, ys, data, xlabel, ylabel, clabel,
     cbar = plt.colorbar()
     plt.xlabel(r'{}'.format(xlabel))
     plt.ylabel(r'{}'.format(ylabel))
-    print(clabel)
     cbar.set_label(r'{}'.format(clabel), rotation=90)
     if save_file:
         plt.savefig(save_file, dpi=300, bbox_inches='tight')

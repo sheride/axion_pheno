@@ -52,10 +52,13 @@ define lept = e mu ta
 define ax = 9000005
 
 # cuts
-select M(a[1] a[2]) > 500
-select PT(a[1]) > 300
-select M(jets[1] jets[2]) > 750
+# select M(a[1] a[2]) > 500
+# select PT(a[1]) > 300
+# select M(jets[1] jets[2]) > 750
+# select sdETA(jets[1] jets[2]) > 3.6 or sdETA(jets[1] jets[2]) < -3.6
+select PT(jets[1]) > 30 and PT(jets[2]) > 30
 select sdETA(jets[1] jets[2]) > 3.6 or sdETA(jets[1] jets[2]) < -3.6
+select M(jets[1] jets[2]) > 750
 
 # define which plots to make
 plot PT(jets[1])
@@ -165,4 +168,4 @@ set selection[19].nbins = 80
 set selection[19].rank = PTordering
 set selection[19].titleX = "TET"
 
-submit four_cuts_eff_flow_chart
+submit vbf_eff_flow_chart

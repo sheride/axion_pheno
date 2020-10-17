@@ -1,0 +1,1335 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./main.tex
+LaTeX2e <2018-12-01>
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/size10.clo)) (./jheppub.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/epsfig.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def))))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/natbib/natbib.sty)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/color.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/ifxetex/ifxetex.sty)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/auxhook.sty)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/kvoptions.sty)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/hyperref.cfg)
+
+Package hyperref Warning: Option `pagecolor' is not available anymore.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/url/url.sty))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ot1phv.fd))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/fontenc.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/t1enc.def))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/colortbl/colortbl.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/tools/array.sty))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/float/float.sty)
+No file main.aux.
+(/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/t1cmss.fd)
+
+Package JHEP Warning: E-mails are missing.
+(JHEP)                Plese use \emailAdd macro to provide e-mails..
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd)
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+
+[0{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./log
+o.png>] [1] (/usr/local/texlive/2019/texmf-dist/tex/latex/base/t1cmtt.fd)
+Overfull \hbox (36.92953pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 ma5>set main.currentdir = /-Users/-elijahsheridan/-MG5_aMC_v2_6
+_5/-axion_pheno/-optimization/-
+
+Overfull \hbox (31.68082pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 ma5>set main.currentdir = /-Users/-elijahsheridan/-MG5_aMC_v2_6
+_5/-axion_pheno/-madgraph_data
+
+Overfull \hbox (31.68082pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-axion_signal/-
+
+Overfull \hbox (115.66031pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-vbf_diphoton_background_data/-
+
+Overfull \hbox (115.66031pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-vbf_diphoton_background_data/-
+
+Overfull \hbox (115.66031pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-vbf_diphoton_background_data/-
+
+Overfull \hbox (115.66031pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-vbf_diphoton_background_data/-
+
+Overfull \hbox (115.66031pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-vbf_diphoton_background_data/-
+
+Overfull \hbox (115.66031pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-vbf_diphoton_background_data/-
+
+Overfull \hbox (115.66031pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-vbf_diphoton_background_data/-
+
+Overfull \hbox (115.66031pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-vbf_diphoton_background_data/-
+
+Overfull \hbox (152.40134pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-diphoton_double_isr_background_data/-
+
+Overfull \hbox (152.40134pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-diphoton_double_isr_background_data/-
+
+Overfull \hbox (10.68594pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 merged_lhe/-diphoton_double_isr_background_ht_100_200_merged.lh
+e.gz as bg_dip_100_200 
+
+Overfull \hbox (152.40134pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-diphoton_double_isr_background_data/-
+
+Overfull \hbox (10.68594pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 merged_lhe/-diphoton_double_isr_background_ht_200_400_merged.lh
+e.gz as bg_dip_200_400 
+
+Overfull \hbox (152.40134pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-diphoton_double_isr_background_data/-
+
+Overfull \hbox (10.68594pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 merged_lhe/-diphoton_double_isr_background_ht_400_600_merged.lh
+e.gz as bg_dip_400_600 
+
+Overfull \hbox (152.40134pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-diphoton_double_isr_background_data/-
+
+Overfull \hbox (10.68594pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 merged_lhe/-diphoton_double_isr_background_ht_600_800_merged.lh
+e.gz as bg_dip_600_800 
+
+Overfull \hbox (152.40134pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-diphoton_double_isr_background_data/-
+
+Overfull \hbox (21.18338pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 merged_lhe/-diphoton_double_isr_background_ht_800_1200_merged.l
+he.gz as bg_dip_800_1200 
+
+Overfull \hbox (152.40134pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-diphoton_double_isr_background_data/-
+
+Overfull \hbox (31.68082pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 merged_lhe/-diphoton_double_isr_background_ht_1200_1600_merged.
+lhe.gz as bg_dip_1200_1600 
+
+Overfull \hbox (152.40134pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-diphoton_double_isr_background_data/-
+
+Overfull \hbox (21.18338pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 merged_lhe/-diphoton_double_isr_background_ht_1600_inf_merged.l
+he.gz as bg_dip_1600_inf 
+
+Overfull \hbox (36.92953pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 ma5>select ((sdETA(jets[1] jets[2]) > 3.6 or sdETA(jets[1] jets
+[2]) < -3.6) and M(jets[1]
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--151
+
+[2] (/usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd) [3]
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+\T1/cmr/m/n/10 axion_pheno/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+\T1/cmr/m/n/10 madgraph_data/-axion_signal/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+\T1/cmr/m/n/10 on_discovery_contour/-
+
+Overfull \hbox (2.49881pt too wide) in paragraph at lines 180--180
+\T1/cmr/m/n/10 ma100MeV_L2pt2TeV_deta2.lhe.gz| 
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 176--183
+ [] 
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--202
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--202
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--202
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--202
+\T1/cmr/m/n/10 vbf_diphoton_background_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--202
+\T1/cmr/m/n/10 merged_lhe/-
+
+Overfull \hbox (82.11826pt too wide) in paragraph at lines 202--202
+\T1/cmr/m/n/10 vbf_diphoton_background_ht_0_100_merged.lhe.gz| 
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 198--205
+ [] 
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 224--224
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--224
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--224
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--224
+\T1/cmr/m/n/10 vbf_diphoton_background_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--224
+\T1/cmr/m/n/10 merged_lhe/-
+
+Overfull \hbox (92.11581pt too wide) in paragraph at lines 224--224
+\T1/cmr/m/n/10 vbf_diphoton_background_ht_100_200_merged.lhe.gz| 
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 220--227
+ [] 
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--246
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--246
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--246
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--246
+\T1/cmr/m/n/10 vbf_diphoton_background_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--246
+\T1/cmr/m/n/10 merged_lhe/-
+
+Overfull \hbox (92.11581pt too wide) in paragraph at lines 246--246
+\T1/cmr/m/n/10 vbf_diphoton_background_ht_200_400_merged.lhe.gz| 
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 242--249
+ [] 
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--268
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--268
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--268
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--268
+\T1/cmr/m/n/10 vbf_diphoton_background_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--268
+\T1/cmr/m/n/10 merged_lhe/-
+
+Overfull \hbox (92.11581pt too wide) in paragraph at lines 268--268
+\T1/cmr/m/n/10 vbf_diphoton_background_ht_400_600_merged.lhe.gz| 
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 264--271
+ [] 
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 290--290
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 290--290
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 290--290
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 290--290
+\T1/cmr/m/n/10 vbf_diphoton_background_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 290--290
+\T1/cmr/m/n/10 merged_lhe/-
+
+Overfull \hbox (92.11581pt too wide) in paragraph at lines 290--290
+\T1/cmr/m/n/10 vbf_diphoton_background_ht_600_800_merged.lhe.gz| 
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 286--293
+ [] 
+
+Underfull \hbox (badness 10000) in paragraph at lines 312--312
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 312--312
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 312--312
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 312--312
+\T1/cmr/m/n/10 vbf_diphoton_background_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 312--312
+\T1/cmr/m/n/10 merged_lhe/-
+
+Overfull \hbox (97.1146pt too wide) in paragraph at lines 312--312
+\T1/cmr/m/n/10 vbf_diphoton_background_ht_800_1200_merged.lhe.gz| 
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 308--315
+ [] 
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 334--334
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 334--334
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 334--334
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 334--334
+\T1/cmr/m/n/10 vbf_diphoton_background_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 334--334
+\T1/cmr/m/n/10 merged_lhe/-
+
+Overfull \hbox (102.11337pt too wide) in paragraph at lines 334--334
+\T1/cmr/m/n/10 vbf_diphoton_background_ht_1200_1600_merged.lhe.gz| 
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 330--337
+ [] 
+
+Underfull \hbox (badness 10000) in paragraph at lines 356--356
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 356--356
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 356--356
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 356--356
+\T1/cmr/m/n/10 vbf_diphoton_background_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 356--356
+\T1/cmr/m/n/10 merged_lhe/-
+
+Overfull \hbox (93.50436pt too wide) in paragraph at lines 356--356
+\T1/cmr/m/n/10 vbf_diphoton_background_ht_1600_inf_merged.lhe.gz| 
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 352--359
+ [] 
+
+Underfull \hbox (badness 10000) in paragraph at lines 378--378
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 378--378
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 378--378
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+
+Overfull \hbox (31.35287pt too wide) in paragraph at lines 378--378
+\T1/cmr/m/n/10 diphoton_double_isr_background_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 378--378
+\T1/cmr/m/n/10 merged_lhe/-
+
+Overfull \hbox (115.52676pt too wide) in paragraph at lines 378--378
+\T1/cmr/m/n/10 diphoton_double_isr_background_ht_0_100_merged.lhe.gz| 
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 374--381
+ [] 
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 400--400
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 400--400
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 400--400
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+
+Overfull \hbox (31.35287pt too wide) in paragraph at lines 400--400
+\T1/cmr/m/n/10 diphoton_double_isr_background_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 400--400
+\T1/cmr/m/n/10 merged_lhe/-
+
+Overfull \hbox (125.52432pt too wide) in paragraph at lines 400--400
+\T1/cmr/m/n/10 diphoton_double_isr_background_ht_100_200_merged.lhe.gz| 
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 396--403
+ [] 
+
+Underfull \hbox (badness 10000) in paragraph at lines 422--422
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 422--422
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 422--422
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+
+Overfull \hbox (31.35287pt too wide) in paragraph at lines 422--422
+\T1/cmr/m/n/10 diphoton_double_isr_background_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 422--422
+\T1/cmr/m/n/10 merged_lhe/-
+
+Overfull \hbox (125.52432pt too wide) in paragraph at lines 422--422
+\T1/cmr/m/n/10 diphoton_double_isr_background_ht_200_400_merged.lhe.gz| 
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 418--425
+ [] 
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 444--444
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 444--444
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 444--444
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+
+Overfull \hbox (31.35287pt too wide) in paragraph at lines 444--444
+\T1/cmr/m/n/10 diphoton_double_isr_background_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 444--444
+\T1/cmr/m/n/10 merged_lhe/-
+
+Overfull \hbox (125.52432pt too wide) in paragraph at lines 444--444
+\T1/cmr/m/n/10 diphoton_double_isr_background_ht_400_600_merged.lhe.gz| 
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 440--447
+ [] 
+
+Underfull \hbox (badness 10000) in paragraph at lines 466--466
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 466--466
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 466--466
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+
+Overfull \hbox (31.35287pt too wide) in paragraph at lines 466--466
+\T1/cmr/m/n/10 diphoton_double_isr_background_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 466--466
+\T1/cmr/m/n/10 merged_lhe/-
+
+Overfull \hbox (125.52432pt too wide) in paragraph at lines 466--466
+\T1/cmr/m/n/10 diphoton_double_isr_background_ht_600_800_merged.lhe.gz| 
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 462--469
+ [] 
+
+Underfull \hbox (badness 10000) in paragraph at lines 488--488
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 488--488
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 488--488
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+
+Overfull \hbox (31.35287pt too wide) in paragraph at lines 488--488
+\T1/cmr/m/n/10 diphoton_double_isr_background_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 488--488
+\T1/cmr/m/n/10 merged_lhe/-
+
+Overfull \hbox (130.5231pt too wide) in paragraph at lines 488--488
+\T1/cmr/m/n/10 diphoton_double_isr_background_ht_800_1200_merged.lhe.gz| 
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 484--491
+ [] 
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 510--510
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 510--510
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 510--510
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+
+Overfull \hbox (31.35287pt too wide) in paragraph at lines 510--510
+\T1/cmr/m/n/10 diphoton_double_isr_background_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 510--510
+\T1/cmr/m/n/10 merged_lhe/-
+
+Overfull \hbox (135.52188pt too wide) in paragraph at lines 510--510
+\T1/cmr/m/n/10 diphoton_double_isr_background_ht_1200_1600_merged.lhe.gz| 
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 506--513
+ [] 
+
+Underfull \hbox (badness 10000) in paragraph at lines 532--532
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 532--532
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 532--532
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+
+Overfull \hbox (31.35287pt too wide) in paragraph at lines 532--532
+\T1/cmr/m/n/10 diphoton_double_isr_background_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 532--532
+\T1/cmr/m/n/10 merged_lhe/-
+
+Overfull \hbox (126.91287pt too wide) in paragraph at lines 532--532
+\T1/cmr/m/n/10 diphoton_double_isr_background_ht_1600_inf_merged.lhe.gz| 
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 528--535
+ [] 
+[10]
+Underfull \hbox (badness 4872) in paragraph at lines 552--553
+[]|\T1/cmr/m/n/10 Rejected events:
+
+Overfull \hbox (10.85573pt too wide) in paragraph at lines 559--559
+[]|\T1/cmr/m/n/10 bg_vbf_0_100| 
+
+Overfull \hbox (20.85329pt too wide) in paragraph at lines 561--561
+[]|\T1/cmr/m/n/10 bg_vbf_100_200| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 561--561
+[]|\T1/cmr/m/n/10 0.000120 +/--
+
+Underfull \hbox (badness 10000) in paragraph at lines 561--562
+[]|\T1/cmr/m/n/10 0.000120 +/--
+
+Overfull \hbox (20.85329pt too wide) in paragraph at lines 563--563
+[]|\T1/cmr/m/n/10 bg_vbf_200_400| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 563--563
+[]|\T1/cmr/m/n/10 0.001117 +/--
+
+Underfull \hbox (badness 10000) in paragraph at lines 563--564
+[]|\T1/cmr/m/n/10 0.001117 +/--
+
+Overfull \hbox (20.85329pt too wide) in paragraph at lines 565--565
+[]|\T1/cmr/m/n/10 bg_vbf_400_600| 
+
+Overfull \hbox (20.85329pt too wide) in paragraph at lines 567--567
+[]|\T1/cmr/m/n/10 bg_vbf_600_800| 
+
+Overfull \hbox (25.85207pt too wide) in paragraph at lines 569--569
+[]|\T1/cmr/m/n/10 bg_vbf_800_1200| 
+
+Overfull \hbox (30.85085pt too wide) in paragraph at lines 571--571
+[]|\T1/cmr/m/n/10 bg_vbf_1200_1600| 
+
+Overfull \hbox (22.24184pt too wide) in paragraph at lines 573--573
+[]|\T1/cmr/m/n/10 bg_vbf_1600_inf| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 573--573
+[]|\T1/cmr/m/n/10 0.000744 +/--
+
+Underfull \hbox (badness 10000) in paragraph at lines 573--574
+[]|\T1/cmr/m/n/10 0.000744 +/--
+
+Overfull \hbox (10.85573pt too wide) in paragraph at lines 575--575
+[]|\T1/cmr/m/n/10 bg_dip_0_100| 
+
+Overfull \hbox (20.85329pt too wide) in paragraph at lines 577--577
+[]|\T1/cmr/m/n/10 bg_dip_100_200| 
+
+Overfull \hbox (20.85329pt too wide) in paragraph at lines 579--579
+[]|\T1/cmr/m/n/10 bg_dip_200_400| 
+
+Overfull \hbox (20.85329pt too wide) in paragraph at lines 581--581
+[]|\T1/cmr/m/n/10 bg_dip_400_600| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 581--581
+[]|\T1/cmr/m/n/10 0.000426 +/--
+
+Underfull \hbox (badness 10000) in paragraph at lines 581--582
+[]|\T1/cmr/m/n/10 0.000426 +/--
+
+Overfull \hbox (20.85329pt too wide) in paragraph at lines 583--583
+[]|\T1/cmr/m/n/10 bg_dip_600_800| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 583--583
+[]|\T1/cmr/m/n/10 0.000539 +/--
+
+Underfull \hbox (badness 10000) in paragraph at lines 583--584
+[]|\T1/cmr/m/n/10 0.000539 +/--
+
+Overfull \hbox (25.85207pt too wide) in paragraph at lines 585--585
+[]|\T1/cmr/m/n/10 bg_dip_800_1200| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 585--585
+[]|\T1/cmr/m/n/10 0.000500 +/--
+
+Underfull \hbox (badness 10000) in paragraph at lines 585--586
+[]|\T1/cmr/m/n/10 0.000500 +/--
+
+Overfull \hbox (30.85085pt too wide) in paragraph at lines 587--587
+[]|\T1/cmr/m/n/10 bg_dip_1200_1600| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 587--587
+[]|\T1/cmr/m/n/10 0.000205 +/--
+
+Underfull \hbox (badness 10000) in paragraph at lines 587--588
+[]|\T1/cmr/m/n/10 0.000205 +/--
+
+Overfull \hbox (22.24184pt too wide) in paragraph at lines 589--589
+[]|\T1/cmr/m/n/10 bg_dip_1600_inf| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 589--589
+[]|\T1/cmr/m/n/10 0.00975 +/--
+
+Overfull \hbox (27.68684pt too wide) in paragraph at lines 549--592
+ [] 
+
+Underfull \hbox (badness 10000) in paragraph at lines 546--593
+
+[11]
+Overfull \hbox (20.97742pt too wide) in paragraph at lines 609--618
+ [] 
+[12] (./main.aux)
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+ )
+(see the transcript file for additional information){/usr/local/texlive/2019/te
+xmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2019/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2019/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2019/texmf-dist
+/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2019/texmf-dist/f
+onts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2019/texmf-dist/fon
+ts/type1/public/cm-super/sfcc1000.pfb></usr/local/texlive/2019/texmf-dist/fonts
+/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/t
+ype1/public/cm-super/sfsx1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/typ
+e1/public/cm-super/sfsx1728.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1
+/public/cm-super/sfti1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/p
+ublic/cm-super/sftt1000.pfb>
+Output written on main.pdf (13 pages, 232697 bytes).
+Transcript written on main.log.
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./main.tex
+LaTeX2e <2018-12-01>
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/size10.clo)) (./jheppub.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/epsfig.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def))))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/natbib/natbib.sty)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/color.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/ifxetex/ifxetex.sty)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/auxhook.sty)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/kvoptions.sty)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/hyperref.cfg)
+
+Package hyperref Warning: Option `pagecolor' is not available anymore.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/url/url.sty))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ot1phv.fd))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/fontenc.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/t1enc.def))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/colortbl/colortbl.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/tools/array.sty))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/float/float.sty) (./main.aux)
+(/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty))
+(./main.out) (./main.out)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/t1cmss.fd)
+
+Package JHEP Warning: E-mails are missing.
+(JHEP)                Plese use \emailAdd macro to provide e-mails..
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd)
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+
+[0{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./log
+o.png>] (./main.toc) [1]
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/t1cmtt.fd)
+Overfull \hbox (36.92953pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 ma5>set main.currentdir = /-Users/-elijahsheridan/-MG5_aMC_v2_6
+_5/-axion_pheno/-optimization/-
+
+Overfull \hbox (31.68082pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 ma5>set main.currentdir = /-Users/-elijahsheridan/-MG5_aMC_v2_6
+_5/-axion_pheno/-madgraph_data
+
+Overfull \hbox (31.68082pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-axion_signal/-
+
+Overfull \hbox (115.66031pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-vbf_diphoton_background_data/-
+
+Overfull \hbox (115.66031pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-vbf_diphoton_background_data/-
+
+Overfull \hbox (115.66031pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-vbf_diphoton_background_data/-
+
+Overfull \hbox (115.66031pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-vbf_diphoton_background_data/-
+
+Overfull \hbox (115.66031pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-vbf_diphoton_background_data/-
+
+Overfull \hbox (115.66031pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-vbf_diphoton_background_data/-
+
+Overfull \hbox (115.66031pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-vbf_diphoton_background_data/-
+
+Overfull \hbox (115.66031pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-vbf_diphoton_background_data/-
+
+Overfull \hbox (152.40134pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-diphoton_double_isr_background_data/-
+
+Overfull \hbox (152.40134pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-diphoton_double_isr_background_data/-
+
+Overfull \hbox (10.68594pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 merged_lhe/-diphoton_double_isr_background_ht_100_200_merged.lh
+e.gz as bg_dip_100_200 
+
+Overfull \hbox (152.40134pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-diphoton_double_isr_background_data/-
+
+Overfull \hbox (10.68594pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 merged_lhe/-diphoton_double_isr_background_ht_200_400_merged.lh
+e.gz as bg_dip_200_400 
+
+Overfull \hbox (152.40134pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-diphoton_double_isr_background_data/-
+
+Overfull \hbox (10.68594pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 merged_lhe/-diphoton_double_isr_background_ht_400_600_merged.lh
+e.gz as bg_dip_400_600 
+
+Overfull \hbox (152.40134pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-diphoton_double_isr_background_data/-
+
+Overfull \hbox (10.68594pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 merged_lhe/-diphoton_double_isr_background_ht_600_800_merged.lh
+e.gz as bg_dip_600_800 
+
+Overfull \hbox (152.40134pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-diphoton_double_isr_background_data/-
+
+Overfull \hbox (21.18338pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 merged_lhe/-diphoton_double_isr_background_ht_800_1200_merged.l
+he.gz as bg_dip_800_1200 
+
+Overfull \hbox (152.40134pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-diphoton_double_isr_background_data/-
+
+Overfull \hbox (31.68082pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 merged_lhe/-diphoton_double_isr_background_ht_1200_1600_merged.
+lhe.gz as bg_dip_1200_1600 
+
+Overfull \hbox (152.40134pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 ma5>import /-Users/-elijahsheridan/-MG5_aMC_v2_6_5/-axion_pheno
+/-madgraph_data/-diphoton_double_isr_background_data/-
+
+Overfull \hbox (21.18338pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 merged_lhe/-diphoton_double_isr_background_ht_1600_inf_merged.l
+he.gz as bg_dip_1600_inf 
+
+Overfull \hbox (36.92953pt too wide) in paragraph at lines 50--151
+\T1/cmtt/m/n/10 ma5>select ((sdETA(jets[1] jets[2]) > 3.6 or sdETA(jets[1] jets
+[2]) < -3.6) and M(jets[1]
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--151
+
+[2] (/usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd) [3]
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+\T1/cmr/m/n/10 axion_pheno/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+\T1/cmr/m/n/10 madgraph_data/-axion_signal/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+\T1/cmr/m/n/10 on_discovery_contour/-
+
+Overfull \hbox (2.49881pt too wide) in paragraph at lines 180--180
+\T1/cmr/m/n/10 ma100MeV_L2pt2TeV_deta2.lhe.gz| 
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 176--183
+ [] 
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--202
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--202
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--202
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--202
+\T1/cmr/m/n/10 vbf_diphoton_background_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--202
+\T1/cmr/m/n/10 merged_lhe/-
+
+Overfull \hbox (82.11826pt too wide) in paragraph at lines 202--202
+\T1/cmr/m/n/10 vbf_diphoton_background_ht_0_100_merged.lhe.gz| 
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 198--205
+ [] 
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 224--224
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--224
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--224
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--224
+\T1/cmr/m/n/10 vbf_diphoton_background_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--224
+\T1/cmr/m/n/10 merged_lhe/-
+
+Overfull \hbox (92.11581pt too wide) in paragraph at lines 224--224
+\T1/cmr/m/n/10 vbf_diphoton_background_ht_100_200_merged.lhe.gz| 
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 220--227
+ [] 
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--246
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--246
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--246
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--246
+\T1/cmr/m/n/10 vbf_diphoton_background_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--246
+\T1/cmr/m/n/10 merged_lhe/-
+
+Overfull \hbox (92.11581pt too wide) in paragraph at lines 246--246
+\T1/cmr/m/n/10 vbf_diphoton_background_ht_200_400_merged.lhe.gz| 
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 242--249
+ [] 
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--268
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--268
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--268
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--268
+\T1/cmr/m/n/10 vbf_diphoton_background_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--268
+\T1/cmr/m/n/10 merged_lhe/-
+
+Overfull \hbox (92.11581pt too wide) in paragraph at lines 268--268
+\T1/cmr/m/n/10 vbf_diphoton_background_ht_400_600_merged.lhe.gz| 
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 264--271
+ [] 
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 290--290
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 290--290
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 290--290
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 290--290
+\T1/cmr/m/n/10 vbf_diphoton_background_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 290--290
+\T1/cmr/m/n/10 merged_lhe/-
+
+Overfull \hbox (92.11581pt too wide) in paragraph at lines 290--290
+\T1/cmr/m/n/10 vbf_diphoton_background_ht_600_800_merged.lhe.gz| 
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 286--293
+ [] 
+
+Underfull \hbox (badness 10000) in paragraph at lines 312--312
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 312--312
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 312--312
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 312--312
+\T1/cmr/m/n/10 vbf_diphoton_background_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 312--312
+\T1/cmr/m/n/10 merged_lhe/-
+
+Overfull \hbox (97.1146pt too wide) in paragraph at lines 312--312
+\T1/cmr/m/n/10 vbf_diphoton_background_ht_800_1200_merged.lhe.gz| 
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 308--315
+ [] 
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 334--334
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 334--334
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 334--334
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 334--334
+\T1/cmr/m/n/10 vbf_diphoton_background_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 334--334
+\T1/cmr/m/n/10 merged_lhe/-
+
+Overfull \hbox (102.11337pt too wide) in paragraph at lines 334--334
+\T1/cmr/m/n/10 vbf_diphoton_background_ht_1200_1600_merged.lhe.gz| 
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 330--337
+ [] 
+
+Underfull \hbox (badness 10000) in paragraph at lines 356--356
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 356--356
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 356--356
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 356--356
+\T1/cmr/m/n/10 vbf_diphoton_background_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 356--356
+\T1/cmr/m/n/10 merged_lhe/-
+
+Overfull \hbox (93.50436pt too wide) in paragraph at lines 356--356
+\T1/cmr/m/n/10 vbf_diphoton_background_ht_1600_inf_merged.lhe.gz| 
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 352--359
+ [] 
+
+Underfull \hbox (badness 10000) in paragraph at lines 378--378
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 378--378
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 378--378
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+
+Overfull \hbox (31.35287pt too wide) in paragraph at lines 378--378
+\T1/cmr/m/n/10 diphoton_double_isr_background_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 378--378
+\T1/cmr/m/n/10 merged_lhe/-
+
+Overfull \hbox (115.52676pt too wide) in paragraph at lines 378--378
+\T1/cmr/m/n/10 diphoton_double_isr_background_ht_0_100_merged.lhe.gz| 
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 374--381
+ [] 
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 400--400
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 400--400
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 400--400
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+
+Overfull \hbox (31.35287pt too wide) in paragraph at lines 400--400
+\T1/cmr/m/n/10 diphoton_double_isr_background_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 400--400
+\T1/cmr/m/n/10 merged_lhe/-
+
+Overfull \hbox (125.52432pt too wide) in paragraph at lines 400--400
+\T1/cmr/m/n/10 diphoton_double_isr_background_ht_100_200_merged.lhe.gz| 
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 396--403
+ [] 
+
+Underfull \hbox (badness 10000) in paragraph at lines 422--422
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 422--422
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 422--422
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+
+Overfull \hbox (31.35287pt too wide) in paragraph at lines 422--422
+\T1/cmr/m/n/10 diphoton_double_isr_background_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 422--422
+\T1/cmr/m/n/10 merged_lhe/-
+
+Overfull \hbox (125.52432pt too wide) in paragraph at lines 422--422
+\T1/cmr/m/n/10 diphoton_double_isr_background_ht_200_400_merged.lhe.gz| 
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 418--425
+ [] 
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 444--444
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 444--444
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 444--444
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+
+Overfull \hbox (31.35287pt too wide) in paragraph at lines 444--444
+\T1/cmr/m/n/10 diphoton_double_isr_background_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 444--444
+\T1/cmr/m/n/10 merged_lhe/-
+
+Overfull \hbox (125.52432pt too wide) in paragraph at lines 444--444
+\T1/cmr/m/n/10 diphoton_double_isr_background_ht_400_600_merged.lhe.gz| 
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 440--447
+ [] 
+
+Underfull \hbox (badness 10000) in paragraph at lines 466--466
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 466--466
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 466--466
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+
+Overfull \hbox (31.35287pt too wide) in paragraph at lines 466--466
+\T1/cmr/m/n/10 diphoton_double_isr_background_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 466--466
+\T1/cmr/m/n/10 merged_lhe/-
+
+Overfull \hbox (125.52432pt too wide) in paragraph at lines 466--466
+\T1/cmr/m/n/10 diphoton_double_isr_background_ht_600_800_merged.lhe.gz| 
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 462--469
+ [] 
+
+Underfull \hbox (badness 10000) in paragraph at lines 488--488
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 488--488
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 488--488
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+
+Overfull \hbox (31.35287pt too wide) in paragraph at lines 488--488
+\T1/cmr/m/n/10 diphoton_double_isr_background_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 488--488
+\T1/cmr/m/n/10 merged_lhe/-
+
+Overfull \hbox (130.5231pt too wide) in paragraph at lines 488--488
+\T1/cmr/m/n/10 diphoton_double_isr_background_ht_800_1200_merged.lhe.gz| 
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 484--491
+ [] 
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 510--510
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 510--510
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 510--510
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+
+Overfull \hbox (31.35287pt too wide) in paragraph at lines 510--510
+\T1/cmr/m/n/10 diphoton_double_isr_background_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 510--510
+\T1/cmr/m/n/10 merged_lhe/-
+
+Overfull \hbox (135.52188pt too wide) in paragraph at lines 510--510
+\T1/cmr/m/n/10 diphoton_double_isr_background_ht_1200_1600_merged.lhe.gz| 
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 506--513
+ [] 
+
+Underfull \hbox (badness 10000) in paragraph at lines 532--532
+[]|\T1/cmr/m/n/10 /-Users/-elijahsheridan/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 532--532
+\T1/cmr/m/n/10 MG5_aMC_v2_6_5/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 532--532
+\T1/cmr/m/n/10 axion_pheno/-madgraph_data/-
+
+Overfull \hbox (31.35287pt too wide) in paragraph at lines 532--532
+\T1/cmr/m/n/10 diphoton_double_isr_background_data/-
+
+Underfull \hbox (badness 10000) in paragraph at lines 532--532
+\T1/cmr/m/n/10 merged_lhe/-
+
+Overfull \hbox (126.91287pt too wide) in paragraph at lines 532--532
+\T1/cmr/m/n/10 diphoton_double_isr_background_ht_1600_inf_merged.lhe.gz| 
+
+Overfull \hbox (18.13213pt too wide) in paragraph at lines 528--535
+ [] 
+[10]
+Underfull \hbox (badness 4872) in paragraph at lines 552--553
+[]|\T1/cmr/m/n/10 Rejected events:
+
+Overfull \hbox (10.85573pt too wide) in paragraph at lines 559--559
+[]|\T1/cmr/m/n/10 bg_vbf_0_100| 
+
+Overfull \hbox (20.85329pt too wide) in paragraph at lines 561--561
+[]|\T1/cmr/m/n/10 bg_vbf_100_200| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 561--561
+[]|\T1/cmr/m/n/10 0.000120 +/--
+
+Underfull \hbox (badness 10000) in paragraph at lines 561--562
+[]|\T1/cmr/m/n/10 0.000120 +/--
+
+Overfull \hbox (20.85329pt too wide) in paragraph at lines 563--563
+[]|\T1/cmr/m/n/10 bg_vbf_200_400| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 563--563
+[]|\T1/cmr/m/n/10 0.001117 +/--
+
+Underfull \hbox (badness 10000) in paragraph at lines 563--564
+[]|\T1/cmr/m/n/10 0.001117 +/--
+
+Overfull \hbox (20.85329pt too wide) in paragraph at lines 565--565
+[]|\T1/cmr/m/n/10 bg_vbf_400_600| 
+
+Overfull \hbox (20.85329pt too wide) in paragraph at lines 567--567
+[]|\T1/cmr/m/n/10 bg_vbf_600_800| 
+
+Overfull \hbox (25.85207pt too wide) in paragraph at lines 569--569
+[]|\T1/cmr/m/n/10 bg_vbf_800_1200| 
+
+Overfull \hbox (30.85085pt too wide) in paragraph at lines 571--571
+[]|\T1/cmr/m/n/10 bg_vbf_1200_1600| 
+
+Overfull \hbox (22.24184pt too wide) in paragraph at lines 573--573
+[]|\T1/cmr/m/n/10 bg_vbf_1600_inf| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 573--573
+[]|\T1/cmr/m/n/10 0.000744 +/--
+
+Underfull \hbox (badness 10000) in paragraph at lines 573--574
+[]|\T1/cmr/m/n/10 0.000744 +/--
+
+Overfull \hbox (10.85573pt too wide) in paragraph at lines 575--575
+[]|\T1/cmr/m/n/10 bg_dip_0_100| 
+
+Overfull \hbox (20.85329pt too wide) in paragraph at lines 577--577
+[]|\T1/cmr/m/n/10 bg_dip_100_200| 
+
+Overfull \hbox (20.85329pt too wide) in paragraph at lines 579--579
+[]|\T1/cmr/m/n/10 bg_dip_200_400| 
+
+Overfull \hbox (20.85329pt too wide) in paragraph at lines 581--581
+[]|\T1/cmr/m/n/10 bg_dip_400_600| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 581--581
+[]|\T1/cmr/m/n/10 0.000426 +/--
+
+Underfull \hbox (badness 10000) in paragraph at lines 581--582
+[]|\T1/cmr/m/n/10 0.000426 +/--
+
+Overfull \hbox (20.85329pt too wide) in paragraph at lines 583--583
+[]|\T1/cmr/m/n/10 bg_dip_600_800| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 583--583
+[]|\T1/cmr/m/n/10 0.000539 +/--
+
+Underfull \hbox (badness 10000) in paragraph at lines 583--584
+[]|\T1/cmr/m/n/10 0.000539 +/--
+
+Overfull \hbox (25.85207pt too wide) in paragraph at lines 585--585
+[]|\T1/cmr/m/n/10 bg_dip_800_1200| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 585--585
+[]|\T1/cmr/m/n/10 0.000500 +/--
+
+Underfull \hbox (badness 10000) in paragraph at lines 585--586
+[]|\T1/cmr/m/n/10 0.000500 +/--
+
+Overfull \hbox (30.85085pt too wide) in paragraph at lines 587--587
+[]|\T1/cmr/m/n/10 bg_dip_1200_1600| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 587--587
+[]|\T1/cmr/m/n/10 0.000205 +/--
+
+Underfull \hbox (badness 10000) in paragraph at lines 587--588
+[]|\T1/cmr/m/n/10 0.000205 +/--
+
+Overfull \hbox (22.24184pt too wide) in paragraph at lines 589--589
+[]|\T1/cmr/m/n/10 bg_dip_1600_inf| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 589--589
+[]|\T1/cmr/m/n/10 0.00975 +/--
+
+Overfull \hbox (27.68684pt too wide) in paragraph at lines 549--592
+ [] 
+
+Underfull \hbox (badness 10000) in paragraph at lines 546--593
+
+[11]
+Overfull \hbox (20.97742pt too wide) in paragraph at lines 609--618
+ [] 
+[12] (./main.aux) )
+(see the transcript file for additional information){/usr/local/texlive/2019/te
+xmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2019/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2019/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2019/texmf-dist
+/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2019/texmf-dist/f
+onts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2019/texmf-dist/fon
+ts/type1/public/cm-super/sfcc1000.pfb></usr/local/texlive/2019/texmf-dist/fonts
+/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/t
+ype1/public/cm-super/sfsx1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/typ
+e1/public/cm-super/sfsx1728.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1
+/public/cm-super/sfti1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/p
+ublic/cm-super/sftt1000.pfb>
+Output written on main.pdf (13 pages, 235863 bytes).
+Transcript written on main.log.

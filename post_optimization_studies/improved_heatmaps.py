@@ -9,6 +9,8 @@ Created on Wed Aug 26 21:38:13 2020
 import numpy as np
 import opt_helper as opt
 import bisect as bs
+import scipy
+import matplotlib.pyplot as plt
 
 def cross_sec_heatmap():
     ms = np.log10([1, 1e3, 1e5])
@@ -97,6 +99,38 @@ def last_opt_heatmap():
                                        clabel,
                                        save_file='final_opt')
 
+
+def photon_opt_heatmap():
+    outer_path = '/Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/optimization/pta_maa_optimization/tight_analyses'
+    specific_folder_start = '/analysis_tight_pta'
+    inner_path = '/Output/HTML/MadAnalysis5job_0/index.html'
+
+    pta_cuts = [100 + 50 * i for i in range(9)]
+    maa_cuts = [200 + 50 * i for i in range(11)]
+    r = 0.25
+
+#    folder = outer_path + '/tight_r0.25_maa500_pta300'
+    files = [[outer_path + specific_folder_start + str(pta_cut) + '_maa'
+              + str(maa_cut) + inner_path
+              for maa_cut in maa_cuts] for pta_cut in pta_cuts]
+
+    signal, bg = opt.sig_heatmap_html_extract(files)
+
+    signal = np.array(signal)
+    bg = np.array(bg)
+
+    sig = signal / np.sqrt(signal + bg + (bg * r)**2)
+
+    clabel = r'$\frac{S}{\sqrt{S+B+(' + str(r) + '\cdot B)^2}}$'
+
+    opt.smooth_heatmap_from_irreg_grid(maa_cuts, pta_cuts,
+                                       np.transpose(sig),
+                                       '$m^{\gamma\gamma}$ [GeV]',
+                                       '$p_T^\gamma$ [GeV]',
+                                       clabel,
+                                       save_file='second_opt')
+
+
 def final_kin_plots():
     file_names = [
             '/Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/optimization/'
@@ -105,7 +139,7 @@ def final_kin_plots():
             + str(i) + '.py' for i in range(15)]
     stacked_file_names = [
             './kins/selection_' + str(i) + '_stacked' for i in range(16)]
-    norm_one_ylabel = r'Arbitrary Units (Normalized to Unity)'
+#    norm_one_ylabel = r'Arbitrary Units (Normalized to Unity)'
     stacked_ylabel = r'Events ($\mathcal{L}_{int} = 40$ fb$^{-1}$)'
 
     # four cuts
@@ -140,6 +174,104 @@ def final_kin_plots():
                       histtypes=histtypes,
                       linestyles=linestyles)
 
+
+def disc_contour_jet_opt():
+    outer_path = '/Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/post_optimization_studies/disc_contour_jet_optimization/'
+    specific_folder_start = 'disc_contour_sdEta'
+    inner_path = '/Output/HTML/MadAnalysis5job_0/index.html'
+
+    delta_eta_cuts = [2.6, 3.1, 3.6, 4.1]
+    mmjj_cuts = [750, 1000, 1250, 1500, 1750, 2000]
+    r = 0.25
+
+    files = [[outer_path + specific_folder_start + str(ecut) + '_mjj' + str(mcut)
+               + inner_path for mcut in mmjj_cuts] for ecut in delta_eta_cuts]
+
+    signal, bg = opt.sig_heatmap_html_extract(files)
+
+    print(signal)
+    print(bg)
+
+    signal = np.array(signal)
+    bg = np.array(bg)
+
+    sig = signal / np.sqrt(signal + bg + (bg * r)**2)
+
+    print(sig)
+
+    clabel = r'$\frac{S}{\sqrt{S+B+(' + str(r) + '\cdot B)^2}}$'
+
+    opt.smooth_heatmap_from_irreg_grid(mmjj_cuts, delta_eta_cuts, np.transpose(sig),
+                                       '$m^{jj}$ [GeV]',
+                                       '$\Delta \eta^{jj}$',
+                                       clabel,
+                                       save_file='disc_contour_jet_opt')
+
+
+
+def last_opt_heatmap_3pt6():
+    outer_path = '/Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/optimization/second_sdEta_mjj_optimization'
+    specific_folder_start = '/second_analysis_sdEta'
+    inner_path = '/Output/HTML/MadAnalysis5job_0/index.html'
+
+    delta_eta_cuts = [3.6, 4.1]
+    mmjj_cuts = [750, 1000, 1250, 1500, 1750, 2000]
+    r = 0.25
+
+    folder = outer_path + '/tight_r0.25_maa500_pta300'
+    files = [[folder + specific_folder_start + str(ecut) + '_mjj' + str(mcut)
+               + inner_path for mcut in mmjj_cuts] for ecut in delta_eta_cuts]
+
+    signal, bg = opt.sig_heatmap_html_extract(files)
+
+    signal = np.array(signal)
+    bg = np.array(bg)
+
+    sig = signal / np.sqrt(signal + bg + (bg * r)**2)
+
+    clabel = r'$\frac{S}{\sqrt{S+B+(' + str(r) + '\cdot B)^2}}$'
+
+    opt.smooth_heatmap_from_irreg_grid(mmjj_cuts, delta_eta_cuts, np.transpose(sig),
+                                       '$m^{jj}$ [GeV]',
+                                       '$\Delta \eta^{jj}$',
+                                       clabel,
+                                       save_file='axion_significance_vs_selection_jets_3pt6')
+
+
+def last_opt_1d():
+    outer_path = '/Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/optimization/second_sdEta_mjj_optimization'
+    specific_folder_start = '/second_analysis_sdEta'
+    inner_path = '/Output/HTML/MadAnalysis5job_0/index.html'
+
+    delta_eta_cuts = [3.6, 4.1]
+    mmjj_cuts = [750, 1000, 1250, 1500, 1750, 2000]
+    r = 0.25
+
+    folder = outer_path + '/tight_r0.25_maa500_pta300'
+    files = [[folder + specific_folder_start + str(ecut) + '_mjj' + str(mcut)
+               + inner_path for mcut in mmjj_cuts] for ecut in delta_eta_cuts]
+
+    signal, bg = opt.sig_heatmap_html_extract(files)
+
+    signal = np.array(signal)
+    bg = np.array(bg)
+
+    sig = signal / np.sqrt(signal + bg + (bg * r)**2)
+    sig = sig[0]
+
+    pts = np.linspace(mmjj_cuts[0], mmjj_cuts[-1], 100)
+    f = scipy.interpolate.interp1d(mmjj_cuts, sig, kind='cubic')
+    interp = [f(pt) for pt in pts]
+    plt.plot(pts, interp)
+#    plt.ylim(0, 5);
+    plt.xlabel(r'$m^{jj}$ [GeV]');
+    plt.ylabel(r'Significance $\frac{S}{\sqrt{S+B+(' + str(r) + '\cdot B)^2}}$')
+    plt.savefig('deta3pt6_sig_jet_opt', dpi=300, bbox_inches='tight')
+
+
 #last_opt_heatmap()
-final_kin_plots()
-#
+#final_kin_plots()
+#photon_opt_heatmap()
+#disc_contour_jet_opt()
+#last_opt_heatmap_3pt6()
+last_opt_1d()

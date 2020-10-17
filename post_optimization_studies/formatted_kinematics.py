@@ -50,8 +50,8 @@ def kin_histo_sig_bg(file_name, sig_divs, bg_divs, out_file_name=None, norm_one=
     file_name = file_name
     out_file_name = out_file_name or 'plot'
     labels = labels or ['Plot ' + str(i) for i in range(len(sig_divs + bg_divs))]
-#    colors = colors or ['#698252', '#e8aa7a', '#4bd3bd', '#ec4738', '#7a8e99', '#9b8e82', '#a9935e']
-    colors = colors or ['#698252', '#9b8e82', '#7a8e99', '#a9935e']
+    colors = colors or ['#698252', '#e8aa7a', '#4bd3bd', '#ec4738', '#7a8e99', '#9b8e82', '#a9935e']
+#    colors = colors or ['#698252', '#4bd3bd', '#9b8e82', '#7a8e99', '#a9935e']
     histtypes = histtypes or ['step'] * len(sig_divs + bg_divs)
     linestyles = linestyles or ['solid'] * len(sig_divs + bg_divs)
 
@@ -122,8 +122,8 @@ def kin_histo_sig_bg(file_name, sig_divs, bg_divs, out_file_name=None, norm_one=
 
     y_bg = [None] * len(comb_bg_data)
     y_sig = [None] * len(comb_sig_data)
-#    for i, data in reversed(list(enumerate(comb_bg_data))): # reversed
-    for i, data in enumerate(comb_bg_data):
+    for i, data in reversed(list(enumerate(comb_bg_data))): # reversed
+#    for i, data in enumerate(comb_bg_data):
         y_bg[i], _, __ = pad.hist(
             x=xData,
             bins=xBinning,
@@ -514,6 +514,122 @@ def old_style_four_cuts():
                       ylabel=norm_one_ylabel, save=True, norm_one=True,
                       xlabel=label)
 
+
+def pre_select_2_signal():
+    file_names = [
+            '/Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/'
+            + 'post_optimization_studies/mad_analyses/pre_select_two_signal'
+            + '/Output/Histos/MadAnalysis5job_0/selection_'
+            + str(i) + '.py' for i in range(15)]
+    names = ['ptj1', 'etaj1', 'phij1',
+             'ptj2',
+             'etaj2', 'phij2', 'dRjj',
+             'mjj',
+             'detajj', 'maa', 'pta1',
+             'pta2',
+             'THT', 'MET', 'TET']
+    stacked_file_names = [
+            './kins/pre_select_2_sig/' + 'log_' + name + '_pre_2sig' for name in names]
+    ylabel = r'a.u.'
+
+    labels = [r'$pp \; \to \; jj + ax \; (\to \; \gamma\gamma) \; (m_a = 1$ MeV)',
+              r'$pp \; \to \; jj + ax \; (\to \; \gamma\gamma) \; (m_a = 100$ MeV)',
+              r'$pp \; \to \; jj + \gamma\gamma \; (QCD = 0)$',
+              r'$pp \; \to \; jj + \gamma\gamma$']
+
+    xlabels = [r'$p_T^{j_1}$ [GeV]', r'$\eta^{j_1}$', r'$\phi^{j_1}$',
+               r'$p_T^{j_2}$ [GeV]', r'$\eta^{j_2}$', r'$\phi^{j_2}$',
+               r'$\Delta R^{jj}$', r'$m^{jj}$ [GeV]',
+               r'$\Delta \eta^{jj}$', r'$m^{\gamma\gamma}$ [GeV]',
+               r'$p_T^{\gamma_1}$ [GeV]', r'$p_T^{\gamma_2}$ [GeV]',
+               r'$THT$ [GeV]', r'$MET$ [GeV]', r'$TET$ [GeV]']
+
+    for file_name, s_file, label in zip(
+            file_names, stacked_file_names, xlabels):
+        sig_divs = [0, 1]
+        bg_divs = [2, 10]
+        kin_histo_sig_bg(file_name, sig_divs, bg_divs,
+                      out_file_name=s_file, labels=labels,
+                      ylabel=ylabel, save=True, norm_one=True,
+                      xlabel=label, stacked=True, logy=True,
+                      stack_bg=False)
+
+
+
+def pre_select_no_gg_2_signal():
+    file_name = (
+            '/Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/'
+            + 'post_optimization_studies/mad_analyses/pre_select_no_gg_2_sig'
+            + '/Output/Histos/MadAnalysis5job_0/selection_0.py')
+    out_file_name = (
+            './kins/pre_select_2_sig/deta_pre_no_gg.png')
+    out_file_name_log = (
+            './kins/pre_select_2_sig/log_deta_pre_no_gg.png')
+    ylabel = r'a.u.'
+
+    labels = [r"$qq' \; \to \; jj + ax \; (\to \; \gamma\gamma) \; (m_a = 1$ MeV)",
+              r"$qq' \; \to \; jj + ax \; (\to \; \gamma\gamma) \; (m_a = 100$ MeV)",
+              r'$pp \; \to \; jj + \gamma\gamma \; (QCD = 0)$',
+              r'$pp \; \to \; jj + \gamma\gamma$']
+
+    xlabel = r'$\Delta \eta^{jj}$ (GeV)'
+
+    sig_divs = [0, 1]
+    bg_divs = [2, 10]
+    kin_histo_sig_bg(file_name, sig_divs, bg_divs,
+                  out_file_name=out_file_name, labels=labels,
+                  ylabel=ylabel, save=True, norm_one=True,
+                  xlabel=xlabel, stack_bg=False)
+    sig_divs = [0, 1]
+    bg_divs = [2, 10]
+    kin_histo_sig_bg(file_name, sig_divs, bg_divs,
+                  out_file_name=out_file_name_log, labels=labels,
+                  ylabel=ylabel, save=True, norm_one=True,
+                  xlabel=xlabel, stack_bg=False, logy=True)
+
+
+def on_discovery_contour_log_new():
+    file_names = [
+            '/Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/'
+            + 'post_optimization_studies/mad_analyses/'
+            + 'ma100MeV_L1pt8-2pt4TeV_binsize'
+            + '/Output/Histos/MadAnalysis5job_0/selection_'
+            + str(i) + '.py' for i in range(15)]
+    names = ['ptj1', 'etaj1', 'phij1',
+             'ptj2',
+             'etaj2', 'phij2', 'dRjj',
+             'mjj',
+             'detajj', 'maa', 'pta1',
+             'pta2',
+             'THT', 'MET', 'TET']
+    out_file_names = [
+            './kins/on_discovery_contour_new/post_log_'
+            + name for name in names]
+    ylabel = r'Events ($\mathcal{L}_{int} = 3000$ fb$^{-1}$)'
+
+    labels = [r'$pp \; \to \; jj + ax \; (\to \; \gamma\gamma) \; (\Lambda = 1.8$ TeV $)$',
+              r'$pp \; \to \; jj + ax \; (\to \; \gamma\gamma) \; (\Lambda = 2.0$ TeV $)$',
+              r'$pp \; \to \; jj + ax \; (\to \; \gamma\gamma) \; (\Lambda = 2.2$ TeV $)$',
+              r'$pp \; \to \; jj + ax \; (\to \; \gamma\gamma) \; (\Lambda = 2.4$ TeV $)$',
+              r'$pp \; \to \; jj + \gamma\gamma$',
+              r'$pp \; \to \; jj + \gamma\gamma \; (QCD = 0)$']
+
+    xlabels = [r'$p_T^{j_1}$ [GeV]', r'$\eta^{j_1}$', r'$\phi^{j_1}$',
+               r'$p_T^{j_2}$ [GeV]', r'$\eta^{j_2}$', r'$\phi^{j_2}$',
+               r'$\Delta R^{jj}$', r'$m^{jj}$ [GeV]',
+               r'$\Delta \eta^{jj}$', r'$m^{\gamma\gamma}$ [GeV]',
+               r'$p_T^{\gamma_1}$ [GeV]', r'$p_T^{\gamma_2}$ [GeV]',
+               r'$THT$ [GeV]', r'$MET$ [GeV]', r'$TET$ [GeV]']
+
+    for file_name, o_file, label in zip(
+            file_names, out_file_names, xlabels):
+        sig_divs = [0,1,2,3]
+        bg_divs = [4, 12]
+        kin_histo_sig_bg(file_name, sig_divs, bg_divs,
+                      out_file_name=o_file, labels=labels,
+                      ylabel=ylabel, save=True, norm_one=False,
+                      xlabel=label, stacked=True, logy=True)
+
 #new_kin_plots()
 #on_discovery_contour_delta_eta_2()
 #on_discovery_contour_delta_eta_2_log()
@@ -523,4 +639,7 @@ def old_style_four_cuts():
 #on_discovery_contour_delta_eta_3pt6_log()
 #pre_select()
 #pre_select_no_gg()
-old_style_four_cuts()
+#old_style_four_cuts()
+#pre_select_2_signal()
+#pre_select_no_gg_2_signal()
+on_discovery_contour_log_new()

@@ -1,0 +1,51 @@
+set main.currentdir = /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/post_optimization_studies/disc_contour_jet_optimization
+set main.currentdir = /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/optimization/ma_scripts
+# set directory where running "./bin/ma5"
+set main.currentdir = /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data # need to change this directory path --> exit and type "pwd" to get the path
+set main.lumi = 40
+set main.fom.formula = 5
+set main.fom.x = 0.0
+# import samples --> change the path to the LHE file
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/axion_signal/on_discovery_contour/ma100MeV_L2pt2TeV_deta2.lhe.gz as signal
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/vbf_diphoton_background_data/merged_lhe/vbf_diphoton_background_ht_0_100_merged.lhe.gz as bg_vbf_0_100
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/vbf_diphoton_background_data/merged_lhe/vbf_diphoton_background_ht_100_200_merged.lhe.gz as bg_vbf_100_200
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/vbf_diphoton_background_data/merged_lhe/vbf_diphoton_background_ht_200_400_merged.lhe.gz as bg_vbf_200_400
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/vbf_diphoton_background_data/merged_lhe/vbf_diphoton_background_ht_400_600_merged.lhe.gz as bg_vbf_400_600
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/vbf_diphoton_background_data/merged_lhe/vbf_diphoton_background_ht_600_800_merged.lhe.gz as bg_vbf_600_800
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/vbf_diphoton_background_data/merged_lhe/vbf_diphoton_background_ht_800_1200_merged.lhe.gz as bg_vbf_800_1200
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/vbf_diphoton_background_data/merged_lhe/vbf_diphoton_background_ht_1200_1600_merged.lhe.gz as bg_vbf_1200_1600
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/vbf_diphoton_background_data/merged_lhe/vbf_diphoton_background_ht_1600_inf_merged.lhe.gz as bg_vbf_1600_inf
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/diphoton_double_isr_background_data/merged_lhe/diphoton_double_isr_background_ht_0_100_merged.lhe.gz as bg_dip_0_100
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/diphoton_double_isr_background_data/merged_lhe/diphoton_double_isr_background_ht_100_200_merged.lhe.gz as bg_dip_100_200
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/diphoton_double_isr_background_data/merged_lhe/diphoton_double_isr_background_ht_200_400_merged.lhe.gz as bg_dip_200_400
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/diphoton_double_isr_background_data/merged_lhe/diphoton_double_isr_background_ht_400_600_merged.lhe.gz as bg_dip_400_600
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/diphoton_double_isr_background_data/merged_lhe/diphoton_double_isr_background_ht_600_800_merged.lhe.gz as bg_dip_600_800
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/diphoton_double_isr_background_data/merged_lhe/diphoton_double_isr_background_ht_800_1200_merged.lhe.gz as bg_dip_800_1200
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/diphoton_double_isr_background_data/merged_lhe/diphoton_double_isr_background_ht_1200_1600_merged.lhe.gz as bg_dip_1200_1600
+import /Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/madgraph_data/diphoton_double_isr_background_data/merged_lhe/diphoton_double_isr_background_ht_1600_inf_merged.lhe.gz as bg_dip_1600_inf
+# define bg and signal samples
+set signal.type = signal
+set bg_vbf_0_100.type = background
+set bg_vbf_100_200.type = background
+set bg_vbf_200_400.type  = background
+set bg_vbf_400_600.type  = background
+set bg_vbf_600_800.type  = background
+set bg_vbf_800_1200.type  = background
+set bg_vbf_1200_1600.type  = background
+set bg_vbf_1600_inf.type = background
+set bg_dip_0_100.type = background
+set bg_dip_100_200.type = background
+set bg_dip_200_400.type = background
+set bg_dip_400_600.type = background
+set bg_dip_600_800.type = background
+set bg_dip_800_1200.type = background
+set bg_dip_1200_1600.type = background
+set bg_dip_1600_inf.type = background
+# a jet can be from a light quark or b quark
+define jets = j
+define e = e+ e-
+define mu = mu+ mu-
+define ta = ta+ ta-
+define lept = e mu ta
+define ax = 9000005
+select ((sdETA(jets[1] jets[2]) > 3.6 or sdETA(jets[1] jets[2]) < -3.6) and M(jets[1] jets[2]) > 750) and (PT(a[1]) > 300 and M(a[1] a[2]) > 500)
