@@ -17,11 +17,11 @@ from PIL import Image
 
 """
 
-**************************
-**************************
-***  HELPER FUNCTIONS  ***
-**************************
-**************************
+                        **************************
+                        **************************
+                        ***  HELPER FUNCTIONS  ***
+                        **************************
+                        **************************
 
 """
 
@@ -224,7 +224,8 @@ def kin_histo_sig_bg(file_name, sig_divs, bg_divs, out_file_name=None, norm_one=
                 x=xData,
                 bins=xBinning,
                 weights=data, label=labels[i+len(y_sig)],
-                histtype='stepfilled', rwidth=1.0, color=colors[i+len(y_sig)], edgecolor=colors[i+len(y_sig)],
+                histtype='stepfilled', rwidth=1.0, color=colors[i+len(y_sig)],
+                edgecolor=colors[i+len(y_sig)],
                 linewidth=4, bottom=None, cumulative=False, density=norm_one,
                 align="mid", orientation="vertical", linestyle='solid')
     else:
@@ -233,11 +234,11 @@ def kin_histo_sig_bg(file_name, sig_divs, bg_divs, out_file_name=None, norm_one=
                 x=xData,
                 bins=xBinning,
                 weights=data, label=labels[i+len(y_sig)],
-                rwidth=1.0, color=colors[i+len(y_sig)], edgecolor=colors[i+len(y_sig)],
+                rwidth=1.0, color=colors[i+len(y_sig)],
+                edgecolor=colors[i+len(y_sig)],
                 linewidth=4, bottom=None, cumulative=False, density=norm_one,
                 align="mid", orientation="vertical", linestyle='solid',
                 histtype='step')
-            # histtype='stepfilled',
 
     # Making plots
     for i, data in enumerate(comb_sig_data):
@@ -353,11 +354,11 @@ def val_to_index(val, min_val, max_val, num_indices, y=False):
 
 """
 
-*************************
-*************************
-******   FIGURES   ******
-*************************
-*************************
+                        *************************
+                        *************************
+                        ******   FIGURES   ******
+                        *************************
+                        *************************
 
 """
 
@@ -383,10 +384,12 @@ def FIG2_axion_cross_sec():
 
     with plt.rc_context(settings):
         smooth_heatmap_from_irreg_grid(ms, Ls, cross_secs,
-                                       '$m_a$ [$\log_{10}$ MeV]',
+                                       '$m_a$ [MeV]',
                                        '$\Lambda$ [TeV]',
-                                       'Cross Section $\sigma$ [pb]',
-                                       save_file='FIG2_axion_cross_sec')
+                                       'Cross Section $\sigma$ [pb]')
+        plt.xticks(ticks=[i for i in range(6)],
+                          labels=[r'$10^{}$'.format(str(i)) for i in range(6)])
+        plt.savefig('FIG2_axion_cross_sec', dpi=300, bbox_inches='tight')
         plt.clf()
 
 
@@ -442,15 +445,15 @@ def FIG3_axion_decay_length(gen=False):
 
 def FIG4_log_deta_pre_no_gg():
     file_name = ('/Users/elijahsheridan/MG5_aMC_v2_6_5/axion_pheno/'
-            + 'post_optimization_studies/mad_analyses/pre_select_two_signal'
-            + '/Output/Histos/MadAnalysis5job_0/selection_8.py')
+            + 'post_optimization_studies/mad_analyses/pre_select_no_gg_2_sig'
+            + '/Output/Histos/MadAnalysis5job_0/selection_0.py')
     plot_name = 'FIG4_log_deta_pre_no_gg'
     ylabel = r'a.u.'
     xlabel = r'$\Delta \eta^{jj}$'
     labels = [r'$pp \; \to \; jj + \gamma\gamma, \; \alpha_{QED}^2\alpha_{QCD}^2$',
               r'$pp \; \to \; jj + \gamma\gamma, \; \alpha_{QED}^4\alpha_{QCD}^0$',
-              r'$pp \; \to \; jj + a \; (\to \; \gamma\gamma), \; \alpha_{QED}^4\alpha_{QCD}^0 \; (m_a = 1$ MeV)',
-              r'$pp \; \to \; jj + a \; (\to \; \gamma\gamma), \; \alpha_{QED}^4\alpha_{QCD}^0 \; (m_a = 100$ MeV)']
+              r"$qq' \; \to \; jj + a \; (\to \; \gamma\gamma), \; \alpha_{QED}^4\alpha_{QCD}^0 \; (m_a = 1$ MeV)",
+              r"$qq' \; \to \; jj + a \; (\to \; \gamma\gamma), \; \alpha_{QED}^4\alpha_{QCD}^0 \; (m_a = 100$ MeV)"]
     sig_divs = [0, 1]
     bg_divs = [2, 10]
 
@@ -837,7 +840,7 @@ def FIG11_sig_ma_L_lum150(gen=False):
 
 
         labels = ['Discovery Contour', 'Axions Escape CMS Detector']
-        xlabel = '$m_a$ [log$_{10}$(GeV)]'
+        xlabel = '$m_a$ [GeV]'
         ylabel = '$\Lambda$ [TeV]'
         plt.legend(handles=[curve[0], zone], labels=labels,
                        bbox_to_anchor=(0.98, 0.98), loc=1, borderaxespad=0.)
@@ -845,6 +848,11 @@ def FIG11_sig_ma_L_lum150(gen=False):
         plt.xlabel(r'{}'.format(xlabel))
         cbar.set_label('Signal Significance', rotation=90)
         cbar.ax.get_yaxis().labelpad = 8
+
+        hack = ['{' + str(i) + '}' for i in range(-3,3)]
+        plt.xticks(
+                ticks=[i for i in range(-3,3)],
+                labels=[r'$10^{}$'.format(h) for h in hack])
 
         plt.savefig('FIG11_sig_ma_L_lum150',
                     dpi=300, bbox_inches='tight')
@@ -936,7 +944,7 @@ def FIG12_sig_ma_L_lum3000(gen=False):
 
 
         labels = ['Discovery Contour', 'Axions Escape CMS Detector']
-        xlabel = '$m_a$ [log$_{10}$(GeV)]'
+        xlabel = '$m_a$ [GeV]'
         ylabel = '$\Lambda$ [TeV]'
         plt.legend(handles=[curve[0], zone], labels=labels,
                        bbox_to_anchor=(0.98, 0.98), loc=1, borderaxespad=0.)
@@ -945,13 +953,88 @@ def FIG12_sig_ma_L_lum3000(gen=False):
         cbar.set_label('Signal Significance', rotation=90)
         cbar.ax.get_yaxis().labelpad = 8
 
+        hack = ['{' + str(i) + '}' for i in range(-3,3)]
+        plt.xticks(
+                ticks=[i for i in range(-3,3)],
+                labels=[r'$10^{}$'.format(h) for h in hack])
+
         plt.savefig('FIG12_sig_ma_L_lum3000',
                     dpi=300, bbox_inches='tight')
 
         plt.clf()
 
 
-def FIG13_subset_parameter_space_hashed(gen=False):
+#def FIG13_subset_parameter_space_hashed(gen=False):
+#    settings = {'axes.labelsize': 32,
+#                'xtick.major.size': 10,
+#                'xtick.major.width': 1.5,
+#                'xtick.labelsize': 24,
+#                'ytick.major.size': 10,
+#                'ytick.major.width': 1.5,
+#                'ytick.labelsize': 24,
+#                'legend.fontsize': 24,
+#                'figure.figsize': (15, 10)}
+#
+#    m, L = [row for row in np.load('FIG13_contour_data.npy')]
+#    m, L = [m, -np.log10(L)]
+#    i, f = np.searchsorted(m, [-2, 3])
+#    m, L = [np.append(m[i:f],[3.4]), np.append(L[i:f], [L[-1]])]
+#
+#    pix_vals = np.load('FIG13_small_image.npy')
+#    w, h = list((7/pix_vals.shape[0]) * np.array(pix_vals.shape[:2]))
+#    bounds = [0.00032480888972387324, 10048.799127736118, 0.00867122579786319,
+#              2732.3259558424825]
+#    extent = [np.log10(b) for b in bounds]
+#
+#    with plt.rc_context(settings):
+#        plt.imshow(pix_vals, extent=extent, aspect='auto')
+#
+#    if gen:
+#        # min and max x-axis indices (mass indices) for our region
+#        imindex, fmindex = [val_to_index(m[0], extent[0], extent[1], len(pix_vals[0])),
+#                            val_to_index(m[-1], extent[0], extent[1], len(pix_vals[0]))]
+#        # set of all columns between min and max
+#        cols = np.linspace(imindex, fmindex, fmindex - imindex + 1)
+#        # indices in "m" associated with each column
+#        m_indices = np.searchsorted(
+#                m, [index_to_val(col, extent[0], extent[1], len(pix_vals[0]))
+#                for col in cols])
+#        # lowest row to shade for each relevant column
+#        bots = [val_to_index(L[m_index], extent[2], extent[3], len(pix_vals), True)
+#                for m_index in m_indices]
+#        # white, except for col indices in cols and above the line
+#        # [178/255, 34/255, 34/255, 1]
+#        #
+#    #    new_region = [
+#    #            [[178/255, 34/255, 34/255, 1]
+#    #            if j in cols and (i < bots[np.where(cols==j)[0][0]])
+#    #            and np.sum(pix_vals[i,j,:3]**2) > 3*240**2
+#    #            else [1.,1.,1.,0.]
+#    #            for j in range(len(pix_vals[0]))] for i in range(len(pix_vals))]
+#        new_region = [
+#                [[0,0,0,0.25]
+#                if j in cols and (i < bots[np.where(cols==j)[0][0]])
+#                else [1.,1.,1.,0.]
+#                for j in range(len(pix_vals[0]))] for i in range(len(pix_vals))]
+#
+#        np.save('FIG13_shade_region', new_region)
+#    else:
+#        new_region = np.load('FIG13_shade_region.npy')
+#
+#
+#
+#    with plt.rc_context(settings):
+#        plt.imshow(new_region, extent=extent, aspect='auto')
+#
+#        #plt.plot(m, L, linewidth=3, color='firebrick')
+#        fig = plt.gcf()
+#        fig.set_size_inches(w*(12/7), h*(12/7))
+#        plt.xlabel(r'$m_a$ [Log$_{10}$ GeV]')
+#        plt.ylabel(r'$1/\Lambda$ [Log$_{10}$ TeV$^{-1}$]')
+#        plt.savefig('FIG13_subset_parameter_space_hashed', dpi=500, bbox_inches='tight')
+
+
+def FIG13_subset_parameter_space(gen=False):
     settings = {'axes.labelsize': 32,
                 'xtick.major.size': 10,
                 'xtick.major.width': 1.5,
@@ -962,11 +1045,8 @@ def FIG13_subset_parameter_space_hashed(gen=False):
                 'legend.fontsize': 24,
                 'figure.figsize': (15, 10)}
 
-    m, L = [row for row in np.load('FIG13_contour_data.npy')]
-    m, L = [m, -np.log10(L)]
-    i, f = np.searchsorted(m, [-2, 3])
-    m, L = [np.append(m[i:f],[3.4]), np.append(L[i:f], [L[-1]])]
 
+    # OLD IMAGE
     pix_vals = np.load('FIG13_small_image.npy')
     w, h = list((7/pix_vals.shape[0]) * np.array(pix_vals.shape[:2]))
     bounds = [0.00032480888972387324, 10048.799127736118, 0.00867122579786319,
@@ -976,50 +1056,215 @@ def FIG13_subset_parameter_space_hashed(gen=False):
     with plt.rc_context(settings):
         plt.imshow(pix_vals, extent=extent, aspect='auto')
 
+    # OVERLAY
+    path = ('../optimization/second_sdEta_mjj_optimization/lumi_and_kin_plots/'
+                  + 'four_cuts_lum{}/Output/HTML/MadAnalysis5job_0/index.html'.format(str(3000)))
+    ratio = 0.25
+
+    # masses, couplings considered
+    Ls = -np.log10([0.001, 1, 1.5, 2, 2.5, 3, 3.5, 4]) # Log10(TeV^{-1})
+    ms = [-3, 0, 2, 3] # Log10(GeV)
+    mL_pairs_flat = np.array([[m,L] for L in Ls for m in ms])
+
+    # cross sections, used to scale signal yield
+    cross_secs = [[7.278e18, 10.16, 2.43, 1.083, 0.6791, 0.4453, 0.3285, 0.2555],
+                  [7.255e18, 10.09, 2.291, 1.068, 0.6473, 0.4395, 0.32, 0.2446],
+                  [6.119e18, 8.523, 1.777, 0.8011, 0.4779, 0.3227, 0.2344, 0.1788]]
+    extrapolate = [(y2 - y1)/(2 - 0) * (3 - 2) + y2 for y1, y2 in zip(cross_secs[1], cross_secs[2])]
+    cross_secs.append(extrapolate)
+
+    scalings = np.transpose(
+            [[cs/cross_secs[0][1] for cs in cross_sec] for cross_sec in cross_secs])
+
+    # importing a single signal, background data point
+    signal, _, bg, __ = sig_and_bg_from_html(path)
+
+    # scaling signal, finding significance
+    signals = signal * scalings
+    sigs = signals / np.sqrt(signals + bg + (bg * ratio)**2)
+    flat_sigs = sigs.flatten()
+
+    # interpolation
+    imindex, fmindex = [
+            val_to_index(ms[0], extent[0], extent[1], len(pix_vals[0])),
+            val_to_index(ms[-1], extent[0], extent[1], len(pix_vals[0]))]
+    iLindex, fLindex = [
+            val_to_index(Ls[0], extent[2], extent[3], len(pix_vals), True),
+            val_to_index(Ls[-1], extent[2], extent[3], len(pix_vals), True)]
+    grid = np.array(
+            [[[index_to_val(x, extent[0], extent[1], len(pix_vals[0])),
+               index_to_val(y, extent[2], extent[3], len(pix_vals), True)]
+              for x in range(imindex, fmindex)]
+             for y in range(iLindex, fLindex)])
+
+#    ind = val_to_index(0, extent[2], extent[3], len(pix_vals), True)
+#    print(grid[ind][100:150])
+
+
+    interp = scipy.interpolate.griddata(mL_pairs_flat, flat_sigs, grid)
+#    np.save('EXP_sig', percent)
+    cols = [i for i in range(imindex, fmindex)]
+    rows = [i for i in range(iLindex, fLindex)]
+
+#    print(cols[0], cols[-1], rows[0], rows[-1])
+
+    # lifetime ban
     if gen:
-
-        # min and max x-axis indices (mass indices) for our region
-        imindex, fmindex = [val_to_index(m[0], extent[0], extent[1], len(pix_vals[0])),
-                            val_to_index(m[-1], extent[0], extent[1], len(pix_vals[0]))]
-        # set of all columns between min and max
-        cols = np.linspace(imindex, fmindex, fmindex - imindex + 1)
-        # indices in "m" associated with each column
-        m_indices = np.searchsorted(
-                m, [index_to_val(col, extent[0], extent[1], len(pix_vals[0]))
-                for col in cols])
-        # lowest row to shade for each relevant column
-        bots = [val_to_index(L[m_index], extent[2], extent[3], len(pix_vals), True)
-                for m_index in m_indices]
-        # white, except for col indices in cols and above the line
-        # [178/255, 34/255, 34/255, 1]
-        #
-    #    new_region = [
-    #            [[178/255, 34/255, 34/255, 1]
-    #            if j in cols and (i < bots[np.where(cols==j)[0][0]])
-    #            and np.sum(pix_vals[i,j,:3]**2) > 3*240**2
-    #            else [1.,1.,1.,0.]
-    #            for j in range(len(pix_vals[0]))] for i in range(len(pix_vals))]
-        new_region = [
-                [[0,0,0,0.25]
-                if j in cols and (i < bots[np.where(cols==j)[0][0]])
-                else [1.,1.,1.,0.]
-                for j in range(len(pix_vals[0]))] for i in range(len(pix_vals))]
-
-        np.save('FIG13_shade_region', new_region)
+        percent = [
+                [ax_scaling(10**m * 1e9, 10**(-l) * 1e12)
+                for m,l in row]
+                for row in grid]
+        np.save('EXP_banned', percent)
     else:
-        new_region = np.load('FIG13_shade_region.npy')
+        percent = np.load('EXP_banned.npy')
 
-
+    new_region_red = [[
+        [178/255, 34/255, 34/255, 1] if (i in rows and j in cols and interp[i - iLindex][j - imindex] >= 5 and percent[i - iLindex][j - imindex] >= 0.95) and np.sum(pix_vals[i,j,:3]**2) > 3*247**2
+        else [1.,1.,1.,0.] for j in range(len(pix_vals[0]))] for i in range(len(pix_vals))]
+    new_region_shaded = [[
+        [0,0,0,0.25] if (i in rows and j in cols and interp[i - iLindex][j - imindex] >= 5 and percent[i - iLindex][j - imindex] >= 0.95)
+        else [1.,1.,1.,0.] for j in range(len(pix_vals[0]))] for i in range(len(pix_vals))]
+#    np.save('EXP_new_region_shaded', percent)
 
     with plt.rc_context(settings):
-        plt.imshow(new_region, extent=extent, aspect='auto')
-
+        plt.imshow(new_region_red, extent=extent, aspect='auto')
+#        plt.imshow(new_region_shaded, extent=extent, aspect='auto')
         #plt.plot(m, L, linewidth=3, color='firebrick')
         fig = plt.gcf()
         fig.set_size_inches(w*(12/7), h*(12/7))
-        plt.xlabel(r'$m_a$ [Log$_{10}$ GeV]')
-        plt.ylabel(r'$1/\Lambda$ [Log$_{10}$ TeV$^{-1}$]')
-        plt.savefig('FIG13_subset_parameter_space_hashed', dpi=500, bbox_inches='tight')
+        plt.xlabel(r'$m_a$ [GeV]')
+        plt.ylabel(r'$1/\Lambda$ [TeV$^{-1}$]')
+
+        hack = ['{' + str(i) + '}' for i in range(-3,5)]
+        plt.xticks(
+                ticks=[i for i in range(-3,5)],
+                labels=[r'$10^{}$'.format(h) for h in hack])
+        plt.yticks(
+                ticks=[i for i in range(-2,4)],
+                labels=[r'$10^{}$'.format(h) for h in hack[1:-1]])
+
+        plt.savefig('FIG13_subset_parameter_space', dpi=500, bbox_inches='tight')
+
+def FIG13_subset_parameter_space_MOD(gen=False):
+    settings = {'axes.labelsize': 32,
+                'xtick.major.size': 10,
+                'xtick.major.width': 1.5,
+                'xtick.labelsize': 24,
+                'ytick.major.size': 10,
+                'ytick.major.width': 1.5,
+                'ytick.labelsize': 24,
+                'legend.fontsize': 24,
+                'figure.figsize': (15, 10)}
+
+
+    # OLD IMAGE
+    pix_vals = np.load('FIG13_small_image.npy')
+    w, h = list((7/pix_vals.shape[0]) * np.array(pix_vals.shape[:2]))
+    bounds = [0.00032480888972387324, 10048.799127736118, 0.00867122579786319,
+              2732.3259558424825]
+    extent = [np.log10(b) for b in bounds]
+
+    with plt.rc_context(settings):
+        plt.imshow(pix_vals, extent=extent, aspect='auto')
+
+    # OVERLAY
+    path = ('../optimization/second_sdEta_mjj_optimization/lumi_and_kin_plots/'
+                  + 'four_cuts_lum{}/Output/HTML/MadAnalysis5job_0/index.html'.format(str(3000)))
+    ratio = 0.25
+
+    # masses, couplings considered
+    Ls = -np.log10([0.001, 1, 1.5, 2, 2.5, 3, 3.5, 4]) # Log10(TeV^{-1})
+    ms = [-3, 0, 2, 3.45] # Log10(GeV)
+    mL_pairs_flat = np.array([[m,L] for L in Ls for m in ms])
+
+    # cross sections, used to scale signal yield
+    cross_secs = [[7.278e18, 10.16, 2.43, 1.083, 0.6791, 0.4453, 0.3285, 0.2555],
+                  [7.255e18, 10.09, 2.291, 1.068, 0.6473, 0.4395, 0.32, 0.2446],
+                  [6.119e18, 8.523, 1.777, 0.8011, 0.4779, 0.3227, 0.2344, 0.1788]]
+    extrapolate = [(y2 - y1)/(2 - 0) * (3 - 2) + y2 for y1, y2 in zip(cross_secs[1], cross_secs[2])]
+    cross_secs.append(extrapolate)
+
+    scalings = np.transpose(
+            [[cs/cross_secs[0][1] for cs in cross_sec] for cross_sec in cross_secs])
+
+    # importing a single signal, background data point
+    signal, _, bg, __ = sig_and_bg_from_html(path)
+
+    # scaling signal, finding significance
+    signals = signal * scalings
+    sigs = signals / np.sqrt(signals + bg + (bg * ratio)**2)
+    flat_sigs = sigs.flatten()
+
+    # interpolation
+    imindex, fmindex = [
+            val_to_index(ms[0], extent[0], extent[1], len(pix_vals[0])),
+            val_to_index(ms[-1], extent[0], extent[1], len(pix_vals[0]))]
+    iLindex, fLindex = [
+            val_to_index(Ls[0], extent[2], extent[3], len(pix_vals), True),
+            val_to_index(Ls[-1], extent[2], extent[3], len(pix_vals), True)]
+    grid = np.array(
+            [[[index_to_val(x, extent[0], extent[1], len(pix_vals[0])),
+               index_to_val(y, extent[2], extent[3], len(pix_vals), True)]
+              for x in range(imindex, fmindex)]
+             for y in range(iLindex, fLindex)])
+
+#    ind = val_to_index(0, extent[2], extent[3], len(pix_vals), True)
+#    print(grid[ind][100:150])
+
+
+    interp = scipy.interpolate.griddata(mL_pairs_flat, flat_sigs, grid)
+#    np.save('EXP_sig', percent)
+    cols = [i for i in range(imindex, fmindex)]
+    rows = [i for i in range(iLindex, fLindex)]
+
+#    print(cols[0], cols[-1], rows[0], rows[-1], interp.shape)
+#    print(cols[-1] - cols[0], rows[-1] - rows[0])
+
+    # lifetime ban
+    if gen:
+        percent = [
+                [ax_scaling(10**m * 1e9, 10**(-l) * 1e12)
+                for m,l in row]
+                for row in grid]
+        np.save('EXP_banned', percent)
+    else:
+        percent = np.load('EXP_banned.npy')
+
+    new_region_red = [[
+        [178/255, 34/255, 34/255, 1] if (i in rows and j in cols and interp[i - iLindex][j - imindex] >= 5 and percent[i - iLindex][j - imindex] >= 0.95) and np.sum(pix_vals[i,j,:3]**2) > 3*247**2
+        else [1.,1.,1.,0.] for j in range(len(pix_vals[0]))] for i in range(len(pix_vals))]
+    new_region_shaded = [[
+        [0,0,0,0.25] if (i in rows and j in cols and interp[i - iLindex][j - imindex] >= 5 and percent[i - iLindex][j - imindex] >= 0.95)
+        else [1.,1.,1.,0.] for j in range(len(pix_vals[0]))] for i in range(len(pix_vals))]
+#    np.save('EXP_new_region_shaded', percent)
+
+    discovery_reach = mpatches.Patch(color=[0,0,0,0.25])
+    novel = mpatches.Patch(color=[178/255, 34/255, 34/255, 1])
+
+    with plt.rc_context(settings):
+        plt.imshow(new_region_red, extent=extent, aspect='auto')
+        plt.imshow(new_region_shaded, extent=extent, aspect='auto')
+        #plt.plot(m, L, linewidth=3, color='firebrick')
+        fig = plt.gcf()
+        fig.set_size_inches(w*(12/7), h*(12/7))
+        plt.xlabel(r'$m_a$ [GeV]')
+        plt.ylabel(r'$1/\Lambda$ [TeV$^{-1}$]')
+
+        hack = ['{' + str(i) + '}' for i in range(-3,5)]
+        plt.xticks(
+                ticks=[i for i in range(-3,5)],
+                labels=[r'$10^{}$'.format(h) for h in hack])
+        plt.yticks(
+                ticks=[i for i in range(-2,4)],
+                labels=[r'$10^{}$'.format(h) for h in hack[1:-1]])
+        plt.gca().set_xlim(-3, 4)
+        plt.gca().set_ylim(-2, 3)
+
+        plt.legend(handles=[discovery_reach, novel],
+                   labels=[r'5$\sigma$ Discovery Reach', 'Previously Unstudied'],
+                   bbox_to_anchor=(0.98, 0.02), loc='lower right', borderaxespad=0.)
+
+        plt.savefig('FIG13_subset_parameter_space_MOD', dpi=500, bbox_inches='tight')
 
 
 #FIG2_axion_cross_sec()
@@ -1031,6 +1276,8 @@ def FIG13_subset_parameter_space_hashed(gen=False):
 #FIG8_axion_significance_vs_selection_photons()
 #FIG9_axion_significance_vs_selection_jets_3pt6()
 #FIG10_post_log_mjj()
-FIG11_sig_ma_L_lum150()
-FIG12_sig_ma_L_lum3000()
+#FIG11_sig_ma_L_lum150()
+#FIG12_sig_ma_L_lum3000()
 #FIG13_subset_parameter_space_hashed(False)
+#FIG13_subset_parameter_space(False)
+FIG13_subset_parameter_space_MOD(False)
